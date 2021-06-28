@@ -1,0 +1,67 @@
+<html>
+    <body>
+
+        <ul id="list">
+
+        </ul>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+        <script id="mainscript">
+            //konfigurasi
+
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+            apiKey: "AIzaSyAXTrIuXO4OGau7EliaUj6XE-7OS0FIN8Q",
+            authDomain: "percobaan-3aa8e.firebaseapp.com",
+            databaseURL: "https://percobaan-3aa8e-default-rtdb.firebaseio.com",
+            projectId: "percobaan-3aa8e",
+            storageBucket: "percobaan-3aa8e.appspot.com",
+            messagingSenderId: "51589690048",
+            appId: "1:51589690048:web:e63a8de81c95edc3d7f325",
+            measurementId: "G-D8GZMGNJ69"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            var siswaNo=0;
+            function addItemsToList(nama,kelas,Skor){
+                var ul=document.getElementById('list');
+                var header=document.createElement('h2');
+
+                var _nama=document.createElement('li');
+                var _kelas=document.createElement('li');
+                var _skor=document.createElement('li');
+
+                header.innerHTML='Siswa'+(siswaNo++);
+                _nama.innerHTML='Nama :'+nama;
+                _kelas.innerHTML='Kelas :'+kelas;
+                _skor.innerHTML='Skor :'+Skor;
+
+                ul.appendChild(header);
+                ul.appendChild(_nama);
+                ul.appendChild(_kelas);
+                ul.appendChild(_skor);
+
+            }
+           
+            function fetchAllData(){
+                firebase.database().ref('kuis1').once('value',function(snapshot){
+                    snapshot.forEach(
+                        function(ChildSnapshot){
+                            let nama = ChildSnapshot.val().nama;
+                            let kelas = ChildSnapshot.val().kelas;
+                            let Skor = ChildSnapshot.val().Skor;
+                            addItemsToList(nama,kelas,Skor);
+                        }
+                    )
+                });
+            }
+            window.onload(fetchAllData());
+
+        </script>
+
+    </body>
+</html>

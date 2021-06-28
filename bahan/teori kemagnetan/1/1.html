@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Teori Dasar Kemagnetan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="../../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;"  href="1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../3/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a href="../../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab">
+        B. Teori Dasar Kemagnetan
+      </div>
+      <br>
+      <h3> <img src="../../gambar/tujuan.png"><p class="textjudul">Tujuan</p></h3>
+      <div class="canvas">
+        <p>1.	Peserta didik mampu menerapkan konsep kemagnetan dan induksi elektromagnetik.</p>
+        <p>2.	Peserta didik mampu membuat karya sederhana yang memanfaatkan prinsip elektromagnetik.</p>
+
+      </div>
+      <br>
+      <div class="canvas">
+        <p>Sebelumnya kita sudah mempelajari tentang  magnet bumi yang sangat bermanfaat pada migrasi hewan yang digunakan sebagai petunjuk arah. Selain magnet bumi, magnet juga dapat dijumpai dalam bentuk logam. Karena secara umum magnet dibagi menjadi dua, yaitu  magnet alam dan magnet buatan. magnet juga sangat berguna bagi kehidupan sehari-hari kita. Banyak produk-produk elektronik yang memanfaatkan magnet dalam pengembangannya.  Ternyata magnet juga dapat kita buat sendiri, ada beberapa cara membuat magnet yang bisa kita gunakan. Untuk mengetahuinya pelajarilah materi pada sub bab ini dengan penuh semangat.</p>      </div>
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        1. Konsep Gaya Magnet
+      </div>
+      <div class="canvas">
+        Secara umum magnet dibagi menjadi dua yaitu, magnet alam dan magnet buatan. Magnet alam berasal dari bebatuan alami yang mengandung kemagnetan. Sedangkan magnet buatan berasal dari logam yang awalnya tidak memiliki sifat kemagnetan dan dibuat memiliki sifat kemagnetan yang biasanya terbuat dari besi atau baja.
+        <br>
+        <br>
+        <div class="canvas">
+          <center>
+          <b>Magnet buatan memiliki berbagai bentuk yang dapat kita jumpai. Seperti pada gambar berikut.</b>
+          <br><br>
+          
+            <img style="display: initial;" id="batang" class="gbr" src="gambar/batang.png">
+            <img style="display: none;" id="jarum" class="gbr" src="gambar/jarum.png">
+            <img style="display: none;" id="ladam" class="gbr" src="gambar/ladam.png">
+            <img style="display: none;" id="lingkaran" class="gbr" src="gambar/lingkaran.png">
+            <img style="display: none;" id="silinder" class="gbr" src="gambar/silinder.png">
+          <br><br>
+          <button class="btnangka" style="background:black;" id="tombol1" onclick="gbr1()" type="button">1</button>
+          <button class="btnangka" style="background: #04709b;" id="tombol2" onclick="gbr2()" type="button">2</button>
+          <button class="btnangka" style="background: #04709b;"id="tombol3" onclick="gbr3()" type="button">3</button>
+          <button class="btnangka" style="background: #04709b;"id="tombol4" onclick="gbr4()" type="button">4</button>
+          <button class="btnangka" style="background: #04709b;"id="tombol5" onclick="gbr5()" type="button">5</button>
+        </center>
+        </div>
+      </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Mengamati</p></h3>
+      <div class="canvas">
+        Pada vidio berikut ini akan melakukan percobaan untuk mengetahui bagaimana sifat kutub-kutub magnet.
+        <br> 1. Amatilah cara mengecek kutub utara dan selatan dari sebuah magnet.
+        <br> 2. Amatilah dengan seksama apabila dua buah magnet dengan kutub sejenis dan tidak sejenis didekatkan. 
+      </div>
+      <br>
+      <center>
+        <video id="vidio" controls>
+          <source src="gambar/magnet.mp4">
+        </video>
+      </center>
+      <br>
+      <!--untuk kontrol vidio-->
+      <div class="canvas"	>
+        <center>
+          <button class="btnvidio" onclick="alat()" type="button">Alat bahan</button>
+          <button class="btnvidio" onclick="coba1()" type="button">Percobaan 1</button>
+          <button class="btnvidio" onclick="coba2()" type="button">Percobaan 2</button>
+        </center>
+      </div>
+      <br>
+      <!--latihan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      
+      <div class="canvas">
+         <div class="sebelum" style="color: brown;">
+          <center>
+            <b>LATIHAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDEO</b>
+          </center>
+        </div>
+    <div class="latihanhide">
+     
+     <div class="canvas">
+      Setelah mengamati video di atas kamu pasti telah memahami bagaimana sifat kutub magnet. untuk menguji pemahaman kamu cobalah jawab pertanyaan berikut. <b>Kesimpulan akan muncul</b> setelah selesai menjawab semua pertanyaan dengan tepat.
+      <br><br>
+        <p><b>Petunjuk :</b></p>
+          <ol type="1" style="padding-left: 15px;">
+            <li>Soal berjumlah tiga yang terdiri dari gambar dan dua pilihan jawaban.</li>
+            <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
+            <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+          </ol>
+        </div>    
+      <br>
+      <div class="canvas" id="pertanyaan1" >
+            <center>
+              <b>Kutub Utara dengan kutub selatan atau sebaliknya.</b><br><br>
+            <img  src="gambar/latihan1-1.png"></td>
+            <br>
+             <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span> Tarik-menarik </span></label>
+             <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Tolak-menolak </span></label>
+              
+              <br>
+                <div class="jawaban" id="j1benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+                <div class="jawaban"  id="j1salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+             </center>
+      </div> 
+      <br>
+      <div class="canvas" id="pertanyaan2" style="display: none;">
+        <center>
+          <b>Kutub  selatan dengan kutub selatan.</b><br><br>
+          <img  src="gambar/latihan1-2.png"></td>
+
+            <br>
+                <label><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span> Tarik-menarik </span></label>
+                <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> Tolak-menolak </span></label>
+          <br>
+            <div class="jawaban" id="j2benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+            <div class="jawaban"  id="j2salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+         </center>
+      </div> 
+      <br>
+      <div class="canvas" id="pertanyaan3" style="display: none;">
+        <center>
+          <b>Kutub utara dengan kutub utara.</b><br><br>
+          <img  src="gambar/latihan1-3.png"></td>
+          <br>
+                <label><input type="radio" name="soal2" id="s3salah" onclick="cek3()"/><span> Tarik-menarik </span></label>
+                <label><input type="radio"  name="soal2" id="s3benar" onclick="cek3()"/><span> Tolak-menolak </span></label>
+          <br>
+            <div class="jawaban" id="j3benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+            <div class="jawaban"  id="j3salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+         </center>
+      </div>
+
+    </div>
+    </div>
+    <br>
+    <div class="kesimpulan" id="kesimpulan">
+      <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+        Magnet memiliki dua kutub yaitu kutub utara dan kutub selatan. Kutub-kutub magnet yang tidak sejenis apabila didekatkan akan tarik-menarik. Dan apabila kutub-kutub magnet sejenis bila didekatkan akan tolak-menolak. Untuk mengetahui kutub utara dan kutub selatan magnet dapat dilakukan dengan menggunakan kompas.
+        <br>
+      </div>
+    </div>
+    <br>
+    </div>
+    <br>
+    </div>
+  </div>
+    <!--untuk mengakses file javascript-->
+    <script src="../../navigasi.js"></script>
+    <script src="1.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="../../migrasi hewan/2.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button class="btn1">1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="3.html"><button >3</button></a>
+          <a href="4.html"><button >4</button></a>
+          <a href="5.html"><button >5</button></a>
+          <a href="2.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

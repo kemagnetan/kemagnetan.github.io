@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <link rel="stylesheet" href="tabel.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Teori Dasar Kemagnetan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="../../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;"  href="1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../3/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a href="../../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        a. Sifat Magnet Bahan
+      </div>
+      <div class="canvas">
+        Magnet adalah benda yang dapat menarik benda lain yang terbuat dari beberapa bahan logam seperti besi, baja, dan nikel. Namun ada beberapa benda yang tidak dapat ditarik oleh magnet seperti kaca kayu dan kertas. Gaya tarik magnet dapat menembus benda lain. Misalnya saat kamu menaruh besi di atas meja dan kamu bisa menggerakkan besi tersebut dari bawah meja dengan menggunakan magnet. Semakin besar sifat kemagnetan sebuah magnet maka akan semakin besar pula gaya tarik magnet tersebut.
+        <br><br>
+        Ada tiga kelompok klasifikasi benda berdasarkan interaksinya dengan magnet yaitu feromagnetik (benda yang ditarik kuat oleh magnet), paramagnetik (benda yang ditarik lemah oleh magnet), dan diamagnetik (benda yang tidak dapat ditarik oleh magnet). 
+        <br>
+      </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Mengamati</p></h3>
+      <div class="canvas">
+        Pada vidio berikut ini kita akan melakukan percobaan untuk mengetahui benda-benda yang dapat ditarik oleh magnet.<br>
+        1. Amatilah benda-benda yang dapat ditarik dan tidak dapat ditarik oleh magnet.<br>
+        2. Amatilah dan kelompokkan benda-benda tersebut kedalam feromagnetik, paramagnetik, dan diamagnetik.
+      </div>
+      <br>
+      <center>
+        <video id="vidio" controls>
+          <source src="gambar/uji bahan magnet.mp4">
+        </video>
+      </center>
+      <br>
+      <!--untuk kontrol vidio-->
+      <div class="canvas"	>
+        <center>
+          <button class="btnvidio" onclick="alat()" type="button">Alat bahan</button>
+          <button class="btnvidio" onclick="coba()" type="button">Percobaan</button>
+        </center>
+      </div>
+      <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      <div class="canvas">
+       <div class="sebelum" style="color: brown;">
+          <center>
+            <b> LATIHAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDIO</b>
+          </center>
+      </div>
+       <!--soal latihan-->
+    <div class="latihanhide">
+      
+      <div class="canvas">
+      Setelah mengamati demonstrasi di atas. jawablah latihan berikut ini untuk menguji pemahanmu.
+      <br>
+         <p><b>Petunjuk :</b></p>
+           <ol type="1" style="padding-left: 15px;">
+             <li>Tentukan apakah benda berikut dapat ditarik atau tidak.</li>
+             <li>Kelompokan benda-benda tersebut kedalam feromagnetik, paramagnet, dan diamagnetik.</li>
+             <li>tekan tombol cek untuk melihat hasil jawaban. Kolom pada tabel akan berwarna hijau jika jawaban benar dan berwarna merah ketika jawaban salah.</li>
+           </ol>
+      </div>
+           <br><br>
+           <div class="tabelwarna">
+           <table>
+             <tr>
+               <th>Benda</th>
+               <th>Ditarik</th>
+               <th>Kelompok</th>
+             </tr>
+             <!--soal 1-->
+             <tr>
+               <td>Paku besi</td>
+               <td id="pil1">
+                  <label><input type="radio" name="pilihan1" id="s1benar" /><span>	Ya </span></label>
+                  <br>
+                  <label><input type="radio" name="pilihan1"  /><span>	Tidak </span></label>
+              </td>
+               <td id="pil2">
+                <label><input type="radio" name="pilihan2" id="s2benar" /><span>	Feromagnetik </span></label>
+                <br>
+                <label><input type="radio" name="pilihan2"  /><span>	Paramagnetik </span></label>
+                <br>
+                <label><input type="radio" name="pilihan2"  /><span>	Diamagnetik </span></label>
+               </td>
+             </tr>
+             <!--soal 2-->
+             <tr>
+              <td>Pensil (kayu)</td>
+              <td id="pil3">
+                 <label><input type="radio" name="pilihan3"  /><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan3" id="s3benar" /><span>	Tidak </span></label>
+             </td>
+              <td id="pil4">
+               <label><input type="radio" name="pilihan4" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan4" /><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan4" id="s4benar" /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+            <!--soal 3-->
+            <tr>
+              <td>Polpen (plastik)</td>
+              <td id="pil5">
+                 <label><input type="radio" name="pilihan5" /><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan5" id="s5benar" /><span>	Tidak </span></label>
+             </td>
+              <td id="pil6">
+               <label><input type="radio" name="pilihan6" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan6" /><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan6" id="s6benar" /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+            <!--soal 4-->
+            <tr>
+              <td>Gunting (besi)</td>
+              <td id="pil7">
+                 <label><input type="radio" name="pilihan7" id="s7benar" /><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan7" /><span>	Tidak </span></label>
+             </td>
+              <td id="pil8">
+               <label><input type="radio" name="pilihan8" id="s8benar" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan8" /><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan8" /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+            <!--soal 5-->
+            <tr>
+              <td>Sendok (besi)</td>
+              <td id="pil9">
+                 <label><input type="radio" name="pilihan9" id="s9benar" /><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan9" /><span>	Tidak </span></label>
+             </td>
+              <td id="pil10">
+               <label><input type="radio" name="pilihan10" id="s10benar" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan10"  /><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan10" /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+            <!--soal 6-->
+            <tr>
+              <td>Tembaga</td>
+              <td id="pil11">
+                 <label><input type="radio" name="pilihan11" /><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan11" id="s11benar" /><span>	Tidak </span></label>
+             </td>
+              <td id="pil12">
+               <label><input type="radio" name="pilihan12" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan12" /><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan12" id="s12benar" /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+
+             <!--soal 7-->
+             <tr>
+              <td>Magnesium</td>
+              <td id="pil13">
+                 <label><input type="radio" name="pilihan13" id="s13benar"/><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan13"  /><span>	Tidak </span></label>
+             </td>
+              <td id="pil14">
+               <label><input type="radio" name="pilihan14" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan14" id="s14benar"/><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan14"  /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+
+             <!--soal 8-->
+             <tr>
+              <td>Lithium</td>
+              <td id="pil15">
+                 <label><input type="radio" name="pilihan15" id="s15benar"/><span>	Ya </span></label>
+                 <br>
+                 <label><input type="radio" name="pilihan15"  /><span>	Tidak </span></label>
+             </td>
+              <td id="pil16">
+               <label><input type="radio" name="pilihan16" /><span>	Feromagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan16" id="s16benar"/><span>	Paramagnetik </span></label>
+               <br>
+               <label><input type="radio" name="pilihan16"  /><span>	Diamagnetik </span></label>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+          <br>
+          <center>
+            <button onclick="cek();">Cek Jawaban</button>
+          </center>
+       </div>         
+
+
+     </div>
+     <br>
+     <!--Kesimpulan-->
+     <div class="kesimpulan1">
+      <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+        <div class="kesimpulansebelum" id="kesimpulansebelum" style="color: brown;">
+          <center>
+            <b> KESIMPULAN AKAN MUNCUL SETELAH MENJAWAB LATIHAN</b>
+          </center>
+      </div>
+      <div class="kesimpulan" id="kesimpulan">
+        Ada beberapa benda yang dapat ditarik dan tidak dapat ditarik oleh magnet. Seperti percobaan yang telah kita lakukan. Benda yang dapat ditarik kuat oleh magnet disebut feromagnetik, menda yang ditarik lemah oleh magnet disebut paramagnetik dan benda yang tidak dapat ditarik oleh magnet disebut diamagnetik.
+        <br><br>
+        <center>
+        <img width="50%" src="gambar/kelompokmb.png">
+        </center>
+      </div>
+     </div>
+    </div>
+    </div>
+
+    <br><br>
+  </div>
+    <!--untuk mengakses file javascript-->
+    <script src="../../navigasi.js"></script>
+    <script src="2.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="1.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button class="btn1">2</button></a>
+          <a href="3.html"><button >3</button></a>
+          <a href="4.html"><button >4</button></a>
+          <a href="5.html"><button >5</button></a>
+          <a href="3.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

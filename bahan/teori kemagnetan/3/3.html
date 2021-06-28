@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Teori Dasar Kemagnetan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="../../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a href="../1/1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;" href="1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../4/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a href="../../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        c. Penerapan Gaya Lorentz pada Motor Listrik
+      </div>
+      <div class="canvas">
+        Motor listrik memiliki beberapa komponen, diantaranya magnet tetap dan kumparan. Jika ada arus listrik yang mengalir pada kumparan dan terletak dalam medan magnet, maka kumparan tersebut akan mengalami gaya Lorentz sehingga kumparan akan berputar.      </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Menonton</p></h3>
+      <div class="canvas">
+        Untuk lebih memahami pengaruh arus listrik terhadap medan magnet, cobalah amati vidio berikut.      </div>
+      <br>
+      <center>
+        <video id="vidio" controls>
+          <source src="gambar/motor listrik.mp4">
+        </video>
+      </center>
+      <br>
+      <!--untuk kontrol vidio-->
+      <div class="canvas"	>
+        <center>
+          <button class="btnvidio" onclick="alat()" type="button">Alat dan bahan</button>
+          <button class="btnvidio" onclick="coba()" type="button">Percobaan</button>
+        </center>
+      </div>
+      <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      <div class="sebelum" style="color: brown;">
+        <div class="canvas">
+            <center>
+              <b>LATIHAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDIO</b>
+            </center>
+        </div>
+      </div>
+         
+      <br>
+  <div class="latihanhide">
+     <div class="canvas">
+        <p><b>Petunjuk :</b></p>
+          <ol type="1" style="padding-left: 15px;">
+            <li>Soal berupa pilihan ganda.</li>
+            <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
+            <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+          </ol>
+      </div>    
+      <br>
+    <div class="canvas" style="background-color: seashell;">
+
+    <!--Soal 1-->
+    <div class="soal" id="soal1sow" >
+      <b>Berikut yang merupakan produk-produk yang menggunakan mekanisme gaya Lorentz pada motor listrik adalah ….</b><br><br>
+        <table cellpadding="10">
+        <tr>
+          <td><label><input type="radio" name="soal"  id="qsoal1" onclick="cek1()"/><span> Setrika</span></label></td>
+          <td>
+            <div style="display: none;" id="s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal" id="soal2" onclick="cek1()"/><span> Belender</span></label></td>
+          <td>
+            <div style="display: none;" id="s2"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal"  id="soal3" onclick="cek1()"/><span> Dispenser</span></label></td>
+          <td>
+            <div style="display: none;" id="s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label><input type="radio" name="soal"  id="soal4"  onclick="cek1()"/><span> Televisi  </span></label></td>
+          <td>
+            <div style="display: none;" id="s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <br>
+    <div id="soal2sow" style="display:none;">
+    <div class="canvas" style="background-color: seashell;">
+             <!--Soal 2-->
+             <div class="soal" >
+              Perhatikan Langkah-langkah membuat motor listrik sederhana berikut !<br>
+                1)	Aliri kawat penyangga dengan listrik dari baterai.<br>
+                2)	Buatlah kawat kumparan membentuk melingkar.<br>
+                3)	Letakan kawat kumparan pada kawat penyangga di antara kedua magnet yang berhadapan (kutub tidak sejenis).<br>
+                4)	Kawat kumparan berputar.<br><br>
+            <b>Berikut yang merupakan langkah-langkah yang benar untuk membuat motor listrik sederhana adalah ….</b>
+              <br>
+              <br>
+            
+              <!--Jawaban-->  
+              <table cellpadding="10">
+                <tr>
+                  <td><label><input type="radio" name="soal"  id="ja1" onclick="cek2()"/><span> 1), 2), 3), dan 4)</span></label></td>
+                  <td>
+                    <div style="display: none;" id="hasil1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label><input type="radio" name="soal" id="ja2" onclick="cek2()"/><span> 1), 3), 2), dan 4)</span></label></td>
+                  <td>
+                    <div style="display: none;" id="hasil2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label><input type="radio" name="soal"  id="ja3" onclick="cek2()"/><span> 2), 1), 3), dan 4)</span></label></td>
+                  <td>
+                    <div style="display: none;" id="hasil3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label><input type="radio" name="soal"  id="ja4"  onclick="cek2()"/><span> 2), 3), 1) dan 4)  </span></label></td>
+                  <td>
+                    <div style="display: none;" id="hasil4"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    
+    <div class="sebelum2" >
+     <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+     <div class="canvas">
+       <div id="hidekesimpulan" style="color: brown;">
+            <center>
+              <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENJAWAB SEMUA SOAL</b>
+            </center>
+        </div>
+      <div id="kesimpulan" style="display: none;">
+        Ketika kumparan dialiri listrik maka kumparan menimbulkan elektromagnetik. Dan ketika kumparan berada diantara gaya magnet maka akan menimbulkan gaya Lorentz yang membuat kumparan berputar.    
+      </div>
+    </div>
+    <BR><BR>
+    </div>
+    </div>
+
+  </div>
+    <!--untuk mengakses file javascript-->
+    <script src="../../navigasi.js"></script>
+    <script src="3.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="2.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="3.html"><button class="btn1">3</button></a>
+          <a href="../4/1.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

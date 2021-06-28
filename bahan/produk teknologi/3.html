@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../navigasi.css">
+    <link rel="stylesheet" href="../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Kemagnetan dalam Produk Teknologi</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a href="../teori kemagnetan/1/1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../teori kemagnetan/2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../teori kemagnetan/3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../teori kemagnetan/4/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../teori kemagnetan/Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;" href="1.html">Materi</a></li>
+              <li><a href="../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        3. Pemanfaatan Magnet dalam PLTN
+      </div>
+      <br>
+      <h3> <img src="../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
+      <div class="canvas">
+        Vidio berikut ini akan menjelaskan mengenai PLTN (Pembangkit Listrik Tenaga Nuklir) dan bagaimana cara reaktor nuklir bekerja.
+      </div>
+        <br>
+      <center>
+        <video id="vidio" controls>
+          <source src="gambar/reaktor nuklir.mp4">
+        </video>
+      </center>
+      <br>
+      <!--Latihan -->
+      <h3> <img src="../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      <div  class="canvas" >
+        <div class="sebelum" style="color: brown;">
+          <center>
+            <b>LATIHAN DAN KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDIO</b>
+          </center>
+        </div>
+        <div class="latihan">
+           <p><b>Petunjuk :</b></p>
+             <ol type="1" style="padding-left: 15px;">
+               <li>Berikut adalah pernyataan mengenai kereta maglev.
+               <li>Jawab benar jika menurut kamu pernyataan pada soal benar. </li>
+               <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
+               <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+             </ol> 
+        </div> 
+      </div>
+      <br>
+      <div class="soal">
+        <!--soal 1-->
+      <div class="canvas" >
+        <table style="text-align: center;" width="100%">
+          
+          <tr>
+            <td>Pembangkin listrik tenaga nuklir menggunakan uap dari  pembakaran mineral alam.</td>
+          </tr>
+          <tr>
+              <td >
+                <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span> Benar </span></label>
+                <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Salah </span></label>
+              </td>
+          </tr>
+        </table>
+        <br>
+        <center>
+        <div class="jawaban" id="j1benar" style="display:none; "><img src="../gambar/benar.png"></div>
+        <div class="jawaban"  id="j1salah" style="display:none; "><img src="../gambar/salah.png"></div>
+      </center>   
+      </div>
+      <br>
+       <!--soal 2-->
+      <div class="canvas" id="pertanyaan2" style="display: none;">
+        <table style="text-align: center;" width="100%">
+          <tr>
+              <td >Pada PLTN panas diperoleh dari reaksi pemecahan inti atom dalam suatu reaktor nuklir.</td>
+          </tr>
+        </tr>
+              <td style="padding-left: 10px;">
+                <label><input type="radio" name="soal2" id="s2benar" onclick="cek2()"/><span> Benar  </span></label>
+                <label><input type="radio"  name="soal2" id="s2salah" onclick="cek2()"/><span> Salah </span></label>
+              </td>
+          </tr>
+        </table>
+        <br>
+        <center>
+          <div class="jawaban" id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
+          <div class="jawaban"  id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
+        </center>
+      </div>
+      <br>
+       <!--soal 3-->
+      <div class="canvas" id="pertanyaan3" style="display: none;">
+        <table style="text-align: center;" width="100%">
+         
+          <tr>
+              <td >Pada PLTN panas diperoleh dari reaksi pemecahan inti atom dalam suatu reaktor nuklir.</td>
+          </tr>
+          <tr>
+              <td style="padding-left: 10px;">
+                <label><input type="radio" name="soal3" id="s3salah" onclick="cek3()"/><span> Benar </span></label>
+                <label><input type="radio"  name="soal3" id="s3benar" onclick="cek3()"/><span> Salah </span></label>
+              </td>
+          </tr>
+        </table>
+        <br>
+        <center>
+        <div class="jawaban" id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
+        <div class="jawaban"  id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
+        </center>
+      </div>
+      <br>
+      <!--Soal 4-->
+      <div class="canvas" id="pertanyaan4" style="display: none;">
+        <table style="text-align: center;" width="100%">
+         
+          <tr>
+              <td>Panas dari pemecahan atom digunakan untuk menggerakan turbin dan reaktor.</td>
+          </tr>
+          <tr>
+              <td style="padding-left: 10px;">
+                <label><input type="radio" name="soal4" id="s4benar" onclick="cek4()"/><span> Benar </span></label>
+                <label><input type="radio"  name="soal4" id="s4salah" onclick="cek4()"/><span> Salah </span></label>
+              </td>
+          </tr>
+        </table>
+        <br>
+        <center>
+        <div class="jawaban" id="j4benar" style="display:none; "><img src="../gambar/benar.png"></div>
+        <div class="jawaban"  id="j4salah" style="display:none; "><img src="../gambar/salah.png"></div>
+        </center>
+      </div>
+      <br>
+    </div>
+         <br>
+      <!--kesimpulan muncul setelah selesai menjawab soal-->
+      <div id="kesimpulan" style="display: none;">
+      <h3> <img src="../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">        
+        Pembangkit listrik tenaga nuklir (PLTN) menghasilkan panas dari pemecahan inti atom. Panas yang dihasilkan digunakan untuk menggerakkan turbin dan generator. Panas yang dihasilkan mampu mencapai 1,5 juta derajat selsius. Akibat suhu panas yang dihasilkan begitu tinggi maka medan magnet yang sangat kuat digunakan untuk menekan panas.
+        <br>
+      </div>
+    </div>
+      <br>
+    </div>
+    </div>
+    <!--untuk mengakses file javascript-->
+    <script src="3.js"></script>
+    <script src="../navigasi.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="2.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="3.html"><button class="btn1">3</button></a>
+          <a href="Kuis/kuis3.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body{
+	background-image: url('koleksi/bg.png');
+	background-size: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	float: left;
+	width:100%;
+	height:10%;
+}
+
+.laygambar{
+	float: left;
+	margin-top: 10%;
+	width:100%;
+	height:40%;
+	font-family:arial;
+	font-size:8pt;
+}
+.margin{
+	width: auto;
+	margin-left: 26%;
+}
+footer{
+	float: left;
+	margin-top: 5%;
+	margin-left: 35%;
+	width:30%;
+	height:8%;
+	border-radius:25px;
+	background:#008EB8;
+	font-family:arial;
+	font-size:8pt;
+	color:white;
+	opacity:0.7;
+
+}	
+.gambaricon{
+	float:left;
+	width:15%;
+	height:15%;
+	transition: all .2s ease-in-out; 
+	margin-left:5%;
+}
+
+.iconabout{
+	float:left;
+	width:60px;
+	height:60px;
+	transition: all .2s ease-in-out; 
+	margin-top: 3%;
+	margin-left:90%;
+}
+
+.gambaricon:hover{
+transform: scale(2);
+}
+.iconabout:hover{
+transform: scale(1.8);
+}
+@media screen and (max-width: 760px) {
+	.header{
+		margin-top: 5%;
+		width:100%;
+		height:8%;
+		background:#008EB8;
+		opacity:0.7;
+	}
+	.iconabout{
+		float:left;
+		width:60px;
+		height:60px;
+		margin-left:5%;
+		margin-top: -1%;
+	}
+	.laygambar{
+		float: left;
+		width:100%;
+		height:60%;
+		font-family:arial;
+		font-size:8pt;
+		margin-top: 8%;
+	}
+	.margin{
+		width: 40%;
+		height: 60%;
+		margin-left: 35%;
+	}
+	.gambaricon{
+		float:left;
+			width:60%;
+			height:60%;
+	}
+	.gambaricon:hover{
+		transform: scale(1.1);
+		}
+	footer{
+		float: left;
+		margin-top: 20%;
+		margin-left: 0%;
+		width:100%;
+		height:8%;
+		border-radius:0;
+		background:#008EB8;
+		font-family:arial;
+		font-size:7pt;
+		color:white;
+		opacity:0.7;
+	}
+	}

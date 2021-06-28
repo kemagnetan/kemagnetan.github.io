@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="kuis3.css">
+</head>
+<body onload="initializeApp()">
+    
+    <center><div class="judul"> KUIS 3</div></center>
+
+        <div id="datadiri">
+            <div class="canvaskecil">
+            <center> 
+            <table cellpadding="5">
+                <tr>
+                    <td>Nama :</td> 
+                    <td><input type="text" id="nama" /></td>
+                </tr>
+                <tr>
+                    <td>Sekolah : </td>
+                    <td><input type="text" id="sekolah" /></td>
+                </tr>
+                <tr>
+                    <td>Kelas :  </td>
+                    <td>
+                        <select id="kelas" name="kelas">
+                            <option value="" selected="selected"> PILIH KELAS </option>
+                            <option value="9A">9A</option>
+                            <option value="9B">9B</option>
+                            <option value="9C">9C</option>
+                            <option value="9D">9D</option>
+                            <option value="9E">9E</option>
+                            <option value="9F">9F</option>
+                            <option value="9G">9G</option>
+                            <option value="9H">9H</option>
+                        </select>
+                    </td>
+                </tr> 
+            </table> 
+            <br><br>
+            <button class="btnmulai" type="button" onclick="mulai()">Mulai</button>
+            </center>
+            </div>
+        </div>
+        <div class="canvaskecil" id="badan_soal" style="display: none;">
+            
+                <div id="badanSoal" >
+                    <div id="soal2" class="pertanyaanbd" style="display: none;">
+                        <ul type="none">	
+                            Perhatikan beberapa pernyataan berikut !
+                            <li>1) Mampu memberikan gambaran anatomi tubuh yang lebih detail</li>
+                            <li>2) menggunakan radiasi pengion</li>
+                            <li>3) mampu mendeteksi kelainan pada jaringan lunak otak</li>
+                            <li>4) mampu mendeteksi kelainan dikepala</li>
+                        </ul>
+                    </div>
+                    <div id="soal4" class="pertanyaanbd" style="display: none;">
+                        <ul type="none">	
+                            perhatikan inti-inti berikut !
+                            <li>1) deuterium</li>
+                            <li>2) helium</li>
+                            <li>3) neutron</li>
+                            <li>4) tritium</li>
+                        </ul>
+                    </div>
+                    <div id="soal5" class="pertanyaanbd" style="display: none;">
+                        <ul type="none">	
+                            Perhatikan pernyataan berikut !
+                            <li>1) Penggunaan medan magnet pada  reaktor dapat menghemat bahan bakar.</li>
+                            <li>2) Pengadaan medan magnet memerlukan energi yang sangat besar.</li>
+                            <li>3) reaksi fusi terjadi pada suhu yang sangat tinggi.</li>
+                            <li>4) medan magnet yang sangat kuat mengurung partikel agar tetap didalam medan magnet.</li>
+                            
+                        </ul>
+                    </div>
+                    <div id="soal9" class="pertanyaanbd" style="display: none;">
+                        <ul type="none">	
+                            perhatikan informasi-informasi berikut !
+                            <li>1) Menimbulkan gaya gesek yang besar.</li>
+                            <li>2) Menimbulkan tingkat kebisingan yang tinggi.</li>
+                            <li>3) membutuhkan biaya investasi yang sangat besar.</li>
+                            <li>4) Sulit dikendalikan karena mengambang di atas rel.</li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div id="pertanyaan" class="pertanyaan"></div>
+                    <br>
+                    <label id="bg1" class="pilihan"><input id="pilihan1" type="radio"  name="pilihan" value="1" /> <span id="opt1"></span></label>
+                    <label id="bg2" class="pilihan"><input id="pilihan2" type="radio"  name="pilihan" value="2" /> <span id="opt2"></span></label>
+                    <label id="bg3" class="pilihan"><input id="pilihan3" type="radio"  name="pilihan" value="3" /> <span id="opt3"></span></label>
+                    <label id="bg4" class="pilihan"><input id="pilihan4" type="radio"  name="pilihan" value="4" /> <span id="opt4"></span></label>
+                    
+                </div>
+            <center>
+            <button class="btn_simpan" id="btn_simpan" onclick="simpan();">Simpan</button>
+            <button id="btn_selanjutnya" onclick="SoalNext();">Selanjutnya</button>
+           
+                <div id="hasil" class="pertanyaan" style="display:none;"></div>
+                <button id="btn_cek" style="display: none;" onclick="Cek2();">CEK</button>
+                <button id="btn_selesai" style="display: none;" onclick="selesaii();">Selesai</button>
+                <a style="text-decoration: none; color:white;" href="../3.html"> <button id="mat_selanjutnya" style="display:none;">Kembali</button></a>
+            </center>
+        </div>
+        <br>
+        <div id="navigasi_soal" style="display: none;">
+                <center>
+                    <button class="btnkecil"  id="tombol1" onclick="soal1_sow();" type="button">1</button>
+                    <button class="btnkecil"  id="tombol2" onclick="soal2_sow();" type="button">2</button>
+                    <button class="btnkecil"  id="tombol3" onclick="soal3_sow();" type="button">3</button>
+                    <button class="btnkecil"  id="tombol4" onclick="soal4_sow();" type="button">4</button>
+                    <button class="btnkecil"  id="tombol5" onclick="soal5_sow();" type="button">5</button>
+                    <button class="btnkecil"  id="tombol6" onclick="soal6_sow();" type="button">6</button>
+                    <button class="btnkecil"  id="tombol7" onclick="soal7_sow();" type="button">7</button>
+                    <button class="btnkecil"  id="tombol8" onclick="soal8_sow();" type="button">8</button>
+                    <button class="btnkecil"  id="tombol9" onclick="soal9_sow();" type="button">9</button>
+                    <button class="btnkecil"  id="tombol10" onclick="soal10_sow();" type="button">10</button>
+                </center>
+                <br>
+        </div>
+        
+	<script src="soal.js"></script>
+	<script src="kuis3.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+   
+</body>
+</html>
+<script type="text/javascript" async
+     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>

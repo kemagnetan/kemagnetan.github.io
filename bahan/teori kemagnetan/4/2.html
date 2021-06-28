@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Teori Dasar Kemagnetan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../../migrasi hewan/1.html">Materi</a></li>
+			  <li><a href="../../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a href="../1/1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a style="color: cyan; background: #272727; border-left-color: cyan;" href="1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+				<li><a href="../../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+ <!--class untuk konten-->
+  <div class="content">
+    <br>
+		<div class="borderbab" style="text-align: left;">
+			Transformator
+		</div>
+		<div class="canvas">
+			<p>
+        Bagian-bagian transformator terdiri atas kumparan primer, kumparan sekunder, dan inti besi lunak. Kumparan primer merupakan bagian transformator yang terhubung dengan sumber tegangan. Inti besi lunak pada transformator berfungsi untuk tempat melingkarnya kumparan primer dan sekunder. Tegangan dan arus keluar dari transformator mengalir dari kumparan sekunder. Agar lebih jelas simak skema transformator dibawah ini.
+      </p>
+					<center><img src="gambar/trafo2.png"></center>
+				</div>	
+        <br>
+		<div class="canvas">
+			<p>Tegangan dan jumlah lilitan pada transformator memiliki hubungan kesebandingan yang dapat ditulis sebagai berikut.</p>
+      <br>
+      <center>
+				<h5>$ W_p = W_s$<br><br>
+				$ V_p \times I_p \times t  = V_s\times I_s \times t$<br></h5>
+				$ \frac{V_p}{V_s}= \frac{I_s}{I_p}$<br><br>
+				maka, $\frac{I_s}{I_p} = \frac{V_p}{V_s}=\frac{N_p}{N_s}$
+			</center>
+	
+		<b>Keterangan: </b>
+		<br>$W_p$	= energi primer (J) 
+		<br>$W_s$	= energi sekunder (J) 
+		<br>$I_p$	= arus primer (A) 
+		<br>$I_s$	= arus sekunder (A) 
+		<br>
+		<br>$N_p$	= lilitan primer 
+		<br>$N_s$	= lilitan sekunder 
+		<br>$V_p$	= tegangan primer (V) 
+		<br>$V_s$	= tegangan sekunder (V)
+		<br><br>
+		Perhitungan efisiensi trafo (η) yang tidak ideal tersebut dapat dilakukan dengan menggunakan rumus berikut.
+		<br><br>
+		η = $\frac{P_{out}}{P_{in}} \times 100%$
+		<br><br>
+		η = $\frac{V_s . I_s}{V_p . I_p} \times 100%$
+		
+		<br><br>
+		<b>Keterangan :</b>
+		<br> $P_{out} $ = daya listrik pada kumparan sekunder (W)
+		<br> $P_{in} $ = daya listrik pada kumparan primer (W)
+	
+	
+			<script type="text/javascript" async
+			src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+		   </script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+			});
+		</script>
+
+		</div>
+		<br>
+		<div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cek()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh</p></div>
+		<div id="contoh" style="display: none;" class="canvas">	
+					Sebuah transformator memiliki 300 lilitan primer dan 30 lilitan sekunder. Diketahui tegangan pada lilitan primer adalah 220 volt. 
+				<ol style="padding-left: 16px;" type="1">
+					<li> Tentukan besar tegangan pada lilitan sekunder.</li>
+					<li> Jika arus listrik yang mengalir pada lilitan primer sebesar 0,5 mA, berapakah arus listrik yang mengalir pada lilitan sekunder?</li>
+					<li> Tentukan efisiensi transformator.</li>
+					<li> Tentukan jenis transformator.</li> 
+				</ol>
+				<br>
+				<b>Diketahui:</b> <br>
+				<ul type="none" >
+					<li>$N_p$ = 300 lilitan </li>
+					<li>$N_s$ = 30 lilitan</li> 
+					<li>$V_p$ = 220 volt</li>
+					<li>$I_p$ = 0,5 mA</li>
+				</ul>
+				<br>
+				<b>Ditanya:</b> <br>
+				<ol type="1" style="padding-left: 16px;">	
+					<li>Tegangan sekunder (Vs )</li> 
+					<li>Arus sekunder (Is ) </li>
+					<li>Efisiensi transformator (η) </li>
+					<li>enis transformator </li>
+				</ol>
+				<br>
+				<b>Jawaban</b>
+			
+			<ol type="1" style="padding-left: 16px;">	
+				<li>Tegangan sekunder (Vs )</li> 
+					<br>
+					$ \frac{N_p}{N_s} = \frac{V_p}{V_s}$
+					<br><br>
+					$ \frac{300}{30} = \frac{220 V}{V_s}$
+					<br><br>
+					$V_s= \frac{220 V \times 30}{300}= \space 22\space Volt$ 
+					<br><br>
+
+				<li>Arus sekunder ($I_s$ ) </li>
+					<br>
+					$ \frac{N_p}{N_s} = \frac{I_s}{I_p}$
+					<br><br>
+					$ \frac{300}{30} = \frac{I_s}{0,5 \space mA}$
+					<br><br>
+					$I_s = \frac{300 \times 0,5 \space mA}{30}= \space 5 \space mA $
+					<br><br>
+
+				<li>Efisiensi transformator (η) </li>
+				<br>
+				$ η = \frac {P_{out}}{P_{in}} \times 100 $$\space = \frac{V_s.I_s}{V_p.I_p} \times 100%  $$= \frac {5 \space mA \times 22 \space V} {0,5 \space mA \times 220 \space V} \times 100% $
+				<br><br>
+				<li>Jenis transformator </li>
+				<br>
+				Karena $I_p>V_s> N_p> N_s$ , maka transformator tersebut adalah transformator step-down.
+			</ol>
+
+			
+				<script type="text/javascript" async
+				src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+			</script>
+			<script type="text/x-mathjax-config">
+				MathJax.Hub.Config({
+				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+				});
+			</script>
+			
+		</div>
+
+    <br>
+		<div class="h3hover" style="font-size: 14pt; cursor: pointer;display: none;"id="latihan" onclick="cek2()"> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></div>
+		<div id="kontenlatihan" class="canvas" style="display: none;">
+
+			        <div class="soalberwarna" style="padding-bottom: 1px;">
+                1.	Sebuah transformator memiliki 1.500 lilitan primer dan 300 lilitan sekunder. Bila tegangan sekunder transformator tersebut 3 volt dan arus primernya 4 mA, berapakah tegangan primer dan arus sekundernya?                 
+				<br><br>
+				<p ><b>JAWABAN</b></p>  
+                <div id="p1" class="halatihan" ></div>
+				
+                <form onsubmit="return check()" method="post">
+                    <br><br> Tegangan primer<br>  <input id="myid" name="myvar" type="text" class="formlatihan"  > V
+                    <br><br>
+                    Arus sekunder<br> <input id="myid1" name="myvar1" type="text" class="formlatihan" > mA
+                  
+                    <input  type="submit" value="Cek">
+                </form>
+				<br>
+             </div>
+            <br>
+
+            <div class="soalberwarna" style="padding-bottom: 1px;">
+                2.	Sebuah transformator step-down terdiri atas kumparan primer dengan 1.200 lilitan dan kumparan sekunder dengan 40 lilitan. Jika kumparan primer dihubungkan degan tegangan sebesar 330 V, berapa tegangan pada kumparan sekunder?            
+				<br><br>
+				<p><b>JAWABAN</b></p>  
+                <div id="p2" class="halatihan" ></div>
+				<br>
+                <form onsubmit="return check2()" method="post">
+                   <br><br> <input id="myid2" name="myvar2" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> V
+                    <input  type="submit" value="Cek">
+                </form> 
+				<br>
+            </div>
+            <br>
+
+            <div class="soalberwarna" style="padding-bottom: 1px;">
+                3.	Jika daya listrik yang mengalir pada kumparan primer dan sekunder sebuah transformator berturut-turut sebesar 350 watt dan 70 watt, berapakah efisiensi transformator tersebut ?               
+				<br><br> 
+				<p><b>JAWABAN</b></p>  
+                <div id="p3" class="halatihan" ></div>
+    
+                <form onsubmit="return check3()" method="post">
+                    <br><br> <input id="myid3" name="myvar3" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> %
+                    <input  type="submit" value="Cek">
+                </form>
+				<br>
+            </div>
+		</div>
+		<br><br>
+	</div> 
+    
+</div>
+
+</div>
+
+    <!--untuk mengakses file javascript-->
+    <script src="../../navigasi.js"></script>
+    <script src="2.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+		<a href="1.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button class="btn1">2</button></a>
+          <a href="../Kuis/kuis2.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+</body>
+</html>

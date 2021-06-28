@@ -1,0 +1,28 @@
+/* Table */
+	.tabelwarna	table {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+            overflow: scroll;
+            
+
+		}
+		.tabelwarna table th{
+            color: white;
+            width: 10%;
+            height: 5%;
+            background-color: rgb(5, 77, 104);;
+            text-align: center;
+        }
+        .tabelwarna table td{
+            background-color:rgb(166, 238, 243);
+            padding-left: 2%;
+            padding-right: 1%;
+        }
+
+        @media screen and (max-width:600px){
+            .tabelwarna table td{
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+        }

@@ -1,0 +1,77 @@
+
+.header{
+	width:50%;
+	height:15%;
+	position: absolute;
+	left: 25%;
+	font-family:arial;
+	font-size:8pt;
+	color:#32404E;
+	text-align: center;
+
+}
+
+.kembali{
+	float:left;
+	width:100%;
+	height:10%;
+}
+.kembali img{
+	width: 5%;
+	padding-left: 90%;
+}
+
+
+/*css3 design scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {     
+    background: white;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #257C9F;
+	border-radius:10px;
+}
+.nav{
+	display: none;
+}
+.menu{
+	display: none;
+}
+.nav{
+	display: none;
+}
+.gambaricon:hover{
+transform: scale(1.5);
+}
+.iconabout:hover{
+transform: scale(1.8);
+}
+/*Tampilan hp*/
+@media screen and (max-width:760px){
+	.header{
+		position: absolute;
+		top:10%;
+		left: 0%;
+		width:100%;
+		height:30%;
+		background:none;
+		font-family:arial;
+		font-size:8pt;
+		color:#32404E;
+		text-align:center;
+	}
+	
+	.kembali{
+	float:left;
+	width:100%;
+	height:5%;
+	}
+	.kembali img{
+		width: 10%;
+		padding-left: 85%;
+	}
+}

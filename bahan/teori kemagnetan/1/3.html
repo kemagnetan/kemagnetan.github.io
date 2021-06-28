@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <link rel="stylesheet" href="tabel.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Teori Dasar Kemagnetan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="../../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;"  href="1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../3/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a href="../../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        b. Cara Membuat Magnet
+      </div>
+      <div class="canvas">
+        Ada tiga cara yang dapat digunakan untuk membuat magnet yaitu, dengan cara induksi, menggosokkan, elektromagnetik.
+        <br><br>
+        <div class="canvas">
+          <div id="induksi" style="display: initial;">
+            <b>1. Dengan Cara Induksi</b> <br>
+            <center><img  class="gbr" src="gambar/induksi.png"></center>
+            <p>Membuat magnet dengan cara menginduksi artinya mendekatkan atau menempelkan suatu benda dengan magnet sehingga benda tersebut berubah menjadi magnet, namun sifat kemagnetan ini hanya berlangsung sementara. Jika benda dilepaskan dari magnet, sifat kemagnetannya akan hilang.</p>
+          </div>
+
+          <div id="menggosok" style="display: none;">
+            <b>2. Dengan Cara Menggosok</b> <br>
+            <center><img class="gbr" src="gambar/menggosok.png"></center>
+            <br>
+            <p>
+              Membuat magnet dengan cara menggosok dapat dilakukan dengan cara menggosokkan kutub magnet pada benda feromagnetik sperti besi dan baja. Semakin banyak gosokan yang dilakukan semakin kuat sifat kemagnetannya. Akan tetapi, sifat kemagnetan ini juga berlangsung sementara.
+            </p>
+          </div>
+          <div id="elektro" style="display: none;">
+            <b>3. Dengan Cara Elektromagnetik</b> <br>
+            <center><img  class="gbr" src="gambar/elektro.png"></center>
+            <br>
+            Membuat magnet dengan cara elektromagnetik dapat dilakukan dengan cara mengalirkan arus listrik ke benda feromagnetik sperti besi dan baja. Arus listrik dapat menimbulkan medan magnet. Namun sifatfat kemagnetannya berlangsung sementara. Ketika arus listrik terputus, sifat kemagnetan benda akan hilang.
+          </div>
+
+          <br>
+        <center>
+          <button class="btnangka" style="background:black;" id="tombol1" onclick="gbr1()" type="button">1</button>
+          <button class="btnangka" style="background: #04709b;" id="tombol2" onclick="gbr2()" type="button">2</button>
+          <button class="btnangka" style="background: #04709b;"id="tombol3" onclick="gbr3()" type="button">3</button>
+        </center>
+      </div>
+      </div>
+      <br>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Mengamati</p></h3>
+      <div class="canvas">
+        Pada vidio berikut ini kita akan melakukan percobaan membuat magnet dengan cara induksi, menggosok, dan elektromagnetik. 
+        <br>
+        <br> 1. Amatilah peristiwa yang terjadi pada paku pertama dan paku kedua pada cara induksi.
+        <br>  2. Amatilah apakah arah lilitan pada paku berpengaruh pada cara elektromagnetik.
+        <br> 3. Amatilah bagaimana pengaruh arah gosokan magnet pada paku dan kutub yang terbentuk.
+        
+      </div>
+      <br>
+      <center>
+        <video id="vidio" controls>
+          <source src="gambar/membuat magnet.m4v">
+        </video>
+      </center>
+      <br>
+      <!--untuk kontrol vidio-->
+      <div class="canvas"	>
+        <center>
+          <button class="btnvidio" onclick="coba1()" type="button">Percobaan 1</button>
+          <button class="btnvidio" onclick="coba2()" type="button">Percobaan 2</button>
+          <button class="btnvidio" onclick="coba3()" type="button">Percobaan 3</button>
+        </center>
+      </div>
+      <br>
+    <div class="pertanyaansingkat" >
+      <div  class="canvas">
+        <b>Setelah kamu mengamati vidio diatas cobalah jawab pertanyaan berikut : (Kolom hasil akan berubah menjadi warna merah ketika salah dan warna hijau ketika benar)</b>
+        <div class="tabelwarna">
+        <table >
+          <tr>
+            <th>Pertanyaan</th>
+            <th>Jawaban</th>
+            <th>Hasil</th>
+          </tr>
+          <tr>
+            <td>(Cara Induksi) Apakah paku pertama yang terinduksi dapat menarik paku kedua.</td>
+            <td>
+              <label><input type="radio" onclick="cekhasil1()" name="pilihan1" id="benarsoal1" /><span>	Ya </span></label>
+              <br>
+              <label><input type="radio" onclick="cekhasil1()" name="pilihan1"  /><span>	Tidak </span></label>
+            </td>
+            <td id="bgpil1">
+              <div id="hasiljawaban1" style="display:none;">
+                Paku pertama yang terinduksi dapat menarik paku kedua atau benda feromagnetik lainnya.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>(Cara elektromagnetik) Apakah pola lilitan pada paku berpengaruh pada kutub magnet yang terbentuk.</td>
+            <td>
+              <label><input type="radio" onclick="cekhasil2()" name="pilihan2" id="benarsoal2" /><span>	Ya </span></label>
+              <br>
+              <label><input type="radio" onclick="cekhasil2()" name="pilihan2"  /><span>	Tidak </span></label>
+            </td>
+            <td id="bgpil2">
+              <div id="hasiljawaban2" style="display:none;">
+                Pola lilitan pada paku mempengaruhi kutub magnet yang terbentuk pada paku.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>(Cara Digosok) Apakah Arah gosokan berpengaruh terhadap paku dan kutub magnet yang terbentuk </td>
+            <td>
+              <label><input type="radio" onclick="cekhasil3()" name="pilihan3" id="benarsoal3" /><span>	Ya </span></label>
+              <br>
+              <label><input type="radio" onclick="cekhasil3()" name="pilihan3"  /><span>	Tidak </span></label>
+            </td>
+            <td id="bgpil3" >
+              <div id="hasiljawaban3" style="display:none;">
+               Semakin lama magnet digosokan maka semakin kuat gaya magnet yang diciptakan. dan arah gosokan berpengaruh terhadap kutub magnet yang terbentuk.
+               </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+        <br>
+      </div>
+    </div>
+      <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      
+      <div class="canvas">
+       <div class="sebelum" style="color: brown;">
+          <center>
+            <b>LATIHAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDIO</b>
+          </center>
+      </div>
+      <div class="latihanhide">
+     
+        <div class="canvas">
+           <p><b>Petunjuk :</b></p>
+             <ol type="1" style="padding-left: 15px;">
+               <li>Soal berjumlah tiga yang terdiri dari gambar dan dua pilihan jawaban.</li>
+               <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
+               <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+             </ol>
+           </div>    
+         <br>
+         <div class="canvas" id="pertanyaan1" >
+             <br>
+             1.	Bila sebuah besi didekatkan dengan magnet seperti cara induksi seperti gambar berikut, yang manakah kutub utara dan selatan dari besi tersebut ….
+               <center>
+               <table>  
+                   <tr>
+                     <td><img width="300px" src="gambar/latihan2-1.png"></td>
+                   </tr>
+                   <tr>
+                     <td>
+                      <center>
+                       <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span>	A kutub Selatan dan B kutub utara </span></label>
+                       <br>
+                       <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> A kutub Utara dan B kutub Selatan </span></label>
+                     </center>
+                     </td>
+                   </tr>
+                 </table>
+                 <br>
+                   <div class="jawaban" id="j1benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+                   <div class="jawaban"  id="j1salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+                 </center>
+         </div> 
+         <br>
+         <div class="canvas" id="pertanyaan2" style="display: none;">
+         <br>
+         2.	Dibawah adalah gambar yang menunjukan rangkaian pembuatan magnet elektromagnetik. Tentukanlah kutub dari P dan Q.
+         <center>
+           <table>  
+            
+               <tr>
+                <td> <center><img width="200px" src="gambar/latihan2-2.png"></center></td>
+               </tr>
+             
+               <tr>
+                 <td>
+                   <center>
+                   <label><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span>	P kutub Selatan dan Q kutub Utara </span></label>
+                   <br>
+                   <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> P kutub utara dan Q kutub Selatan </span></label>
+                   </center>
+                 </td>
+               </tr>
+             </table>
+             <br>
+               <div class="jawaban" id="j2benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+               <div class="jawaban"  id="j2salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+         </center>
+         </div> 
+         <br>
+         <div class="canvas" id="pertanyaan3" style="display: none;">
+           <br>
+           3. Setelah paku digosok dengan magnet dengan pola searah menggunakan kutub utara magnet dengan arah dari bagian paku A ke B. Tentukanlah kutub dari paku tersebut. 
+           <center>
+             <br>
+           <table>  
+               <tr>
+                 <td><img width="300px"  src="gambar/latihan2-3.png"></td>
+               </tr>
+               <tr>
+                 <td>
+                   <center>
+                   <label><input type="radio" name="soal2" id="s3salah" onclick="cek3()"/><span> A kutub selatan dan B utara</span></label>
+                   <br>
+                   <label><input type="radio"  name="soal2" id="s3benar" onclick="cek3()"/><span> A kutub utara dan B selatan </span></label>
+                   </center>
+                 </td>
+               </tr>
+             </table>
+             <br>
+               <div class="jawaban" id="j3benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+               <div class="jawaban"  id="j3salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+             </center>
+         </div>
+   
+       </div>
+    </div>
+     <br>
+
+    <br>
+<div class="kesimpulansebelum" >
+    <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+  <div class="canvas">
+    <div id="hidekesimpulan" style="color: brown; display: inline;">
+      <center>
+        <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENJAWAB LATIHAN</b>
+      </center>
+    </div>
+    <div id="kesimpulan" style="display: none;">
+      Ada tiga cara yang dapat digunakan untuk membuat magnet yaitu, dengan cara induksi, menggosokkan, elektromagnetik. Benda yang dapat dibuat menjadi magnet ialah benda feromagnetik. Namun sifat kemagnetan pada benda yang dibuat menjadi magnet hanya bersifat sementara.          <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+    </div>
+    <br>
+    </div>
+    
+  </div>
+  
+    <!--untuk mengakses file javascript-->
+    <script src="../../navigasi.js"></script>
+    <script src="3.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="2.html"> <button >Sebelumnya</button></a>
+          <a href="1.html"><button >1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="3.html"><button class="btn1">3</button></a>
+          <a href="4.html"><button >4</button></a>
+          <a href="5.html"><button >5</button></a>
+          <a href="4.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../../navigasi.css">
+    <link rel="stylesheet" href="../../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Teori Dasar Kemagnetan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a href="../../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="../../migrasi hewan/Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a href="../1/1.html">Konsep Gaya Magnet</a></li>
+              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;" href="1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../4/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a href="../../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab" style="text-align: left;">
+        2. Teori Kemagnetan Bumi
+      </div>
+      <div class="canvas">
+        Bumi  dapat dianggap sebagai magnet yang sangat besar. Bumi memiliki kutub-kutub magnet yaitu kutub utara dan kutub selatan. Apakah kamu mengetahui bahwa jarum pada kompas terbuat dari magnet yang dapat menunjukan arah kutub utara dan selatan bumi. Perlu kamu ketahui bahwa jarum kompas yang menunjukan arah utara sebenarnya mengarah ke kutub selatan bumi. Itu dikarenakan sifat magnet yang saling Tarik menarik ketika kutubnya berlawanan.
+        <br><br>
+        Penunjukan arah jarum kompas tidak tepat menuju kutub-kutub bumi ada simpangan yang terjadi yang membentuk sudut deklinasi dan inklinasi. Seperti yang terlihat pada gambar berikut.
+        <br><br>
+      <!--materi deklinasi inklinasi -->
+        <div class="canvas">
+          
+          <div id="deklinasi" style="display: initial;">
+            <center><img  width="270px" src="gambar/deklinasi.png"></center>
+            <b>Sudut deklinasi</b> <br><br>
+            <p>Sudut deklinasi yaitu sudut yang dibentuk oleh jarum kompas dengan simpangan arah utara dan selatan bumi. Sudut deklinasi dapat bernilai positif maupun negatif tergantung pada arah penyimpangannya. Sudut deklinasi bernilai positif saat jarum utara kompas menyimpang ke arah timur. Sedangkan sudut deklinasi bernilai negatif saat jarum utara kompas menyimpang ke arah barat.</p>
+          </div>
+          <div id="inklinasi" style="display: none;">    
+            <center><img width="270px" src="gambar/inklinasi.png"></center>
+            <b>Sudut inklinasi </b> <br><br>
+            <p>
+              Sudut inklinasi adalah sudut yang dibentuk dari penyimpangan magnet terhadap arah barat dan timur geografis, sudut inklinasi juga ada dua yaitu inklinasi positif terjadi jika kutub utara magnet menyimpang ke bawah dan sudut inklinasi negatif terjadi jika kutub utara magnet menyimpang ke atas.            </p>
+          </div>
+          <br>
+        <center>
+          <button class="btnangka" style="background:black;" id="tombol1" onclick="gbr1()" type="button">1</button>
+          <button class="btnangka" style="background: #04709b;" id="tombol2" onclick="gbr2()" type="button">2</button>
+        </center>
+      </div>
+      <!--batas materi deklinasi inklinasi-->
+      </div>
+      <br>
+      <center>
+        <button class="btnvidio" id="tombol1" onclick="selesaibaca()" type="button">Selesai membaca</button>
+      </center>
+     <br><br>
+
+     <div id="latihanhide" style="display:none;">
+      <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
+      <div class="canvas">
+         <p><b>Petunjuk :</b></p>
+           <ol type="1" style="padding-left: 15px;">
+             <li>Latihan berjumlah 2 soal yang terdiri dari gambar dan dua pilihan jawaban.</li>
+             <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
+             <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+           </ol>
+         </div>    
+       <br>
+       <div class="canvas2" id="pertanyaan1" >
+           <br>
+           <center>
+           Gambar berikut merupakan gambar yang menunjukan sudut ....             
+
+             <table>  
+                 <tr>
+                   <td><center><img width="300px" src="gambar/deklinasi.png"></center></td>
+                 </tr>
+                 <tr>
+                   <td>
+                    <center>
+                     <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span>	Deklinasi</span></label>
+                     <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Inklinasi </span></label>
+                   </center>
+                   </td>
+                 </tr>
+               </table>
+               <br>
+                 <div class="jawaban" id="j1benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+                 <div class="jawaban"  id="j1salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+               </center>
+       </div> 
+       <br>
+       <div class="canvas2" id="pertanyaan2" style="display: none;">
+       <br>
+         <center>
+          Gambar berikut merupakan gambar yang menunjukan sudut ....
+         <table>  
+          
+             <tr>
+              <td> <center><img width="200px" src="gambar/inklinasi.png"></center></td>
+             </tr>
+           
+             <tr>
+               <td>
+                 <center>
+                 <label><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span>	Deklinasi </span></label>
+                 <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> Inklinasi </span></label>
+                 </center>
+               </td>
+             </tr>
+           </table>
+           <br>
+             <div class="jawaban" id="j2benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+             <div class="jawaban"  id="j2salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+       </center>
+       </div>
+       <br>
+      <!--kesimpulan muncul setelah selesai menjawab latihan-->
+    <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+    <div class="canvas">
+       <div id="sebelum"  style="color: brown;">
+          <center>
+            <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENJAWAB LATIHAN</b>
+          </center>
+      </div>
+      <div id="kesimpulan" style="display:none;">
+        Sudut deklinasi adalah sudut yang dibentuk oleh jarum kompas dengan simpangan arah utara dan selatan bumi. Sedangkan Sudut inklinasi adalah sudut yang dibentuk dari penyimpangan magnet terhadap arah barat dan timur geografis.       </div>
+    </div>
+    <br>
+    </div>
+    </div>
+    <!--untuk mengakses file javascript-->
+    <script src="../../navigasi.js"></script>
+    <script src="1.js"></script>
+
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <a href="../1/5.html"><button >Sebelumnya</button></a>
+          <a href="1.html"><button class="btn1">1</button></a>
+          <a href="../3/1.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>

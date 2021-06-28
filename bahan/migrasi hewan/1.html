@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kemagnetan dan pemanfaatannya</title>
+    <link rel="stylesheet" href="../navigasi.css">
+    <link rel="stylesheet" href="../../border.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  
+  <!--header untuk judul sub bab-->
+  <div class="header">
+      <center>Pemanfaatan Medan Magnet pada Migrasi Hewan</center>
+  </div>
+  <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="text"><img src="../gambar/LOGO.png"></div>
+        <ul>
+          <li class="beranda"><a href="../../index.html">Beranda</a></li>
+          <li>
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="migrasi">Migrasi Hewan
+              <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="migrasi-tampil">
+              <li><a  style="  color: cyan; background: #272727; border-left-color: cyan;" 
+                      href="../migrasi hewan/1.html">Materi</a></li>
+              <li><a href="Kuis/kuis1.html">Kuis 1</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#" class="kemagnetan">Teori Dasar Kemagnetan
+              <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="kemagnetan-tampil">
+              <li><a href="../teori kemagnetan/1/1.html">Konsep Gaya Magnet</a></li>
+              <li><a href="../teori kemagnetan/2/1.html">Teori Kemagnetan bumi</a></li>
+              <li><a href="../teori kemagnetan/3/1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a href="../teori kemagnetan/4/1.html">Induksi elektromagnetik</a></li>
+              <li><a href="../teori kemagnetan/Kuis/kuis2.html">Kuis 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="produk">Produk kemagnetan
+              <span class="fas fa-caret-down tiga"></span>
+            </a>
+            <ul class="produk-tampil">
+              <li><a href="../produk teknologi/1.html">Materi</a></li>
+              <li><a href="../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
+            </ul>
+          </li>
+          <li><a href="../Evaluasi/eva.html">EVALUASI</a></li>
+
+        </ul>
+    </nav>
+    <!--class untuk konten-->
+    <div class="content">
+      <br>
+      <div class="borderbab">
+        A. Pemanfaatan Medan Magnet pada Migrasi Hewan
+      </div>
+      <br>
+      <h3> <img src="../gambar/tujuan.png"><p class="textjudul">Tujuan</p></h3>
+      <div class="canvas">
+        Siswa mampu memahami  manfaat medan magnet pada migrasi hewan.
+      </div>
+      <br>
+      <div class="canvas">
+        <p>Jika selama ini kamu hanya mengetahui fungsi magnet hanya untuk produk-produk rumah tangga atau produk elektronik, ternyata magnet juga ada di dalam tubuh makhluk hidup sebagai alat navigasi dengan memanfaatkan medan magnet bumi.</p>
+        <br>
+	      <p>Pernahkah kamu melihat hewan yang sedang bermigrasi. Berbagai jenis hewan melakukan migrasi dari satu daerah ke daerah lain dengan tujuan tertentu untuk mencari makan atau untuk bereproduksi. Apakah kamu mengetahui hewan-hewan apa saja yang memanfaatkan magnet dalam bermigrasi? Pelajari materi ini dengan penuh semangat.</p>
+      </div>
+      <br>
+      <h3> <img src="../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
+      <div class="canvas">
+      Untuk mengetahui hewan-hewan apa saja yang memanfaatkan medan magnet dalam bermigrasi. Simaklah video berikut dengan seksama. <b>Simaklah agar anda dapat menjawab kuis dengan mudah.</b>
+    </div>
+    <br>
+      <center>
+        <video id="vidio" controls>
+          <source src="gambar/migrasi hewan.mp4">
+        </video>
+      </center>
+      <br>
+      <!--untuk kontrol vidio-->
+      <div class="canvas"	>
+        <center>
+          <button class="btnvidio" onclick="burung()" type="button">Burung</button>
+          <button class="btnvidio" onclick="salmon()" type="button">Ikan Salmon</button>
+          <button class="btnvidio" onclick="penyu()" type="button">Penyu</button>
+          <button class="btnvidio" onclick="lobster()" type="button">Lobster Duri</button>
+          <button class="btnvidio" onclick="bakteri()" type="button">Bakteri</button>
+        </center>
+      </div>
+      <br>
+      <!--kesimpulan muncul setelah selesai menonton vidio-->
+      <h3> <img src="../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
+      <div class="canvas">
+       <div class="sebelum" style="color: brown;">
+          <center>
+            <b>KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDIO</b>
+          </center>
+      </div>
+      <div class="kesimpulan">
+        <ul>
+          <li>Burung merpati, burung layang-layang, dan elang memanfaatkan medan magnet bumi untuk bermigrasi dengan menggunakan magnetite (Mineral besi bermagnet) yang terletak di dalam tubuhnya.</li>
+          <li>Ikan salmon memiliki kemampuan untuk kembali ke aliran sungai air tawar tempat awal mereka menetas dan tumbuh setelah berenang ribuan kilometer mengarungi lautan dengan kemampuan mendeteksi  medan magnet.</li>
+          <li>Penyu akan mulai dan mengakhiri migrasi di pantai yang sama tempat mereka menetas. Tidak seperti hewan lain yang bermigrasi secara berkelompok, penyu bermigrasi secara sendiri-sendiri.</li>
+          <li>Lobster duri migrasi dari lepas pantai menuju lautan lepas yang lebih hangat dan tenang. Lobster duri dapat merasakan medan magnet bumi dan bisa menyesuaikan diri tetap bergerak menuju arah kutub air.</li>
+          <li>Dalam tubuh bakteri Magnetotactic Bacteria (MTB) terdapat organel khusus yang disebut magnetosome. Pada magnetosome tersusun atas senyawa magnetite ($Fe_{3}O_{4}$) atau greigite ($Fe_{3}S_{4}$). </li>
+      </ul>
+      <br>
+      <b>Setelah memahami hewa-hewan yang memanfaatkan medan magnet dalam bermigrasi. Kerjakan latihan pada </b> <a href="2.html"><button class="btnkecil" >Halaman berikutnya</button></a></center>
+      </div>
+      </div>
+      <br>
+    </div>
+    <!--untuk mengakses file javascript-->
+    <script src="1.js"></script>
+    <script src="../navigasi.js"></script>
+
+    <!--framework untuk MathJax/latex (untuk menulis rumus)-->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <!--footer halaman yang berisi navigasi page halaman-->
+    <div class="footer">
+      <div class="navigasibawah">
+        <center>
+          <button >Sebelumnya</button>
+          <a href="1.html"><button class="btn1">1</button></a>
+          <a href="2.html"><button >2</button></a>
+          <a href="2.html"><button >Selanjutnya</button></a>
+        </center>
+      </div>
+      </div>
+  </body>
+</html>
