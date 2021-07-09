@@ -29,9 +29,7 @@ let cek = function(){
         head.insertBefore(link1, title);
         head.insertBefore(link2, title);
 
-        setTimeout(function(){ 
-            body.classList.toggle("hilang");
-        }, 1005);
+   
     }
 };
 cek();

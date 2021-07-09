@@ -10,6 +10,7 @@
     text-align: center;
     cursor: pointer;
     color: rgb(211, 66, 40);
+    z-index: 1;
 }
 .keluar:hover{
     background-color: rgb(211, 205, 205);
