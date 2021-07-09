@@ -97,26 +97,6 @@ selanjutnya.addEventListener('click', function () {
 });
 
 
-function readlah() {
-    var task = firebase.database().ref("kontrolkuis/");
-    let tmp = document.querySelector('body');
-
-    task.on("child_added", function (data) {
-        var taskvalue = data.val();
-
-        if ((taskvalue.id == "1595735617538") && (taskvalue.nilai == 0)) {
-            tmp.innerHTML += '<div class = "full" > <p>HALAMAN TIDAK DAPAT DIAKSES</p> </div>'
-            // console.log('0');
-        } else {
-            // console.log('1');
-        }
-
-
-
-    });
-
-    MathJax.typeset();
-}
 
 
 
