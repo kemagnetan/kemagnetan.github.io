@@ -1,0 +1,99 @@
+[{
+    "soal0": {
+        "soal": "Ikan salmon memanfaatkan medan magnet bumi untuk bermigrasi dari  ....",
+        "a": "air asin ke air tawar",
+        "b": "air payau ke air asin",
+        "c": "air asin ke air payau",
+        "d": "air tawar ke air payau",
+        "benar": "a"
+    }
+}, {
+    "soal1": {
+        "soal": "Hewan yang dapat bermigrasi sejauh 12.900 Km dalam kurun waktu 5-10 tahun dengan memanfaatkan medan magnet bumi, hewan tersebut adalah ....",
+        "a": "Ikan Salmon",
+        "b": "Penyu",
+        "c": "Lobster duri",
+        "d": "Burung elang",
+        "benar": "b"
+     
+    }
+
+}, {
+    "soal2": {
+        "soal": "Bagian tubuh bakteri yang berfungsi sebagai medan magnet ditunjukkan oleh angka ....",
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4",
+        "benar": "c",
+        "opt": "3"
+    }
+}, {
+    "soal3": {
+        "soal": "Burung merpati dapat menentukan arah tujuan dengan memanfaatkan medan magnet karena ....",
+        "a": "memiliki magnetite pada otaknya",
+        "b": "bagian mata terdapat mineral \\[Fe_3 O_4 \\]",
+        "c": "burung mampu memproduksi magnet sebagai navigasi arah",
+        "d": "memiliki mineral greigite yang dapat terpengaruh oleh magnet",
+        "benar": "a"
+    }
+}, {
+    "soal4": {
+        "soal": "Penyu memanfaatkan medan magnet bumi dalam bermigrasi dan dapat  menentukan arah ....",
+        "a": "garis bujur",
+        "b": "kutub utara",
+        "c": "garis lintang",
+        "d": "kutub selatan",
+        "benar": "a"
+    }
+}, {
+    "soal5": {
+        "soal": "Organisme berikut yang memanfaatkan magnet bumi untuk bermigrasi untuk mencari lingkungan yang hangat adalah  ....",
+        "a": "ikan salmon",
+        "b": "lobster duri",
+        "c": "burung merpati",
+        "d": "Magnetotactic bacteria",
+        "benar": "b"
+    
+    }
+}, {
+    "soal6": {
+        "soal": "Dalam tubuh bakteri Magnetotactic Bacteria (MTB) terdapat organel khusus yang disebut magnetosome. Senyawa yang terkandung dalam magnetosome adalah  ....",
+        "a": "Magnetotactic bacteria",
+        "b": "Basitrasin dan penicilin",
+        "c": "Amfoterisin dan vankomisin",
+        "d": "Magnetite dan greigite",
+        "benar": "d"
+        
+    }
+}, {
+    "soal7": {
+        "soal": "Pernyataan yang benar mengenai fenomena kemagnetan terdapat pada angka ....",
+        "a": "1), 2), dan 5)",
+        "b": "1), 3), dan 4)",
+        "c": "2), 3), dan 4)",
+        "d": "3), 4), dan 5)",
+        "benar": "a"
+        
+    }
+}, {
+    "soal8": {
+        "soal": "Jenis mineral yang memiliki sifat magnetis paling kuat terdapat dalam tubuh ....",
+        "a": "penyu",
+        "b": "lobster",
+        "c": "ikan salmon",
+        "d": "magnetospirillum magneticum",
+        "benar": "d"
+        
+    }
+}, {
+    "soal9": {
+        "soal": "Senyawa khusus yang dimiliki organisme untuk bermigrasi yaitu ....",
+        "a": "\\[Fe CO_3 \\ dan \\ Fe_2 O_3\\] ",
+        "b": "\\[Fe CO_3 \\ dan \\ Fe_3 O_4\\]",
+        "c": "\\[Fe_2 O_3 \\ dan \\ Fe_3 O_4\\]",
+        "d": "\\[Fe_3 O_4 \\ dan \\ Fe_3 S_4\\]",
+        "benar": "d"
+ 
+    }
+}]
