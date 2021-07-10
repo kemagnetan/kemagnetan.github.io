@@ -34,7 +34,7 @@
                  <th>Kelas</th>
                  <th>Hari</th>
                  <th>Waktu</th>
-                 <th>Skor</th>
+                 <th>Nilai</th>
              </thead>
              <tbody id="tbody2">
  
@@ -78,8 +78,8 @@
                                 var kelas=CurrentRecord.val().kelas;
                                 var hari=CurrentRecord.val().hari;
                                 var waktu=CurrentRecord.val().waktu;
-                                var Skor=CurrentRecord.val().Skor;
-                                KuisToTable1(nama,kelas,hari,waktu,Skor);
+                                var nilai=CurrentRecord.val().nilai;
+                                KuisToTable1(nama,kelas,hari,waktu,nilai);
                             }
                         );
                     });
@@ -87,7 +87,7 @@
                 window.onload=dataKuis1;
     //---------------------------------mengisi tabel-----------------------------
                 var no=0;
-                function KuisToTable1(nama,kelas,hari,waktu,Skor){
+                function KuisToTable1(nama,kelas,hari,waktu,nilai){
                     var tbody =document.getElementById('tbody2');
                     var trow = document.createElement('tr');
                     var td1 = document.createElement('td');
@@ -101,7 +101,7 @@
                     td3.innerHTML= kelas;
                     td4.innerHTML= hari;
                     td5.innerHTML= waktu;
-                    td6.innerHTML= Skor;
+                    td6.innerHTML= nilai;
     
                     trow.appendChild(td1);
                     trow.appendChild(td2);
