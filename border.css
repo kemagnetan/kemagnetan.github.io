@@ -161,9 +161,9 @@ h3 img{
         width: 100%;
     }
     .sub3 table td{
-        max-width: 460px;
-        padding-left: 5px;
-        padding-right: 5px;
+        max-width: 400px;
+        padding-left: 1px;
+        padding-right: 1px;
         text-align: center;
     }
     .latihan img{
