@@ -5,6 +5,63 @@
   box-sizing: border-box;
 
 }
+.garis{
+  background-color: rgb(23, 77, 77);
+  border-radius: 5px;
+  height: 1px;
+  margin-top: 5px;
+}
+.pilihan2{
+  min-height: 20px;
+  width: 200px;
+  padding:5px;
+  margin-left: 5px;
+  background-color: rgb(129, 230, 230);
+  color:rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.pilihan2:hover{
+  background-color: rgb(107, 197, 197);
+  color:rgb(0, 0, 0);
+}
+.pilihan{
+  min-height: 20px;
+  min-width: 300px;
+  padding:4px;
+  padding-left: 10px;
+  margin-top: 3px;
+  background-color: rgb(19, 141, 141);
+  color:white;
+  border-radius: 5px;
+}
+.jwbpendek{
+  height: 20px;
+  width: 400px;
+  margin-left: 4px;
+  padding:4px;
+  padding-left: 10px;
+  margin-top: 10px;
+  background-color: rgb(13, 107, 107);
+  color:white;
+  border-radius: 5px;
+ 
+}
+.jwbpendek:hover{
+  background-color: rgb(16, 134, 134);
+}
+.pertanyaan{
+  min-height: 20px;
+  min-width: 300px;
+  padding:5px;
+  margin-top: 3px;
+  background-color: rgb(16, 124, 124);
+  color:white;
+  border-radius: 5px;
+}
+.pilihan:hover{
+  background-color: rgb(5, 109, 109);
+  color:white;
+}
 .btn{
   position: absolute;
   top: 15px;
@@ -30,12 +87,12 @@
 }
 .sidebar{
   float: left;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  background: #1b1b1b;
+  background: #051218;
   transition: left 0.4s ease;
   position: fixed;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 .sidebar.show{
@@ -46,7 +103,7 @@
   padding: 11%;
 }
 nav ul{
-  background: #1b1b1b;
+  background: black;
   height: 100%;
   width: 100%;
   list-style: none;
@@ -119,30 +176,37 @@ nav ul li a span.rotate{
   transform: translateY(-50%) rotate(-180deg);
 }
 .header{
-  width: 80%;
-  height: 7%;
+  width: 85%;
+  height: 8%;
   position: absolute;
-  left: 20%;
+  left: 15%;
   padding-top: 1%;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
-  background-color: rgb(5, 77, 104);
+  background-color: #007cad;
+  font-size: 17pt;
+
+  border-color: #063a4e;
+  border-style: solid;
+  border-width: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
 }
 .content{
 
   position: absolute;
-  top:7%;
-  left: 20%;
+  top:8%;
+  left: 15%;
   height: 85%;
-  width: 80%;
+  width: 85%;
   padding-right: 8%;
   padding-left: 7%;
   color: black;
-  font-size: 12pt;
   overflow:scroll;
 	overflow:auto;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 .content video{
@@ -150,25 +214,29 @@ nav ul li a span.rotate{
 }
 .footer{
   position: absolute;
-  top:90%;
-  left: 20%;
-  height: 2%;
-  width: 80%;
+  top:93%;
+  left: 15%;
+  height: auto;
+  width: 85%;
+  
 }
 .navigasibawah{
   margin-top: 5px;
+  background-color: #007cad;
+  padding:1px;
 }
 
 button {
   background-color: #000500; 
   border: none;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  border-radius:5px ;
   
 }
 button a{
@@ -176,7 +244,9 @@ button a{
   color: white;
 }
 .btn1{
-  background-color: #04709b;
+  background-color: rgb(233, 241, 154);
+  color: black;
+ 
 }
 .btnvidio{
   border-radius: 10px 10px 10px 10px;
@@ -186,6 +256,7 @@ button a{
 }
 .btnvidio:hover{
   background-color:  #000000; 
+  color: white;
 }
 .btnkecil{
   border-radius: 5px 5px 5px 5px;
@@ -195,6 +266,7 @@ button a{
 }
 .btnkecil:hover{
   background-color:  #000000; 
+  color: white; 
 }
 .btnangka{
   border-radius: 5px 5px 5px 5px;
@@ -202,9 +274,14 @@ button a{
   min-width: 30px;
   background-color:  #0aa2df; 
 }
+.btnangka:hover{
+  color: aliceblue;
+}
 
 button:hover{
-  background-color:#04709b;
+  background-color:white;
+  color: black;
+
 }
 /*css3 design scrollbar*/
 ::-webkit-scrollbar {
@@ -224,18 +301,49 @@ display: none;
 }
 
 @media screen and (max-width: 760px) {
+  .btn1{
+    background-color:  #007cad;
+    color: white;
+   
+  }
+  .pilihan{
+  min-height: 30px;
+  min-width:unset;
+  width: 100pxpx;
+}
+.jwbpendek{
+  padding-right: 80px;
+  margin-left: 20px;
+  line-height: 30px;
+}
+.pilihan2{
+  line-height: 30px;
+  padding-left: 2px;
+}
+.pertanyaan{
+  min-height: 30px;
+  min-width:unset;
+  width: 100pxpx;
+}
+.jawaban img{
+  width: 5px;
+}
+.pilihan2{
+  margin-left: 15px;
+  padding-right: 20px;
+}
   .header{
     width: 100%;
-    height: 10%;
     position: unset;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     padding-left: 20%;
     padding-right: 10%;
     color: white;
     font-size: 10pt;
     background-color: rgb(5, 77, 104);
   }
+  
   .gambarhover:hover{
     transform: scale(2.5);
   }
@@ -285,14 +393,16 @@ display: none;
     margin-bottom: 2%;
   }
   .navigasibawah{
-    margin-top: 10px;
+
+    background-color:initial;
+    padding:1px;
     font-size: 4pt;;
   }
   button {
     padding: 6px;
     width: auto;
     height: 10%;
-    ;
+    
   }
   .btnvidio{
     border-radius: 5px 5px 5px 5px;
@@ -305,4 +415,5 @@ display: none;
     line-height: 40px;
     border-top: 1px solid rgba(255,255,255,0.1);
   }
+ 
 }

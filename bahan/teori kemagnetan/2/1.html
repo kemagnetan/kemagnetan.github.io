@@ -70,7 +70,7 @@
         Penunjukan arah jarum kompas tidak tepat menuju kutub-kutub bumi ada simpangan yang terjadi yang membentuk sudut deklinasi dan inklinasi. Seperti yang terlihat pada gambar berikut.
         <br><br>
       <!--materi deklinasi inklinasi -->
-        <div class="canvas">
+        <div class="canvas" style="background-color: white;">
           
           <div id="deklinasi" style="display: initial;">
             <center><img  width="270px" src="gambar/deklinasi.png"></center>
@@ -85,7 +85,7 @@
           </div>
           <br>
         <center>
-          <button class="btnangka" style="background:black;" id="tombol1" onclick="gbr1()" type="button">1</button>
+          <button class="btnangka" style="background:black;" id="tombol" onclick="gbr1()" type="button">1</button>
           <button class="btnangka" style="background: #04709b;" id="tombol2" onclick="gbr2()" type="button">2</button>
         </center>
       </div>
@@ -99,7 +99,7 @@
 
      <div id="latihanhide" style="display:none;">
       <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
-      <div class="canvas">
+      <div class="canvas" style="background: #04709b; color:white;">
          <p><b>Petunjuk :</b></p>
            <ol type="1" style="padding-left: 15px;">
              <li>Latihan berjumlah 2 soal yang terdiri dari gambar dan dua pilihan jawaban.</li>
@@ -111,17 +111,17 @@
        <div class="canvas2" id="pertanyaan1" >
            <br>
            <center>
-           Gambar berikut merupakan gambar yang menunjukan sudut ....             
+            <div class="pertanyaan"><b>Gambar berikut merupakan gambar yang menunjukan sudut ....</b> </div>            
 
              <table>  
                  <tr>
-                   <td><center><img width="300px" src="gambar/deklinasi.png"></center></td>
+                   <td><center><img width="270px" src="gambar/deklinasi.png"></center></td>
                  </tr>
                  <tr>
                    <td>
                     <center>
-                     <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span>	Deklinasi</span></label>
-                     <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Inklinasi </span></label>
+                     <label  class="pilihan"><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span>	Deklinasi</span></label>
+                     <label  class="pilihan"><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Inklinasi </span></label>
                    </center>
                    </td>
                  </tr>
@@ -130,32 +130,53 @@
                  <div class="jawaban" id="j1benar" style="display:none; "><img src="../../gambar/benar.png"></div>
                  <div class="jawaban"  id="j1salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
                </center>
+               <br>
+               <div id="1jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+                <h2>Jawaban Salah</h2>
+                Sayang sekali. Silahkan pelajari  kembali materi di atas dengan penuh semangat.
+              </div>
+              <div id="1jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+                <h2>Jawaban benar</h2>
+                Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+              </div>
+              <br>
+          <div id="pertanyaan2" style="display: none;">
+                <br>
+                  <center>
+                   <div class="pertanyaan"><b>Gambar berikut merupakan gambar yang menunjukan sudut ....</b></div>
+                  <table>  
+                   
+                      <tr>
+                       <td> <center><img width="200px" src="gambar/inklinasi.png"></center></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>
+                          <center>
+                            <label  class="pilihan"><input type="radio" name="soal2" id="s2benar" onclick="cek2()"/><span>	Deklinasi</span></label>
+                            <label  class="pilihan"><input type="radio"  name="soal2" id="s2salah" onclick="cek2()"/><span> Inklinasi </span></label>
+                          </center>
+                        </td>
+                      </tr>
+                    </table>
+                    <br>
+                      <div class="jawaban" id="j2benar" style="display:none; "><img src="../../gambar/benar.png"></div>
+                      <div class="jawaban"  id="j2salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
+                </center>
+                </div>
+                <br>
+                <div id="2jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+                 <h2>Jawaban Salah</h2>
+                 Sayang sekali. Silahkan pelajari  kembali materi di atas dengan penuh semangat.
+               </div>
+               <div id="2jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+                 <h2>Jawaban benar</h2>
+                 Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+               </div>
+               <br>
        </div> 
        <br>
-       <div class="canvas2" id="pertanyaan2" style="display: none;">
-       <br>
-         <center>
-          Gambar berikut merupakan gambar yang menunjukan sudut ....
-         <table>  
-          
-             <tr>
-              <td> <center><img width="200px" src="gambar/inklinasi.png"></center></td>
-             </tr>
-           
-             <tr>
-               <td>
-                 <center>
-                 <label><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span>	Deklinasi </span></label>
-                 <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> Inklinasi </span></label>
-                 </center>
-               </td>
-             </tr>
-           </table>
-           <br>
-             <div class="jawaban" id="j2benar" style="display:none; "><img src="../../gambar/benar.png"></div>
-             <div class="jawaban"  id="j2salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
-       </center>
-       </div>
+      
        <br>
       <!--kesimpulan muncul setelah selesai menjawab latihan-->
     <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>

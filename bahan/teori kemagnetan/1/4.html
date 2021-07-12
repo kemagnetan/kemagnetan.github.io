@@ -70,24 +70,27 @@
       <br>
       <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Menonton</p></h3>
       <div class="canvas">
-        pada vidio berikut kamu akan mengetahui peralatan-peralatan yang menggunakan prinsip elektromagnet.
-      </div>
-      <br>
-      <center>
-        <video id="vidio" controls>
-          <source src="gambar/penerapanelektro.mp4">
-        </video>
-      </center>
-      <br>
-      <!--untuk kontrol vidio-->
-      <div class="canvas"	>
+        pada vidio berikut kamu akan mengetahui peralatan-peralatan yang menggunakan prinsip elektromagnet. mungkin peralatan-peralatan ini kamu sering temui dikehidupan sehari-hari.
+      
+        <br><br>
         <center>
-          <button class="btnvidio" onclick="pengantar()" type="button">Pengantar</button>
-          <button class="btnvidio" onclick="coba1()" type="button">Bel listrik</button>
-          <button class="btnvidio" onclick="coba2()" type="button">Sakelar</button>
-          <button class="btnvidio" onclick="coba3()" type="button">Telepon Kabel</button>
+          <video id="vidio" controls>
+            <source src="gambar/penerapanelektro.mp4">
+          </video>
         </center>
+        <br><br>
+        <!--untuk kontrol vidio-->
+        <div class="canvas"	>
+          <center>
+            <button class="btnvidio" onclick="pengantar()" type="button">Pengantar</button>
+            <button class="btnvidio" onclick="coba1()" type="button">Bel listrik</button>
+            <button class="btnvidio" onclick="coba2()" type="button">Sakelar</button>
+            <button class="btnvidio" onclick="coba3()" type="button">Telepon Kabel</button>
+          </center>
+        </div>
       </div>
+     
+     
       <br>
       <!--kesimpulan muncul setelah selesai menonton vidio-->
       <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
@@ -100,7 +103,7 @@
       </div>
       <div class="latihanhide">
     
-        <div class="canvas">
+        <div class="canvas" style="background-color: #007cad; color: white;">
            <p><b>Petunjuk :</b></p>
              <ol type="1" style="padding-left: 15px;">
                <li>Soal berupa pilihan ganda berjumlah tiga soal.</li>
@@ -109,33 +112,37 @@
              </ol>
          </div>    
          <br>
-       <div class="canvas" style="background-color: seashell;">
+       <div class="canvas" style="background-color:#daf5fd; color: black;">
             <!--Soal 1-->
        <div class="soal" id="soal1sow" >
-         <b>Berikut yang merupakan benda-benda yang menggunakan prinsip magnet elektronik, kecuali ….</b><br><br>
+        <div class="pertanyaan"><b>Berikut yang merupakan benda-benda yang menggunakan prinsip magnet elektronik, kecuali ….</b></div>
            <table cellpadding="10">
-           <tr>
-             <td><label><input type="radio" name="soal"  id="qsoal1" onclick="cek1()"/><span> Sakelar Elektromagnetik (Relay)</span></label></td>
-             <td>
-               <div style="display: none;" id="s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          
+             <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()"> 
+               <input type="radio" name="soal"  id="qsoal1" /><span> Sakelar Elektromagnetik (Relay)</span></label></td>
+             </div><td>
+               <div style="display: none;" id="s1"><img style="width: 20px;" src="../../gambar/salah.png"></div>
              </td>
            </tr>
            <tr>
-             <td><label><input type="radio" name="soal" id="soal2" onclick="cek1()"/><span> Telepon Kabel</span></label></td>
-             <td>
-               <div style="display: none;" id="s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+             <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()"> 
+               <input type="radio" name="soal" id="soal2" /><span> Telepon Kabel</span></label></td>
+             </div><td>
+               <div style="display: none;" id="s2"><img style="width: 20px;" src="../../gambar/salah.png"></div>
              </td>
            </tr>
            <tr>
-             <td><label><input type="radio" name="soal"  id="soal3" onclick="cek1()"/><span> Bel listrik sederhana</span></label></td>
-             <td>
-               <div style="display: none;" id="s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+             <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()"> 
+               <input type="radio" name="soal"  id="soal3" /><span> Bel listrik sederhana</span></label></td>
+             </div><td>
+               <div style="display: none;" id="s3"><img style="width: 20px;" src="../../gambar/salah.png"></div>
              </td>
            </tr>
            <tr>
-             <td><label><input type="radio" name="soal"  id="soal4"  onclick="cek1()"/><span> Setrika  </span></label></td>
-             <td>
-               <div style="display: none;" id="s4"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+             <td> <label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()" > 
+              <input type="radio" name="soal"  id="soal4"  /><span> Setrika  </span></label></td>
+             </div><td>
+               <div style="display: none;" id="s4"><img style="width: 20px;" src="../../gambar/benar.png"></div>
              </td>
            </tr>
          </table>
@@ -143,30 +150,35 @@
        </div>
     <!--Soal 2-->
     <div class="soal" id="soal2sow" style="display:none;">
-        <b>Sakelar elektronik digunakan untuk menghubungkan atau memutuskan aliran listrik dengan memanfaatkan magnet elektromagnetik yang dapat menahan aliran listrik sekala besar. bagaimana magnet tersebut dapat terbentuk ….</b><br><br>
+      <div class="pertanyaan"><b>Sakelar elektronik digunakan untuk menghubungkan atau memutuskan aliran listrik dengan memanfaatkan magnet elektromagnetik yang dapat menahan aliran listrik sekala besar. bagaimana magnet tersebut dapat terbentuk ….</b></div>
+      
          <table cellpadding="10">
          <tr>
-           <td><label><input type="radio" name="soal2"  id="q2soal1" onclick="cek2()"/><span> listrik mengalir kekumparan sehingga menjadi magnet 	</span></label></td>
-           <td>
-             <div style="display: none;" id="q2s1"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+           <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek2()" >
+             <input type="radio" name="soal2"  id="q2soal1" /><span> listrik mengalir kekumparan sehingga menjadi magnet 	</span></label></td>
+            </div><td>
+             <div style="display: none;" id="q2s1"><img style="width: 20px;" src="../../gambar/benar.png"></div>
            </td>
          </tr>
          <tr>
-           <td><label><input type="radio" name="soal2" id="q2soal2" onclick="cek2()"/><span> magnet sudah ada didalam sakelar 	 </span></label></td>
-           <td>
-             <div style="display: none;" id="q2s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+           <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek2()" >
+             <input type="radio" name="soal2" id="q2soal2" /><span> magnet sudah ada didalam sakelar 	 </span></label></td>
+           </div><td>
+             <div style="display: none;" id="q2s2"><img style="width: 20px;" src="../../gambar/salah.png"></div>
            </td>
          </tr>
          <tr>
-           <td><label><input type="radio" name="soal2"  id="q2soal3" onclick="cek2()"/><span> listrik mengalirkan magnet kedalam sakelar</span></label></td>
-           <td>
-             <div style="display: none;" id="q2s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+           <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek2()" >
+             <input type="radio" name="soal2"  id="q2soal3" /><span> listrik mengalirkan magnet kedalam sakelar</span></label></td>
+            </div><td>
+             <div style="display: none;" id="q2s3"><img style="width: 20px;" src="../../gambar/salah.png"></div>
            </td>
          </tr>
          <tr>
-           <td><label><input type="radio" name="soal2"  id="q2soal4" onclick="cek2()"/><span> sakelar dihubungkan dengan magnet  </span></label></td>
-           <td>
-             <div style="display: none;" id="q2s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+           <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek2()" >
+          <input type="radio" name="soal2"  id="q2soal4" /><span> sakelar dihubungkan dengan magnet  </span></label></td>
+        </div> <td>
+             <div style="display: none;" id="q2s4"><img style="width: 20px;" src="../../gambar/salah.png"></div>
            </td>
          </tr>
          </table>
@@ -175,45 +187,60 @@
    
      <!--Soal 3-->
      <div class="soal" id="soal3sow" style="display:none;">
-       <b>Telepon kabel dapat mengirim dan mendengar suara dengan mengubah energi listrik menjadi energi bunyi dengan mengirim energi listrik yang berubah-ubah. Berikut yang merupakan cara kerja telpon kabel dalam menghasilkan bunyi adalah ….</b><br><br>
+      <div class="pertanyaan"><b>Telepon kabel dapat mengirim dan mendengar suara dengan mengubah energi listrik menjadi energi bunyi dengan mengirim energi listrik yang berubah-ubah. Berikut yang merupakan cara kerja telpon kabel dalam menghasilkan bunyi adalah ….</b></div>
+    
        <table cellpadding="10">
        <tr>
-         <td><label><input type="radio" name="soal3"  id="q3soal1" onclick="cek3()"/><span> magnet belawanan dengan arus listrik</span></label></td>
-         <td>
-           <div style="display: none;" id="q3s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+         <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek3()" >
+           <input type="radio" name="soal3"  id="q3soal1" /><span> magnet belawanan dengan arus listrik</span></label></td>
+          </div><td>
+           <div style="display: none;" id="q3s1"><img style="width: 20px;" src="../../gambar/salah.png"></div>
          </td>
        </tr>
        <tr>
-         <td><label><input type="radio" name="soal3" id="q3soal2" onclick="cek3()"/><span> listrik menghantarkan gelombang magnet </span></label></td>
-         <td>
-           <div style="display: none;" id="q3s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+         <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek3()" >
+           <input type="radio" name="soal3" id="q3soal2" /><span> listrik menghantarkan gelombang magnet </span></label></td>
+          </div><td>
+           <div style="display: none;" id="q3s2"><img style="width: 20px;" src="../../gambar/salah.png"></div>
          </td>
        </tr>
        <tr>
-         <td><label><input type="radio" name="soal3"  id="q3soal3" onclick="cek3()"/><span> diafragma speaker menerima aliran listrik</span></label></td>
-         <td>
-           <div style="display: none;" id="q3s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+         <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek3()" >
+           <input type="radio" name="soal3"  id="q3soal3" /><span> diafragma speaker menerima aliran listrik</span></label></td>
+          </div><td>
+           <div style="display: none;" id="q3s3"><img style="width: 20px;" src="../../gambar/salah.png"></div>
          </td>
        </tr>
        <tr>
-         <td><label><input type="radio" name="soal3"  id="q3soal4" onclick="cek3()"/><span> diafragma speaker bergetar dengan kekuatan elektromagnetik </span></label></td>
-         <td>
+         <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek3()" >
+           <input type="radio" name="soal3"  id="q3soal4" /><span> diafragma speaker bergetar dengan kekuatan elektromagnetik </span></label></td>
+          </div><td>
            
-           <div style="display: none;" id="q3s4"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+           <div style="display: none;" id="q3s4"><img style="width: 20px;" src="../../gambar/benar.png"></div>
          </td>
        </tr>
      </table>
    
        <br>
-       
+       <br>
+  
      </div>
+     <div id="jawabansalah" class="canvas" style="display:none; background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+      <h2>Jawaban Salah</h2>
+      Sayang sekali. Silahkan amati kembali vidio diatas dengan penuh semangat.
+    </div>
+    <div id="jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+      <h2>Jawaban benar</h2>
+      Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+    </div>
+  </div>
      <br>
      <center>
        <button class="btnkecil" style="background:black;" id="tombol1" onclick="soal1_sow()" type="button">1</button>
        <button class="btnkecil" style="background: #04709b;" id="tombol2" onclick="soal2_sow()" type="button">2</button>
        <button class="btnkecil" style="background: #04709b;"id="tombol3" onclick="soal3_sow()" type="button">3</button>
        </center>
-   </div>
+   
    </div>
    </div>
      <br>

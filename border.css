@@ -1,6 +1,6 @@
 
 .tombollatihan{
-    background:  #007cad;;
+    background:  #007cad;
     border-radius: 5px 5px 5px 5px;
     padding: 2px;
     min-width: 150px;
@@ -27,6 +27,7 @@
     border-radius: 5px 5px 5px 5px;
     text-align: center;
     margin-bottom: 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .soalberwarna{
     width: 100%;
@@ -77,15 +78,37 @@ h3 img{
 }
 .textjudul{
     padding-top: 4px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .canvas{
     border-radius: 5px 5px 5px 5px;
     border-color: #257C9F;
+    background-color:aliceblue;
     border-style: solid;
     border-width: 1px;
     padding: 3% 3% ;
     text-align: justify; 
     font-family: Arial, Helvetica, sans-serif;
+}
+.sub3{
+    border-radius: 5px 5px 5px 5px;
+    border-color: #257C9F;
+    background-color:#007cad;
+    color: white;
+    border-style: solid;
+    border-width: 1px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub3  table tr td img{
+    width: 20px;
+}
+.sub3 table {
+    min-width: 100%;
+}
+.sub3 table td{
+    max-width: 450px;
+    padding-left: 5px;
+    text-align: center;
 }
 .canvas2{
     border-radius: 5px 5px 5px 5px;
@@ -136,5 +159,14 @@ h3 img{
     }
     .gbr{
         width: 100%;
+    }
+    .sub3 table td{
+        max-width: 460px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+    .latihan img{
+        width: 20px;
     }
 }

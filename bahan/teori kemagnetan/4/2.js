@@ -45,15 +45,13 @@ function check() {
         ret=false;
     }
     if(myvar1 == y && myvar == x) { //jawaban benar
-        document.getElementById("p1").innerHTML = "Benar";
-        document.getElementById("p1").style.backgroundColor="#1ed148";
-        document.getElementById("p1").style.color="#ffffff";
+        $("#jawabanbenar").show(200);
+        $("#jawabansalah").hide(0);
         ret=false;
         
     } else{
-        document.getElementById("p1").innerHTML = "Belum Benar Semua";
-        document.getElementById("p1").style.backgroundColor="#f00";
-        document.getElementById("p1").style.color="#ffffff";
+        $("#jawabanbenar").hide(0);
+        $("#jawabansalah").show(200);
         ret=false;
     }
     return ret;
@@ -67,18 +65,16 @@ function check2() {
     if(myvar2 == x1) { //benar
         myid2.style.color="#ffffff";
         myid2.style.backgroundColor="#1ed148";
-        document.getElementById("p2").innerHTML = "Benar";
-        document.getElementById("p2").style.backgroundColor="#1ed148";
-        document.getElementById("p2").style.color="#ffffff";
+        $("#jawabanbenar2").show(200);
+        $("#jawabansalah2").hide(0);
         ret=false;       
     }
     
     else{ //salah
         myid2.style.color="#ffffff"
         myid2.style.backgroundColor="#f00";
-        document.getElementById("p2").innerHTML = "Jawaban Belum Tepat";
-        document.getElementById("p2").style.backgroundColor="#f00";
-        document.getElementById("p2").style.color="#ffffff";
+        $("#jawabanbenar2").hide(0);
+        $("#jawabansalah2").show(200);
         ret=false;
     }
     return ret;
@@ -93,18 +89,16 @@ function check3() {
     if(myvar3 == x1) { //benar
         myid3.style.color="#ffffff";
         myid3.style.backgroundColor="#1ed148";
-        document.getElementById("p3").innerHTML = "Benar";
-        document.getElementById("p3").style.backgroundColor="#1ed148";
-        document.getElementById("p3").style.color="#ffffff";
+        $("#jawabanbenar3").show(200);
+        $("#jawabansalah3").hide(0);
         ret=false;       
     }
     
     else{ //salah
         myid3.style.color="#ffffff"
         myid3.style.backgroundColor="#f00";
-        document.getElementById("p3").innerHTML = "Jawaban Belum Tepat";
-        document.getElementById("p3").style.backgroundColor="#f00";
-        document.getElementById("p3").style.color="#ffffff";
+        $("#jawabanbenar3").hide(0);
+        $("#jawabansalah3").show(200);
         ret=false;
     }
     return ret;

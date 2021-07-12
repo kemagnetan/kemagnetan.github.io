@@ -81,12 +81,13 @@ function coba1() {
 function cekhasil1(){
   
   if(document.getElementById("benarsoal1").checked) {
-    hasiljawaban1.style.display="";
-    bgpil1.style.background="green";
-    bgpil1.style.color="white";
+    
+    $('#jawabanbenar').show(200);
+    $('#jawabansalah').hide(200);
+  
    }   else{
-    hasiljawaban1.style.display="";
-    bgpil1.style.background="red";
+    $('#jawabanbenar').hide(200);
+    $('#jawabansalah').show(200);
    }
 
  }
@@ -94,14 +95,14 @@ function cekhasil1(){
  function cekhasil2(){
   
   if(document.getElementById("benarsoal2").checked) {
-    hasiljawaban2.style.display="";
-    bgpil2.style.background="green";
-    bgpil2.style.color="white";
+    $('#jawabanbenar1').show(200);
+    $('#jawabansalah1').hide(200);
+
     kesimpulann.style.display="";
     sebelum22.style.display="none";
    }   else{
-    hasiljawaban2.style.display="";
-    bgpil2.style.background="red";
+    $('#jawabanbenar1').hide(200);
+    $('#jawabansalah1').show(200);
    }
 
  }

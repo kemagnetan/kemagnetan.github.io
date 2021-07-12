@@ -69,7 +69,7 @@
       <div class="canvas">
         Ada tiga cara yang dapat digunakan untuk membuat magnet yaitu, dengan cara induksi, menggosokkan, elektromagnetik.
         <br><br>
-        <div class="canvas">
+        <div class="canvas" style="background-color: white;">
           <div id="induksi" style="display: initial;">
             <b>1. Dengan Cara Induksi</b> <br>
             <center><img  class="gbr" src="gambar/induksi.png"></center>
@@ -108,8 +108,8 @@
         <br>  2. Amatilah apakah arah lilitan pada paku berpengaruh pada cara elektromagnetik.
         <br> 3. Amatilah bagaimana pengaruh arah gosokan magnet pada paku dan kutub yang terbentuk.
         
-      </div>
-      <br>
+     
+      <br><br>
       <center>
         <video id="vidio" controls>
           <source src="gambar/membuat magnet.m4v">
@@ -124,60 +124,54 @@
           <button class="btnvidio" onclick="coba3()" type="button">Percobaan 3</button>
         </center>
       </div>
+    </div>
       <br>
     <div class="pertanyaansingkat" >
       <div  class="canvas">
-        <b>Setelah kamu mengamati vidio diatas cobalah jawab pertanyaan berikut : (Kolom hasil akan berubah menjadi warna merah ketika salah dan warna hijau ketika benar)</b>
-        <div class="tabelwarna">
+        <div class="pertanyaan"><center><b>Setelah kamu mengamati vidio diatas cobalah jawab pertanyaan berikut : </b></center></div>
+        <div class="tabelnew">
         <table >
           <tr>
             <th>Pertanyaan</th>
             <th>Jawaban</th>
-            <th>Hasil</th>
           </tr>
           <tr>
             <td>(Cara Induksi) Apakah paku pertama yang terinduksi dapat menarik paku kedua.</td>
             <td>
-              <label><input type="radio" onclick="cekhasil1()" name="pilihan1" id="benarsoal1" /><span>	Ya </span></label>
-              <br>
-              <label><input type="radio" onclick="cekhasil1()" name="pilihan1"  /><span>	Tidak </span></label>
+              <label class="pilihan2" id="class1"><input type="radio" onclick="cekhasil1()" name="pilihan1" id="benarsoal1" /><span>	Ya </span></label>
+              
+              <label class="pilihan2" id="class2"><input type="radio" onclick="cekhasil1()" name="pilihan1"  id="salahsoal1"/><span>	Tidak </span></label>
+              <img style="display: none;"id="benar1" src="../../gambar/benar.png" width="20px">
+              <img style="display: none; " id="salah1" src="../../gambar/salah.png" width="20px">
             </td>
-            <td id="bgpil1">
-              <div id="hasiljawaban1" style="display:none;">
-                Paku pertama yang terinduksi dapat menarik paku kedua atau benda feromagnetik lainnya.
-              </div>
-            </td>
+           
           </tr>
           <tr>
             <td>(Cara elektromagnetik) Apakah pola lilitan pada paku berpengaruh pada kutub magnet yang terbentuk.</td>
             <td>
-              <label><input type="radio" onclick="cekhasil2()" name="pilihan2" id="benarsoal2" /><span>	Ya </span></label>
-              <br>
-              <label><input type="radio" onclick="cekhasil2()" name="pilihan2"  /><span>	Tidak </span></label>
+              <label class="pilihan2" id="class3"><input type="radio" onclick="cekhasil2()" name="pilihan2" id="benarsoal2" /><span>	Ya </span></label>
+             
+              <label class="pilihan2" id="class4"><input type="radio" onclick="cekhasil2()" name="pilihan2"  /><span>	Tidak </span></label>
+              <img style="display: none;"id="benar2" src="../../gambar/benar.png" width="20px">
+              <img style="display: none; " id="salah2" src="../../gambar/salah.png" width="20px">
             </td>
-            <td id="bgpil2">
-              <div id="hasiljawaban2" style="display:none;">
-                Pola lilitan pada paku mempengaruhi kutub magnet yang terbentuk pada paku.
-              </div>
-            </td>
+            
           </tr>
           <tr>
             <td>(Cara Digosok) Apakah Arah gosokan berpengaruh terhadap paku dan kutub magnet yang terbentuk </td>
             <td>
-              <label><input type="radio" onclick="cekhasil3()" name="pilihan3" id="benarsoal3" /><span>	Ya </span></label>
-              <br>
-              <label><input type="radio" onclick="cekhasil3()" name="pilihan3"  /><span>	Tidak </span></label>
+              <label class="pilihan2" id="class5"><input type="radio" onclick="cekhasil3()" name="pilihan3" id="benarsoal3" /><span>	Ya </span></label>
+             
+              <label class="pilihan2" id="class6"><input type="radio" onclick="cekhasil3()" name="pilihan3"  /><span>	Tidak </span></label>
+              <img style="display: none;"id="benar3" src="../../gambar/benar.png" width="20px">
+              <img style="display: none; " id="salah3" src="../../gambar/salah.png" width="20px">
             </td>
-            <td id="bgpil3" >
-              <div id="hasiljawaban3" style="display:none;">
-               Semakin lama magnet digosokan maka semakin kuat gaya magnet yang diciptakan. dan arah gosokan berpengaruh terhadap kutub magnet yang terbentuk.
-               </div>
-            </td>
+           
           </tr>
         </table>
       </div>
         <br>
-      </div>
+    </div>
     </div>
       <br>
       <!--kesimpulan muncul setelah selesai menonton vidio-->
@@ -191,7 +185,7 @@
       </div>
       <div class="latihanhide">
      
-        <div class="canvas">
+        <div class="canvas" style="background: #04709b; color:white;">
            <p><b>Petunjuk :</b></p>
              <ol type="1" style="padding-left: 15px;">
                <li>Soal berjumlah tiga yang terdiri dari gambar dan dua pilihan jawaban.</li>
@@ -200,81 +194,85 @@
              </ol>
            </div>    
          <br>
-         <div class="canvas" id="pertanyaan1" >
+         <div class="canvas" id="pertanyaan1" style="background:white;">
              <br>
-             1.	Bila sebuah besi didekatkan dengan magnet seperti cara induksi seperti gambar berikut, yang manakah kutub utara dan selatan dari besi tersebut ….
+             <div class="pertanyaan">Bila sebuah besi didekatkan dengan magnet seperti cara induksi seperti gambar berikut, yang manakah kutub utara dan selatan dari besi tersebut ….</div>
                <center>
-               <table>  
-                   <tr>
-                     <td><img width="300px" src="gambar/latihan2-1.png"></td>
-                   </tr>
-                   <tr>
-                     <td>
-                      <center>
-                       <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span>	A kutub Selatan dan B kutub utara </span></label>
+                  <br>
+                     <img width="300px"  src="gambar/latihan2-1.png">
+                   <br>
+                                       
+                       <label class="jwbpendek"><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span>	A kutub Selatan dan B kutub utara </span></label>
                        <br>
-                       <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> A kutub Utara dan B kutub Selatan </span></label>
-                     </center>
-                     </td>
-                   </tr>
-                 </table>
+                       <label class="jwbpendek"><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> A kutub Utara dan B kutub Selatan </span></label>
+
                  <br>
                    <div class="jawaban" id="j1benar" style="display:none; "><img src="../../gambar/benar.png"></div>
                    <div class="jawaban"  id="j1salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
                  </center>
+                 <br>
+                 <div id="1jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+                  <h2>Jawaban Salah</h2>
+                  Sayang sekali. Silahkan amati kembali vidio di atas dengan penuh semangat.
+                </div>
+                <div id="1jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+                  <h2>Jawaban benar</h2>
+                  Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+                </div>
          </div> 
          <br>
-         <div class="canvas" id="pertanyaan2" style="display: none;">
+         <div class="canvas" id="pertanyaan2" style="display: none; background-color: white;">
          <br>
-         2.	Dibawah adalah gambar yang menunjukan rangkaian pembuatan magnet elektromagnetik. Tentukanlah kutub dari P dan Q.
+         <div class="pertanyaan">Dibawah adalah gambar yang menunjukan rangkaian pembuatan magnet elektromagnetik. Tentukanlah kutub dari P dan Q.</div>
          <center>
-           <table>  
-            
-               <tr>
-                <td> <center><img width="200px" src="gambar/latihan2-2.png"></center></td>
-               </tr>
-             
-               <tr>
-                 <td>
-                   <center>
-                   <label><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span>	P kutub Selatan dan Q kutub Utara </span></label>
+           <br>
+            <img width="200px" src="gambar/latihan2-2.png">
+            <br>
+                  <label class="jwbpendek"><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span>	P kutub Selatan dan Q kutub Utara </span></label>
                    <br>
-                   <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> P kutub utara dan Q kutub Selatan </span></label>
-                   </center>
-                 </td>
-               </tr>
-             </table>
+                   <label class="jwbpendek"><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> P kutub utara dan Q kutub Selatan </span></label>
              <br>
                <div class="jawaban" id="j2benar" style="display:none; "><img src="../../gambar/benar.png"></div>
                <div class="jawaban"  id="j2salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
          </center>
+         <br>
+         <div id="2jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan amati kembali vidio di atas dengan penuh semangat.
+        </div>
+        <div id="2jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+          <h2>Jawaban benar</h2>
+          Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+        </div>
          </div> 
          <br>
-         <div class="canvas" id="pertanyaan3" style="display: none;">
+         <div class="canvas" id="pertanyaan3" style="display: none; background-color: white;">
            <br>
-           3. Setelah paku digosok dengan magnet dengan pola searah menggunakan kutub utara magnet dengan arah dari bagian paku A ke B. Tentukanlah kutub dari paku tersebut. 
+           Setelah paku digosok dengan magnet dengan pola searah menggunakan kutub utara magnet dengan arah dari bagian paku A ke B. Tentukanlah kutub dari paku tersebut. 
            <center>
-             <br>
-           <table>  
-               <tr>
-                 <td><img width="300px"  src="gambar/latihan2-3.png"></td>
-               </tr>
-               <tr>
-                 <td>
-                   <center>
-                   <label><input type="radio" name="soal2" id="s3salah" onclick="cek3()"/><span> A kutub selatan dan B utara</span></label>
+            <br>
+            <img width="300px"  src="gambar/latihan2-3.png"></td>
+             <br> 
+                   
+                   <label class="jwbpendek"><input type="radio" name="soal2" id="s3salah" onclick="cek3()"/><span> A kutub selatan dan B utara</span></label>
                    <br>
-                   <label><input type="radio"  name="soal2" id="s3benar" onclick="cek3()"/><span> A kutub utara dan B selatan </span></label>
-                   </center>
-                 </td>
-               </tr>
-             </table>
+                   <label class="jwbpendek"><input type="radio"  name="soal2" id="s3benar" onclick="cek3()"/><span> A kutub utara dan B selatan </span></label>
+                  
              <br>
                <div class="jawaban" id="j3benar" style="display:none; "><img src="../../gambar/benar.png"></div>
                <div class="jawaban"  id="j3salah" style="display:none; "><img src="../../gambar/salah.png"></div> 
              </center>
+             <br>
+         <div id="3jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan amati kembali vidio di atas dengan penuh semangat.
+        </div>
+        <div id="3jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+          <h2>Jawaban benar</h2>
+          Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+        </div>
          </div>
-   
+         
        </div>
     </div>
      <br>

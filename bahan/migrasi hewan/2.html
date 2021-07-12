@@ -63,7 +63,7 @@
       <br>
       <h3> <img src="../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
    <div class="canvas">
-       <div class="canvas">
+       <div class="canvas" style="background-color: #007cad; color: white;">
          <p><b>Petunjuk :</b></p>
            <ol type="1" style="padding-left: 15px;">
              <li>Soal berupa pilihan ganda berjumlah lima soal.</li>
@@ -72,62 +72,86 @@
            </ol>
         </div>
        <br>
-    <div class="canvas">   
+    <div class="canvas" style="background-color:#daf5fd; color: black;">   
     <!--Soal 1-->
     <div class="soal" id="soal1sow" >
-      Burung dapat memanfaatkan medan magnet bumi untuk bermigrasi karena  ....
-        <table cellpadding="10">
+      <div class="pertanyaan"><b>Burung dapat memanfaatkan medan magnet bumi untuk bermigrasi karena  ....</b></div> 
+        <table >
         <tr>
-          <td><label><input type="radio" name="soal"  id="qsoal1" onclick="cek1()"/><span> Memiliki zat kimia</span></label></td>
           <td>
-            <div style="display: none;" id="s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
+            <label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()" > 
+           <input type="radio" name="soal" id="qsoal1" /><span> Memiliki zat kimia</span></label>
+
+            </div></td>
+          <td>
+            <div style="display: none; padding-top:5px;" id="s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()" > 
+            <input type="radio" name="soal" id="soal2"/><span> Mengikuti arah angin	 </span></label>
+          </div> </td>
+          
+           <td>
+            <div style="display: none;padding-top:5px;" id="s2"><img style="width: 30px;" src="../gambar/salah.png"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()"> 
+            <input type="radio" name="soal"  id="soal3" /><span> Memiliki magnetite</span></label>
+          </div></td>
+          <td>
+            <div style="display: none; padding-top:5px;" id="s3"><img style="width: 30px;" src="../gambar/benar.png"></div>
           </td>
         </tr>
         <tr>
-          <td><label><input type="radio" name="soal" id="soal2" onclick="cek1()"/><span> Mengikuti arah angin	 </span></label></td>
+          <td><label><div class="pilihan"  style="cursor: pointer;" onclick="cek1()" > 
+            <input type="radio" name="soal"  id="soal4" /><span> Memiliki mineral Fe3S4  </span></label>
+          </div></td>
           <td>
-            <div style="display: none;" id="s2"><img style="width: 30px;" src="../gambar/salah.png"></div>
-          </td>
-        </tr>
-        <tr>
-          <td><label><input type="radio" name="soal"  id="soal3" onclick="cek1()"/><span> Memiliki magnetite</span></label></td>
-          <td>
-            <div style="display: none;" id="s3"><img style="width: 30px;" src="../gambar/benar.png"></div>
-          </td>
-        </tr>
-        <tr>
-          <td><label><input type="radio" name="soal"  id="soal4"  onclick="cek1()"/><span> Memiliki mineral Fe3S4  </span></label></td>
-          <td>
-            <div style="display: none;" id="s4"><img style="width: 30px;" src="../gambar/salah.png"></div>
+            <div style="display: none;padding-top:5px;" id="s4"><img style="width: 30px;" src="../gambar/salah.png"></div>
           </td>
         </tr>
       </table>
       <br>
+     
     </div>
+ 
  <!--Soal 2-->
  <div class="soal" id="soal2sow" style="display:none;">
-      Ikan salmon dapat hidup di sungai dan juga laut. Berikut yang merupakan alur perjalanan migrasi ikan salmon adalah ....
+  <div class="pertanyaan"><b>Ikan salmon dapat hidup di sungai dan juga laut. Berikut yang merupakan alur perjalanan migrasi ikan salmon adalah ....</b></div>
       <table cellpadding="10">
       <tr>
-        <td><label><input type="radio" name="soal2"  id="q2soal1" onclick="cek2()"/><span> Menetas di laut, tumbuh di laut, kembali ke sungai	</span></label></td>
+        <td><label><div class="pilihan"  style="cursor: pointer;"> 
+          <input type="radio" name="soal2"  id="q2soal1" onclick="cek2()"/><span> Menetas di laut, tumbuh di laut, kembali ke sungai	</span></label>
+        </div></td>
         <td>
           <div style="display: none;" id="q2s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
         </td>
       </tr>
       <tr>
-        <td><label><input type="radio" name="soal2" id="q2soal2" onclick="cek2()"/><span> Menetas di sungai, tumbuh di laut, kembali ke sungai	 </span></label></td>
+        <td><label><div class="pilihan"  style="cursor: pointer;">
+          <input type="radio" name="soal2" id="q2soal2" onclick="cek2()"/><span> Menetas di sungai, tumbuh di laut, kembali ke sungai	 </span></label>
+        </div></td>
         <td>
           <div style="display: none;" id="q2s2"><img style="width: 30px;" src="../gambar/benar.png"></div>
         </td>
       </tr>
       <tr>
-        <td><label><input type="radio" name="soal2"  id="q2soal3" onclick="cek2()"/><span> Menetas di sungai, tumbuh di sungai, kembali ke sungai</span></label></td>
+        <td><label><div class="pilihan"  style="cursor: pointer;">
+          <input type="radio" name="soal2"  id="q2soal3" onclick="cek2()"/><span> Menetas di sungai, tumbuh di sungai, kembali ke sungai</span></label>
+        </div></td>
         <td>
           <div style="display: none;" id="q2s3"><img style="width: 30px;" src="../gambar/salah.png"></div>
         </td>
       </tr>
       <tr>
-        <td><label><input type="radio" name="soal2"  id="q2soal4" onclick="cek2()"/><span> Menetas di laut, tumbuh di sungai, kembali ke sungai  </span></label></td>
+        <td><label><div class="pilihan"  style="cursor: pointer;">
+          <input type="radio" name="soal2"  id="q2soal4" onclick="cek2()"/><span> Menetas di laut, tumbuh di sungai, kembali ke sungai  </span></label>
+        </div></td>
         <td>
           <div style="display: none;" id="q2s4"><img style="width: 30px;" src="../gambar/salah.png"></div>
         </td>
@@ -138,28 +162,36 @@
 
   <!--Soal 3-->
   <div class="soal" id="soal3sow" style="display:none;">
-    Penyu bermigrasi menggunakan medan magnet dengan kemampuan yang berbeda dengan hewn lain, yaitu   ....
+    <div class="pertanyaan"><b>Penyu bermigrasi menggunakan medan magnet dengan kemampuan yang berbeda dengan hewn lain, yaitu   ....</b></div>
     <table cellpadding="10">
     <tr>
-      <td><label><input type="radio" name="soal3"  id="q3soal1" onclick="cek3()"/><span> Memanfaatkan magnetite pada tubuhnya</span></label></td>
+      <td><label><div class="pilihan"  style="cursor: pointer;">
+        <input type="radio" name="soal3"  id="q3soal1" onclick="cek3()"/><span> Memanfaatkan magnetite pada tubuhnya</span></label>
+      </div></td>
       <td>
         <div style="display: none;" id="q3s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
       </td>
     </tr>
     <tr>
-      <td><label><input type="radio" name="soal3" id="q3soal2" onclick="cek3()"/><span> Kemampuan bermigrasi secara sendiri-sendiri </span></label></td>
+      <td><label><div class="pilihan"  style="cursor: pointer;">
+        <input type="radio" name="soal3" id="q3soal2" onclick="cek3()"/><span> Kemampuan bermigrasi secara sendiri-sendiri </span></label>
+      </div></td>
       <td>
         <div style="display: none;" id="q3s2"><img style="width: 30px;" src="../gambar/salah.png"></div>
       </td>
     </tr>
     <tr>
-      <td><label><input type="radio" name="soal3"  id="q3soal3" onclick="cek3()"/><span> Kemampuan bermigrasi secara berkelompok</span></label></td>
+      <td><label><div class="pilihan"  style="cursor: pointer;">
+        <input type="radio" name="soal3"  id="q3soal3" onclick="cek3()"/><span> Kemampuan bermigrasi secara berkelompok</span></label>
+      </div></td>
       <td>
         <div style="display: none;" id="q3s3"><img style="width: 30px;" src="../gambar/salah.png"></div>
       </td>
     </tr>
     <tr>
-      <td><label><input type="radio" name="soal3"  id="q3soal4" onclick="cek3()"/><span> Menentukan garis bujur seperti kompas </span></label></td>
+      <td><label><div class="pilihan"  style="cursor: pointer;">
+        <input type="radio" name="soal3"  id="q3soal4" onclick="cek3()"/><span> Menentukan garis bujur seperti kompas </span></label>
+      </div></td>
       <td>
         
         <div style="display: none;" id="q3s4"><img style="width: 30px;" src="../gambar/benar.png"></div>
@@ -171,29 +203,37 @@
 </div>
 <!--Soal 4-->
 <div class="soal" id="soal4sow" style="display:none;">
-  Lobster duri juga merupakan salah satu hewan yang memanfaatkan medan magnet dalam bermigrasi. Tempat tujuan lobster duri bermigrasi adalah   ....
+  <div class="pertanyaan"><b>Lobster duri juga merupakan salah satu hewan yang memanfaatkan medan magnet dalam bermigrasi. Tempat tujuan lobster duri bermigrasi adalah   ....</b></div>
   <table >
   <tr>
-    <td><label><input type="radio" name="soal4"  id="q4soal1" onclick="cek4()"/><span> Lautan yang dalam</span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal4"  id="q4soal1" onclick="cek4()"/><span> Lautan yang dalam</span></label>
+    </div></td>
     <td>
       <div style="display: none;" id="q4s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
     </td>
   </tr>
   <tr>
-    <td><label><input type="radio" name="soal4" id="q4soal2" onclick="cek4()"/><span> Lautan yang hangat dan tenang </span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal4" id="q4soal2" onclick="cek4()"/><span> Lautan yang hangat dan tenang </span></label>
+    </div></td>
     <td>
       
       <div style="display: none;" id="q4s2"><img style="width: 30px;" src="../gambar/benar.png"></div>
     </td>
   </tr>
   <tr>
-    <td><label><input type="radio" name="soal4"  id="q4soal3"  onclick="cek4()"/><span> Pinggir pantai</span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal4"  id="q4soal3"  onclick="cek4()"/><span> Pinggir pantai</span></label>
+    </div></td>
     <td>
       <div style="display: none;" id="q4s3"><img style="width: 30px;" src="../gambar/salah.png"></div>
     </td>
   </tr>
   <tr>
-    <td><label><input type="radio" name="soal4"  id="q4soal4"  onclick="cek4()"/><span> Sungai ari tawar </span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal4"  id="q4soal4"  onclick="cek4()"/><span> Sungai ari tawar </span></label>
+    </div></td>
     <td>
       <div style="display: none;" id="q4s4"><img style="width: 30px;" src="../gambar/salah.png"></div>
     </td>
@@ -202,28 +242,36 @@
 </div>
 <!--soal 5-->
 <div class="soal" id="soal5sow" style="display:none;">
-	Dalam tubuh bakteri Magnetotactic Bacteria (MTB) terdapat organel khusus yang disebut magnetosome. Senyawa yang terkandung dalam magnetosome adalah ....
+  <div class="pertanyaan"><b>Dalam tubuh bakteri Magnetotactic Bacteria (MTB) terdapat organel khusus yang disebut magnetosome. Senyawa yang terkandung dalam magnetosome adalah ....</b></div>
   <table cellpadding="10">
   <tr>
-    <td><label><input type="radio" name="soal5"  id="q5soal1"  onclick="cek5()"/><span> Magnetotactic bacteria</span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal5"  id="q5soal1"  onclick="cek5()"/><span> Magnetotactic bacteria</span></label>
+    </div></td>
     <td>
       <div style="display: none;" id="q5s1"><img style="width: 30px;" src="../gambar/salah.png"></div>
     </td>
   </tr>
   <tr>
-    <td><label><input type="radio" name="soal5" id="q5soal2" onclick="cek5()"/><span> Basitrasin dan penicilin	 </span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal5" id="q5soal2" onclick="cek5()"/><span> Basitrasin dan penicilin	 </span></label>
+    </div></td>
     <td>
       <div style="display: none;" id="q5s2"><img style="width: 30px;" src="../gambar/salah.png"></div>
     </td>
   </tr>
   <tr>
-    <td><label><input type="radio" name="soal5"  id="q5soal3" onclick="cek5()"/><span> Amfoterisin dan vankomisin</span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal5"  id="q5soal3" onclick="cek5()"/><span> Amfoterisin dan vankomisin</span></label>
+    </div></td>
     <td>
       <div style="display: none;" id="q5s3"><img style="width: 30px;" src="../gambar/salah.png"></div>
     </td>
   </tr>
   <tr>
-    <td><label><input type="radio" name="soal5"  id="q5soal4" onclick="cek5()"/><span> Magnetite dan greigite </span></label></td>
+    <td><label><div class="pilihan"  style="cursor: pointer;">
+      <input type="radio" name="soal5"  id="q5soal4" onclick="cek5()"/><span> Magnetite dan greigite </span></label>
+    </div></td>
     <td>
       
       <div style="display: none;" id="q5s4"><img style="width: 30px;" src="../gambar/benar.png"></div>
@@ -232,6 +280,15 @@
   </table>
 </div>
 </div>
+<br>
+  <div id="jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+    <h2>Jawaban Salah</h2>
+    Sayang sekali. Silahkan pelajari kembali materi pada halaman sebelumnya dengan penuh semangat.
+  </div>
+  <div id="jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+    <h2>Jawaban benar</h2>
+    Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+  </div>
 </div>
 <br>
   <center>

@@ -110,5 +110,6 @@ function cek(){
         s5s.style.display="none";
     }
 
+    $("#jawabanbenar").show(200);
 
 }

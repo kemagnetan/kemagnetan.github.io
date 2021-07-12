@@ -87,7 +87,7 @@
 			<center><img width="60%" src="gambar/3.png";></center>
 		</div>
 		<br>
-  <div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cek()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh</p></div>
+  <div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cek()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh (Klik)</p></div>
 	<div id="contoh" style="display: none;" class="canvas">	
 	<ol type="1">
 	
@@ -133,14 +133,14 @@
 		</script>
 	</div>
   <br>
-  <div class="h3hover" id="latihan" style="display: none;cursor: pointer;font-size: 14pt; " onclick="cek2()"> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></div>
+  <div class="h3hover" id="latihan" style="display: none;cursor: pointer;font-size: 14pt; " onclick="cek2()"> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba </p></div>
 		<div id="kontenlatihan" class="canvas" style="display: none;">
             Gunakan ( . ) sebagai koma
             
         <div class="soalberwarna" >
 		  1.	Sebuah kawat tembaga sepanjang 15 m dialiri arus listrik sebesar 5 mA. Jika kawat tembaga tersebut tegak lurus berada dalam medan magnet sebesar 10 tesla, berapakah gaya Lorentz yang timbul ?
             <p style="color:black;"><b>JAWABAN</b></p>  
-            <div id="p1" class="halatihan" ></div>
+           
             <br>
             <form onsubmit="return check()" method="post">
                 <input id="myid" name="myvar" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
@@ -150,11 +150,26 @@
         
         </div>
         <br>
-
+        <div id="jawabansalah1" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+ <!--jawaban benar 1-->      
+         <div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+          <h2>Jawaban benar</h2>
+          <center><h3>F = B . I . L</h3></center>
+          <br>
+          <b>Penyelesaian :</b>
+          <br>F = gaya Lorentz !
+          <br>B = 10 tesla 
+          <br>I = 5 mA = 0,01 A
+          <br>L = 15 m
+          <br><br><b>F = 10.0,01.5 = 1,5 N</b>
+        </div>
+        <br>
         <div class="soalberwarna" >
         2.	Sebuah kawat tembaga sepanjang 10 m dialiri arus listrik sebesar 4 mA. Jika kawat tembaga tersebut tegak lurus berada dalam medan magnet sebesar 5 tesla, berapakah gaya Lorentz yang timbul ?
         <p style="color:black;"><b>JAWABAN</b></p>  
-        <div id="p2" class="halatihan" ></div>
         <br>
         <form onsubmit="return check2()" method="post">
             <input id="myid2" name="myvar2" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> N
@@ -162,11 +177,26 @@
         </form> 
         </div>
         <br>
-
+        <div id="jawabansalah2" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+          <h2>Jawaban Salah</h2>
+          Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+        </div>
+        <div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+          <h2>Jawaban benar</h2>
+          <center><h3>F = B . I . L</h3></center>
+          <br>
+          <b>Penyelesaian :</b>
+          <br>F = gaya Lorentz !
+          <br>B = 5 tesla 
+          <br>I = 4 mA = 0,01 A
+          <br>L = 10 m
+          <br><br><b>F = 5 . 0,004 . 10 = 0,2 N</b>
+        </div>
+        <br>
         <div class="soalberwarna" >
             3.	Jika gaya Lorentz yang ditimbulkan oleh kawat tembaga sepanjang 4 m dan dialiri arus listrik sebesar 4 mA adalah 16 N, maka berapakah besar medan magnet yang melingkupi kawat tembaga tersebut?
             <p style="color:black;"><b>JAWABAN</b></p>  
-            <div id="p3" class="halatihan" ></div>
+           
             <br>
             <form onsubmit="return check3()" method="post">
                 <input id="myid3" name="myvar3" type="text" class="formlatihan" style="width: 30px;"  onfocus="this.style.color='#000';"> X
@@ -175,7 +205,29 @@
             </form>
 		</div>
 		<br>
-    
+    <div id="jawabansalah3" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+      <h2>Jawaban Salah</h2>
+      Sayang sekali. Silahkan pelajari kembali materi di atas dengan penuh semangat.
+    </div>
+    <div id="jawabanbenar3" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+      <h2>Jawaban benar</h2>
+      <br><b>Diketahui:</b>
+		<br>L = 4 m
+		<br>I = 4 mA = 0,004 A 
+		<br>F = 16 N
+		<br><br><b>Ditanya: </b>
+		<br>Medan magnet ? 
+		<br><br><b>Jawab: </b>
+		<br>
+		<h4>
+			$F = B.I.L$ 
+			<br><br>
+			$\frac{F}{I . L} = \frac{16 N}{2  \times 10^{-3} A . 4 m } = 2 \times 10^{3}$
+		</h4>	
+		<br>
+		Jadi, besarnya medan magnet yang melingkupi kawat tembaga adalah $2 ×  10^3$ tesla.
+    </div>
+    <br>
  
     
      <script type="text/javascript" async

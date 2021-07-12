@@ -19,6 +19,7 @@
 
 //Latihan 
 //Latihan
+var jawaban1=0;var jawaban2=0;
 //Soal latihan 1
 //Soal latihan 1
 var s1=document.getElementById("s1");
@@ -31,21 +32,33 @@ function cek1(){
     
     if(document.getElementById("qsoal1").checked) {
         s1.style.display="";
+        $("#jawabanbenar").show(200);
+        $("#jawabansalah").hide(200);
+        jawaban1=1;
     } else{
         s1.style.display="none";
     }
     if(document.getElementById("soal2").checked) {
         s2.style.display="";
+        $("#jawabanbenar").hide(200);
+        $("#jawabansalah").show(200);
+        jawaban1=2;
     } else{
         s2.style.display="none";
     }
     if(document.getElementById("soal3").checked) {
         s3.style.display="";
+        $("#jawabanbenar").hide(200);
+        $("#jawabansalah").show(200);
+        jawaban1=2;
     } else{
         s3.style.display="none";
     }
     if(document.getElementById("soal4").checked) {
         s4.style.display="";
+        $("#jawabanbenar").hide(200);
+        $("#jawabansalah").show(200);
+        jawaban1=2;
     }  else{
         s4.style.display="none";
     }
@@ -65,11 +78,17 @@ function cek2(){
     if(document.getElementById("q2soal1").checked) {
   
         q2s1.style.display="";
+        $("#jawabanbenar").hide(200);
+        $("#jawabansalah").show(200);
+        jawaban2=2;
     } else{
         q2s1.style.display="none";
     }
     if(document.getElementById("q2soal2").checked) {
         q2s2.style.display="";
+        $("#jawabanbenar").hide(200);
+        $("#jawabansalah").show(200);
+        jawaban2=2;
     } else{
         q2s2.style.display="none";
     }
@@ -77,11 +96,18 @@ function cek2(){
         q2s3.style.display="";
         kesimpulann.style.display="";
         seblumkesimpulan.style.display="none";
+
+        $("#jawabanbenar").show(200);
+        $("#jawabansalah").hide(200);
+        jawaban2=1;
     } else{
         q2s3.style.display="none";
     }
     if(document.getElementById("q2soal4").checked) {
         q2s4.style.display="";
+        $("#jawabanbenar").hide(200);
+        $("#jawabansalah").show(200);
+        jawaban2=2;
     }  else{
         q2s4.style.display="none";
     }
@@ -92,22 +118,45 @@ function cek2(){
 function soal1_sow(){
     soal1sow.style.display="";
     soal2sow.style.display="none";
-    soal3sow.style.display="none";
   
     tombol1.style.background="black";
     tombol2.style.background="#04709b";
-    tombol3.style.background="#04709b";
+
   
-  
+    if(jawaban1==0){
+        jawabanbenar.style.display="none";
+        jawabansalah.style.display="none";
+    }
+    if(jawaban1==1){
+        jawabanbenar.style.display="";
+        jawabansalah.style.display="none";
+    }
+    if(jawaban1==2){
+        jawabanbenar.style.display="none";
+        jawabansalah.style.display="";
+    }
+
   
   }
   function soal2_sow(){
     soal1sow.style.display="none";
     soal2sow.style.display="";
-    soal3sow.style.display="none";
+
   
     tombol1.style.background="#04709b";
     tombol2.style.background="black";
-    tombol3.style.background="#04709b";
   
+    if(jawaban2==0){
+        jawabanbenar.style.display="none";
+        jawabansalah.style.display="none";
+    }
+    if(jawaban2==1){
+        jawabanbenar.style.display="";
+        jawabansalah.style.display="none";
+    }
+    if(jawaban2==2){
+        jawabanbenar.style.display="none";
+        jawabansalah.style.display="";
+    }
+
   }

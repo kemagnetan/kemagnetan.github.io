@@ -74,6 +74,9 @@
       <div class="borderbab" style="text-align: left;">
         1. MRI (Magnetic Resonance Imaging)
       </div>
+      <div class="canvas">
+        Magnet banyak digunakan dalam berbagai produk teknologi, salah satunya yang paling populer adalah dalam teknologi kedokteran,  seperti MRI. Hingga kini, salah satu cara yang dianggap paling aman untuk mendeteksi penyakit adalah dengan menggunakan MRI (Magnetic Resonance Imaging).
+      </div>
       <br>
       <h3> <img src="../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
       <div class="canvas">
@@ -109,79 +112,75 @@
             <b>LATIHAN DAN KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENONTON VIDIO</b>
           </center>
         </div>
-        <div class="latihan">
+        <div class="latihan" >
+          <div class="canvas" style="background-color: #007cad; color: white;">
            <p><b>Petunjuk :</b></p>
              <ol type="1" style="padding-left: 15px;">
-               <li>Jawab benar jika menurut kamu pernyataan pada soal benar. </li>
-               <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
-               <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
-             </ol> 
+              <li>Berikut adalah pernyataan mengenai MRI.</li>
+              <li>Jawab benar jika menurut kamu pernyataan pada soal benar. </li>
+              <li>Jika jawaban kamu benar akan diberi tanda <img src="../gambar/benar.png" width="15px"> dan jika salah diberi tanda <img src="../gambar/salah.png" width="15px"></li>
+              <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
+            </ol> 
+            </div>
         </div> 
-      </div>
+      
       <br>
       <div class="soal">
         <!--soal 1-->
-      <div class="canvas" >
-        <table style="text-align: center;" width="100%">
+      <div class="sub3" >
+        <table >
           
           <tr>
-            <td><br>MRI dapat melihat organ dalam tubuh tanpa harus membedah.</td>
-          </tr>
-          <tr>
-              <td ><br>
+            <td>MRI dapat melihat organ dalam tubuh tanpa harus membedah.</td>
+
+
+              <td  style="background-color: white; color: #007cad;">
                 <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span> Benar </span></label>
-                <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Salah </span></label>
+                <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Salah</span></label>
+                <div id="j1benar" style="display:none; "><img src="../gambar/benar.png" ></div>
+                <div id="j1salah" style="display:none; "><img src="../gambar/salah.png"  ></div>
               </td>
           </tr>
-        </table>
-        <br>
-        <center>
-        <div class="jawaban" id="j1benar" style="display:none; "><img src="../gambar/benar.png"></div>
-        <div class="jawaban"  id="j1salah" style="display:none; "><img src="../gambar/salah.png"></div>
-      </center>   
+        </table> 
       </div>
       <br>
        <!--soal 2-->
-      <div class="canvas" id="pertanyaan2" style="display: none;">
-        <table style="text-align: center;" width="100%">
+      <div class="sub3" >
+        <table >
           <tr>
-              <td ><br>MRI membutuhkan listrik jumlah besar dalam pengoperasiannya.</td>
-          </tr>
-        </tr>
-              <td style="padding-left: 10px;"><br>
+              <td >MRI membutuhkan listrik jumlah besar dalam pengoperasiannya.</td>
+        
+              <td style="background-color: white; color: #007cad;">
                 <label><input type="radio" name="soal2" id="s2salah" onclick="cek2()"/><span> Benar  </span></label>
-                <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span> Salah </span></label>
+                <label><input type="radio"  name="soal2" id="s2benar" onclick="cek2()"/><span>  Salah </span></label>
+                <div  id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div  id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
           </tr>
         </table>
-        <br>
-        <center>
-          <div class="jawaban" id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
-          <div class="jawaban"  id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
-        </center>
+  
       </div>
+  
       <br>
        <!--soal 3-->
-      <div class="canvas" id="pertanyaan3" style="display: none;">
-        <table style="text-align: center;" width="100%">
+      <div class="sub3">
+        <table >
          
           <tr>
-              <td ><br>MRI memancarkan medan magnet elektronik dan menerima sinyal dari inti hidrogen di dalam tibuh.</td>
-          </tr>
-          <tr>
-              <td style="padding-left: 10px;"><br>
+              <td >MRI memancarkan medan magnet elektronik dan menerima sinyal dari inti hidrogen di dalam tubuh.</td>
+       
+              <td style="background-color: white; color: #007cad;">
                 <label><input type="radio" name="soal3" id="s3benar" onclick="cek3()"/><span> Benar </span></label>
                 <label><input type="radio"  name="soal3" id="s3salah" onclick="cek3()"/><span> Salah </span></label>
+                <div id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
           </tr>
-        </table>
-        <br>
-        <center>
-        <div class="jawaban" id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
-        <div class="jawaban"  id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
-        </center>
+          </table>
       </div>
     </div>
+</div>
+
          <br>
       <!--kesimpulan muncul setelah selesai menjawab soal-->
       <div id="kesimpulan" style="display: none;">

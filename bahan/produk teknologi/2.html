@@ -65,6 +65,9 @@
       <div class="borderbab" style="text-align: left;">
         2. Kereta Maglev
       </div>
+      <div class="canvas">
+        Maglev merupakan kependekan dari magnetically levitated atau kereta terbang. Kereta maglev diterbangkan kurang lebih 10 mm di atas relnya. Meskipun rel dan kereta tidak menempel, kereta maglev yang super cepat yakni mampu melaju hingga 650 km/jam, tidak akan terjatuh dan tergelincir karena adanya gaya tolak menolak antara badan kereta dan rel. 
+      </div>
       <br>
       <h3> <img src="../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
       <div class="canvas">
@@ -88,117 +91,105 @@
         <div class="latihan">
            <p><b>Petunjuk :</b></p>
              <ol type="1" style="padding-left: 15px;">
-               <li>Berikut adalah pernyataan mengenai kereta maglev.
+               <li>Berikut adalah pernyataan mengenai kereta maglev.</li>
                <li>Jawab benar jika menurut kamu pernyataan pada soal benar. </li>
-               <li>Soal berikutnya akan muncul setelah menjawab soal dengan benar.</li>
+               <li>Jika jawaban kamu benar akan diberi tanda <img src="../gambar/benar.png" width="15px"> dan jika salah diberi tanda <img src="../gambar/salah.png" width="15px"></li>
                <li>Pada saat jawaban dipilih, hasil benar atau salah akan langsung terlihat.</li>
              </ol> 
         </div> 
-      </div>
+      
       <br>
       <div class="soal">
         <!--soal 1-->
-      <div class="canvas" >
+      <div class="sub3" >
         <table style="text-align: center;" width="100%">
           
           <tr>
             <td>Kereta maglev mengambang di atas rel.</td>
-          </tr>
-          <tr>
-              <td >
+        
+              <td style="background-color: white; color: #007cad; max-width: 75px;">
                 <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span> Benar </span></label>
                 <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Salah </span></label>
+                <div  id="j1benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div  id="j1salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
           </tr>
         </table>
-        <br>
-        <center>
-        <div class="jawaban" id="j1benar" style="display:none; "><img src="../gambar/benar.png"></div>
-        <div class="jawaban"  id="j1salah" style="display:none; "><img src="../gambar/salah.png"></div>
-      </center>   
+ 
       </div>
       <br>
        <!--soal 2-->
-      <div class="canvas" id="pertanyaan2" style="display: none;">
-        <table style="text-align: center;" width="100%">
+      <div class="sub3" id="pertanyaan2" >
+        <table >
           <tr>
               <td >Kereta maglev menggunakan elektromagnetik untuk mendorong dan merarik gerbong kereta.</td>
-          </tr>
-        </tr>
-              <td style="padding-left: 10px;">
+       
+              <td style="background-color: white; color: #007cad;max-width: 110px;">
                 <label><input type="radio" name="soal2" id="s2benar" onclick="cek2()"/><span> Benar  </span></label>
                 <label><input type="radio"  name="soal2" id="s2salah" onclick="cek2()"/><span> Salah </span></label>
+                <div  id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div   id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
+
               </td>
           </tr>
         </table>
-        <br>
-        <center>
-          <div class="jawaban" id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
-          <div class="jawaban"  id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
-        </center>
+      
       </div>
       <br>
        <!--soal 3-->
-      <div class="canvas" id="pertanyaan3" style="display: none;">
-        <table style="text-align: center;" width="100%">
+      <div class="sub3" id="pertanyaan3" >
+        <table >
          
           <tr>
               <td >Kereta maglev adalah kereta tercepat kedua di dunia saat ini.</td>
-          </tr>
-          <tr>
-              <td style="padding-left: 10px;">
+        
+              <td style="background-color: white; color: #007cad;max-width: 106px;">
                 <label><input type="radio" name="soal3" id="s3salah" onclick="cek3()"/><span> Benar </span></label>
                 <label><input type="radio"  name="soal3" id="s3benar" onclick="cek3()"/><span> Salah </span></label>
+                <div  id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div   id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
           </tr>
         </table>
-        <br>
-        <center>
-        <div class="jawaban" id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
-        <div class="jawaban"  id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
-        </center>
+      
       </div>
       <br>
-      <div class="canvas" id="pertanyaan4" style="display: none;">
-        <table style="text-align: center;" width="100%">
+      <div class="sub3" id="pertanyaan4" >
+        <table >
          
           <tr>
               <td>Biaya pemeliharaan yang lebih murah.</td>
-          </tr>
-          <tr>
-              <td style="padding-left: 10px;">
+ 
+              <td style="background-color: white; color: #007cad;max-width: 70px;">
                 <label><input type="radio" name="soal4" id="s4benar" onclick="cek4()"/><span> Benar </span></label>
                 <label><input type="radio"  name="soal4" id="s4salah" onclick="cek4()"/><span> Salah </span></label>
+              
+              <div  id="j4benar" style="display:none; "><img src="../gambar/benar.png"></div>
+              <div  id="j4salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
           </tr>
         </table>
-        <br>
-        <center>
-        <div class="jawaban" id="j4benar" style="display:none; "><img src="../gambar/benar.png"></div>
-        <div class="jawaban"  id="j4salah" style="display:none; "><img src="../gambar/salah.png"></div>
-        </center>
+       
       </div>
       <br>
-      <div class="canvas" id="pertanyaan5" style="display: none;">
-        <table style="text-align: center;" width="100%">
+      <div class="sub3" id="pertanyaan5" >
+        <table >
          
           <tr>
               <td>Kereta konvensional lebih bising dari kereta maglev.</td>
-          </tr>
-          <tr>
-              <td style="padding-left: 10px;">
+        
+              <td style="background-color: white; color: #007cad;max-width: 88px;">
                 <label><input type="radio" name="soal5" id="s5salah" onclick="cek5()"/><span> Benar </span></label>
                 <label><input type="radio"  name="soal5" id="s5benar" onclick="cek5()"/><span> Salah </span></label>
+                <div  id="j5benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div   id="j5salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
           </tr>
         </table>
-        <br>
-        <center>
-        <div class="jawaban" id="j5benar" style="display:none; "><img src="../gambar/benar.png"></div>
-        <div class="jawaban"  id="j5salah" style="display:none; "><img src="../gambar/salah.png"></div>
-        </center>
+   
       </div>
     </div>
+  </div>
          <br>
       <!--kesimpulan muncul setelah selesai menjawab soal-->
       <div id="kesimpulan" style="display: none;">

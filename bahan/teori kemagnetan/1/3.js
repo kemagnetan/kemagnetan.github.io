@@ -76,12 +76,11 @@ function coba1() {
 function cekhasil1(){
   
   if(document.getElementById("benarsoal1").checked) {
-    hasiljawaban1.style.display="";
-    bgpil1.style.background="green";
-    bgpil1.style.color="white";
+    class2.style.display="none";
+    benar1.style.display="";
    }   else{
-    hasiljawaban1.style.display="";
-    bgpil1.style.background="red";
+    class1.style.display="none";
+    salah1.style.display="";
    }
 
  }
@@ -89,12 +88,11 @@ function cekhasil1(){
  function cekhasil2(){
   
   if(document.getElementById("benarsoal2").checked) {
-    hasiljawaban2.style.display="";
-    bgpil2.style.background="green";
-    bgpil2.style.color="white";
+    class4.style.display="none";
+    benar2.style.display="";
    }   else{
-    hasiljawaban2.style.display="";
-    bgpil2.style.background="red";
+    class3.style.display="none";
+    salah2.style.display="";
    }
 
  }
@@ -102,12 +100,11 @@ function cekhasil1(){
  function cekhasil3(){
   
   if(document.getElementById("benarsoal3").checked) {
-    hasiljawaban3.style.display="";
-    bgpil3.style.background="green";
-    bgpil3.style.color="white";
+    class6.style.display="none";
+    benar3.style.display="";
    }   else{
-    hasiljawaban3.style.display="";
-    bgpil3.style.background="red";
+    class5.style.display="none";
+    salah3.style.display="";
    }
 
  }
@@ -118,10 +115,14 @@ function cek1(){
       j1benar.style.display="";
       j1salah.style.display="none";
       pertanyaan2.style.display="";
+      $("#1jawabanbenar").show(100);
+      $("#1jawabansalah").hide(100);
   }   
   if(document.getElementById("s1salah").checked){
       j1salah.style.display="";
       j1benar.style.display="none";
+      $("#1jawabanbenar").hide(100);
+      $("#1jawabansalah").show(100);
   }
 }
 
@@ -130,10 +131,14 @@ function cek2(){
        j2benar.style.display="";
        j2salah.style.display="none";
        pertanyaan3.style.display="";
+       $("#2jawabanbenar").show(100);
+       $("#2jawabansalah").hide(100);
    }   
    if(document.getElementById("s2salah").checked){
        j2salah.style.display="";
        j2benar.style.display="none";
+       $("#2jawabanbenar").hide(100);
+       $("#2jawabansalah").show(100);
    }
  }
 
@@ -143,9 +148,13 @@ function cek2(){
        j3salah.style.display="none";
        kesimpulan.style.display="";
        hidekesimpulan.style.display="none";
+        $("#3jawabanbenar").show(100);
+       $("#3jawabansalah").hide(100);
    }   
    if(document.getElementById("s3salah").checked){
        j3salah.style.display="";
        j3benar.style.display="none";
+       $("#3jawabanbenar").hide(100);
+       $("#3jawabansalah").show(100);
    }
  }

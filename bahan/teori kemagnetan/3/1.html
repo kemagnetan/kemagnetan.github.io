@@ -78,17 +78,18 @@
         <br><center><img src="gambar/lorenz2.png"></center><br>
       </div>
       <br>
-      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Menonton</p></h3>
+      <h3> <img src="../../gambar/menonton.png"><p class="textjudul">Mari Mengamati</p></h3>
       <div class="canvas">
-        pada vidio berikut kamu akan mengetahui peralatan-peralatan yang menggunakan prinsip elektromagnet.
+        Untuk lebih memahami pengaruh arus listrik terhadap medan magnet, cobalah amati vidio berikut. 
+        <br><br>
+        <center>
+          <video id="vidio" controls>
+            <source src="gambar/arus kawat.mp4">
+          </video>
+        </center>
+        <br>
       </div>
-      <br>
-      <center>
-        <video id="vidio" controls>
-          <source src="gambar/arus kawat.mp4">
-        </video>
-      </center>
-      <br>
+     <br>
       <!--kesimpulan muncul setelah selesai menonton vidio-->
       <h3> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
       <div class="canvas">
@@ -100,7 +101,7 @@
 
     <div class="latihanhide">
     
-     <div class="canvas">
+     <div class="canvas" style="background: #04709b; color:white;">
         <p><b>Petunjuk :</b></p>
           <ol type="1" style="padding-left: 15px;">
             <li>Soal berupa pilihan ganda berjumlah tiga soal.</li>
@@ -117,25 +118,25 @@
         <tr>
           <td><label><input type="radio" name="soal"  id="qsoal1" onclick="cek1()"/><span> Terjadi simpangan pada jarum kompas</span></label></td>
           <td>
-            <div style="display: none;" id="s1"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+            <div style="display: none;" id="s1"><img style="width: 20px;" src="../../gambar/benar.png"></div>
           </td>
         </tr>
         <tr>
           <td><label><input type="radio" name="soal" id="soal2" onclick="cek1()"/><span> Kompas menempel pada kawat berarus listrik</span></label></td>
           <td>
-            <div style="display: none;" id="s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+            <div style="display: none;" id="s2"><img style="width: 20px;" src="../../gambar/salah.png"></div>
           </td>
         </tr>
         <tr>
           <td><label><input type="radio" name="soal"  id="soal3" onclick="cek1()"/><span>	Jarum utara berubah berubah arah ke selatan</span></label></td>
           <td>
-            <div style="display: none;" id="s3"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+            <div style="display: none;" id="s3"><img style="width: 20px;" src="../../gambar/salah.png"></div>
           </td>
         </tr>
         <tr>
           <td><label><input type="radio" name="soal"  id="soal4"  onclick="cek1()"/><span>	Tidak terjadi apa-apa  </span></label></td>
           <td>
-            <div style="display: none;" id="s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+            <div style="display: none;" id="s4"><img style="width: 20px;" src="../../gambar/salah.png"></div>
           </td>
         </tr>
       </table>
@@ -148,31 +149,39 @@
       <tr>
         <td><label><input type="radio" name="soal2"  id="q2soal1" onclick="cek2()"/><span> Terjadi konsleting listrik 	</span></label></td>
         <td>
-          <div style="display: none;" id="q2s1"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          <div style="display: none;" id="q2s1"><img style="width: 20px;" src="../../gambar/salah.png"></div>
         </td>
       </tr>
       <tr>
         <td><label><input type="radio" name="soal2" id="q2soal2" onclick="cek2()"/><span> Jarum kompas berubah	 </span></label></td>
         <td>
-          <div style="display: none;" id="q2s2"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          <div style="display: none;" id="q2s2"><img style="width: 20px;" src="../../gambar/salah.png"></div>
         </td>
       </tr>
       <tr>
         <td><label><input type="radio" name="soal2"  id="q2soal3" onclick="cek2()"/><span> Simpangan semakin besar</span></label></td>
         <td>
-          <div style="display: none;" id="q2s3"><img style="width: 30px;" src="../../gambar/benar.png"></div>
+          <div style="display: none;" id="q2s3"><img style="width: 20px;" src="../../gambar/benar.png"></div>
         </td>
       </tr>
       <tr>
         <td><label><input type="radio" name="soal2"  id="q2soal4" onclick="cek2()"/><span> Jarum kompas bergeser </span></label></td>
         <td>
-          <div style="display: none;" id="q2s4"><img style="width: 30px;" src="../../gambar/salah.png"></div>
+          <div style="display: none;" id="q2s4"><img style="width: 20px;" src="../../gambar/salah.png"></div>
         </td>
       </tr>
       </table>
     <br>
   </div>
-
+  <br>
+  <div id="jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+    <h2>Jawaban Salah</h2>
+    Sayang sekali. Silahkan amati kembali vidio di atas  dengan penuh semangat.
+  </div>
+  <div id="jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+    <h2>Jawaban benar</h2>
+    Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+  </div>
   </div>
   <br>
   <center>
@@ -184,13 +193,13 @@
     <br>
   <div class="tampil2" >
     <h3> <img src="../../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
-    <div class="canvas">
-     <div id="seblumkesimpulan">
+    <div class="canvas" style="background-color: white;">
+     <div id="seblumkesimpulan" style="color: red;">
       <center>
         <b> KESIMPULAN AKAN MUNCUL SETELAH SELESAI MENJAWAB SEMUA SOAL</b>
       </center>
       </div>
-      <div class="kesimpulan" id="kesimpulann">
+      <div class="kesimpulan" id="kesimpulann" >
         Konsep induksi magnet berawal dari tidak terkendalinya putaran jarum kompas yang ada di kapal laut saat petir menyambar. Seperti yang telah kita lakukan pada percobaan di atas. Ternyata arus listrik dapat menimbulkan medan magnet yang dapat mempengaruhi arah jarum kompas. Ketika jarum kompas positif berada pada titik awal arus listrik positif maka jarum kompas menyimpang ke kiri. Dan ketika jarum kompas utara berada pada titik awal arus listrik negatif  maka jarum kompas menyimpang ke kanan.   
       </div>
     </div>

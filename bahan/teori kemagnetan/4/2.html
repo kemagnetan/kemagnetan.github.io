@@ -115,7 +115,7 @@
 
 		</div>
 		<br>
-		<div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cek()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh</p></div>
+		<div class="h3hover" style="font-size: 14pt; cursor: pointer;" onclick="cek()"> <img src="../../gambar/latihan.png"><p class="textjudul">Contoh (Klik)</p></div>
 		<div id="contoh" style="display: none;" class="canvas">	
 					Sebuah transformator memiliki 300 lilitan primer dan 30 lilitan sekunder. Diketahui tegangan pada lilitan primer adalah 220 volt. 
 				<ol style="padding-left: 16px;" type="1">
@@ -187,7 +187,7 @@
 		<div class="h3hover" style="font-size: 14pt; cursor: pointer;display: none;"id="latihan" onclick="cek2()"> <img src="../../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></div>
 		<div id="kontenlatihan" class="canvas" style="display: none;">
 
-			        <div class="soalberwarna" style="padding-bottom: 1px;">
+			    <div class="soalberwarna" style="padding-bottom: 1px;">
                 1.	Sebuah transformator memiliki 1.500 lilitan primer dan 300 lilitan sekunder. Bila tegangan sekunder transformator tersebut 3 volt dan arus primernya 4 mA, berapakah tegangan primer dan arus sekundernya?                 
 				<br><br>
 				<p ><b>JAWABAN</b></p>  
@@ -203,6 +203,49 @@
 				<br>
              </div>
             <br>
+<!-- jawaban--><div id="jawabansalah" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+				<h2>Jawaban Salah</h2>
+				Sayang sekali. Silahkan pelajari kembali materi di atas  dengan penuh semangat.
+			  </div>
+			  <div id="jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+				<h2>Jawaban benar</h2>
+				<b>Diketahui:</b> <br>
+				<ul type="none" >
+					<li>$N_p$ = 1500 lilitan </li>
+					<li>$N_s$ = 300 lilitan</li> 
+					<li>$V_s$ = 3 volt</li>
+					<li>$I_p$ = 0,5 mA</li>
+				</ul>
+				<br>
+				<b>Ditanya:</b> <br>
+				<ol type="1" style="padding-left: 16px;">	
+					<li>Tegangan primer ($V_p$ )</li> 
+					<li>Arus sekunder ($I_s$ ) </li>
+				</ol>
+				<br>
+				<b>Jawaban</b>
+				<ol type="1" style="padding-left: 16px;">	
+					<li>Tegangan primer ($V_p$ )</li> 
+						<br>
+						$ \frac{N_p}{N_s} = \frac{V_p}{V_s}$
+						<br><br>
+						$ \frac{1500}{300} = \frac{V_p}{3}$
+						<br><br>
+						$V_s= \frac{1500 V \times 3}{300}= \space 15\space Volt$ 
+						<br><br>
+	
+					<li>Arus sekunder ($I_s$ ) </li>
+						<br>
+						$ \frac{N_p}{N_s} = \frac{I_s}{I_p}$
+						<br><br>
+						$ \frac{1500 v}{300} = \frac{I_s}{4 \space mA}$
+						<br><br>
+						$I_s = \frac{1500 v \times 4 \space mA}{300}= \space 20 \space mA $
+						<br><br>
+	
+				</ol>
+			  </div>
+			  <br>
 
             <div class="soalberwarna" style="padding-bottom: 1px;">
                 2.	Sebuah transformator step-down terdiri atas kumparan primer dengan 1.200 lilitan dan kumparan sekunder dengan 40 lilitan. Jika kumparan primer dihubungkan degan tegangan sebesar 330 V, berapa tegangan pada kumparan sekunder?            
@@ -216,6 +259,39 @@
                 </form> 
 				<br>
             </div>
+			<br>
+<!-- jawaban-->
+	<div id="jawabansalah2" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+				<h2>Jawaban Salah</h2>
+				Sayang sekali. Silahkan pelajari kembali materi di atas  dengan penuh semangat.
+	</div>
+			  <div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+				<h2>Jawaban benar</h2>
+				<b>Diketahui:</b> <br>
+				<ul type="none" >
+					<li>$N_p$ = 1200 lilitan </li>
+					<li>$N_s$ = 40 lilitan</li> 
+					<li>$V_p$ = 330 volt</li>
+
+				</ul>
+				<br>
+				<b>Ditanya:</b> <br>
+					
+					Tegangan skunder ($V_s$ )
+				<br>
+				<b>Jawaban</b>
+				<ol type="1" style="padding-left: 16px;">	
+					<li>Tegangan skunder ($V_s$ )</li> 
+						<br>
+						$ \frac{N_p}{N_s} = \frac{V_p}{V_s}$
+						<br><br>
+						$ \frac{1200}{40} = \frac{V_s}{330}$
+						<br><br>
+						$V_s= \frac{330 V \times 40}{1200}= \space 11\space Volt$ 
+						<br><br>
+	
+				</ol>
+			  </div>
             <br>
 
             <div class="soalberwarna" style="padding-bottom: 1px;">
@@ -230,6 +306,26 @@
                 </form>
 				<br>
             </div>
+			<br>
+	<div id="jawabansalah3" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+				<h2>Jawaban Salah</h2>
+				Sayang sekali. Silahkan pelajari kembali materi di atas  dengan penuh semangat.
+	</div>
+	<div id="jawabansalah3" class="canvas" style="display:none;background-color:rgb(255, 255, 255);border-color:red;color: rgb(255, 0, 0);">
+		<h2>Jawaban Benar</h2>
+		<b>Diketahui:</b> <br>
+				<ul type="none" >
+					<li>$P_p$ = 350 watt </li>
+					<li>$P_s$ = 70 watt</li> 
+					
+				</ul>
+				<br>
+				$η = \frac{P_s }{P_p} \times 100%$
+				<br>
+				η = \frac{70 }{350} \times 100%$
+				<br>
+				η = 20%
+</div>
 		</div>
 		<br><br>
 	</div> 

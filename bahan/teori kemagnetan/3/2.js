@@ -20,18 +20,19 @@ function check() {
     var x=1.5;
     if(myvar != x) { //value yg diijinkan hanya numerik, integer maupun float
         myid.style.color="#f00";
-        document.getElementById("p1").innerHTML = "Jawaban Belum Tepat";
-        document.getElementById("p1").style.backgroundColor="#f00";
-        document.getElementById("p1").style.color="#ffffff";
+
         ret=false;
+        $("#jawabanbenar1").hide(0);
+        $("#jawabansalah1").show(200);
     }
     
     if(myvar == x) { //value yg diijinkan hanya numerik, integer maupun float
-        myid.style.color="#257C9F";
-        document.getElementById("p1").innerHTML = "Benar";
-        document.getElementById("p1").style.backgroundColor="#1ed148";
-        document.getElementById("p1").style.color="#ffffff";
+        myid.style.color="green";
+
         ret=false;
+
+        $("#jawabanbenar1").show(200);
+        $("#jawabansalah1").hide(0);
     }
     return ret;
 }
@@ -42,19 +43,19 @@ function check2() {
     var myvar2=myid2.value;
     var x1=0.2;
     if(myvar2 != x1) { //value yg diijinkan hanya numerik, integer maupun float
-        myid2.style.color="#f00";
-        document.getElementById("p2").innerHTML = "Jawaban Belum Tepat";
-        document.getElementById("p2").style.backgroundColor="#f00";
-        document.getElementById("p2").style.color="#ffffff";
+        myid2.style.color="#f00";;
         ret=false;
+
+        $("#jawabanbenar2").hide(0);
+        $("#jawabansalah2").show(200);
     }
     
     if(myvar2 == x1) { //value yg diijinkan hanya numerik, integer maupun float
-        myid2.style.color="#257C9F";
-        document.getElementById("p2").innerHTML = "Benar";
-        document.getElementById("p2").style.backgroundColor="#1ed148";
-        document.getElementById("p2").style.color="#ffffff";
+        myid2.style.color="green";
         ret=false;
+
+        $("#jawabanbenar2").show(200);
+        $("#jawabansalah2").hide(0);
     }
     return ret;
 }
@@ -69,20 +70,20 @@ function check3() {
     var x2=10;
     if(myvar3 != x1 && myid4 != x2) { //value yg diijinkan hanya numerik, integer maupun float
         myid3.style.color="#f00";
-        myid3.style.color="#f00";
-        document.getElementById("p3").innerHTML = "Jawaban Belum Tepat";
-        document.getElementById("p3").style.backgroundColor="#f00";
-        document.getElementById("p3").style.color="#ffffff";
+        myid4.style.color="#f00";
         ret=false;
+
+        $("#jawabanbenar3").hide(0);
+        $("#jawabansalah3").show(200);
     }
     
     if(myvar3 == x1 && myvar4 == x2) { //value yg diijinkan hanya numerik, integer maupun float
         myid3.style.color="#257C9F";
         myid4.style.color="#257C9F";
-        document.getElementById("p3").innerHTML = "Benar";
-        document.getElementById("p3").style.backgroundColor="#1ed148";
-        document.getElementById("p3").style.color="#ffffff";
         ret=false;
+
+        $("#jawabanbenar3").show(200);
+        $("#jawabansalah3").hide(0);
     }
     return ret;
 }
