@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body onload="drop();">
   
   <!--header untuk judul sub bab-->
   <div class="header">
-      <center>Teori Dasar Kemagnetan</center>
+      <center>B. Teori Dasar Kemagnetan</center>
   </div>
   <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
   <div class="btn">
@@ -34,13 +34,13 @@
           </li>
           
           <li>
-            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Kemagnetan
               <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="kemagnetan-tampil">
               <li><a href="../1/1.html">Konsep Gaya Magnet</a></li>
               <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
-              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;" href="1.html">Induksi magnet dan gaya lorentz</a></li>
+              <li><a style="  color: cyan; " href="1.html">Induksi magnet dan gaya lorentz</a></li>
               <li><a href="../4/1.html">Induksi elektromagnetik</a></li>
               <li><a href="../Kuis/kuis2.html">Kuis 2</a></li>
             </ul>
@@ -58,6 +58,13 @@
 
         </ul>
     </nav>
+    <!-- javascript untuk navigasi-->
+    <script>
+      function drop(){
+        $('nav ul .kemagnetan-tampil').toggleClass("show1");
+      $('nav ul .second').toggleClass("rotate");
+       }
+    </script>
  <!--class untuk konten-->
   <div class="content">
     <br>
@@ -144,7 +151,7 @@
             <br>
             <form onsubmit="return check()" method="post">
                 <input id="myid" name="myvar" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> 
-                N
+                Newton
                 <input  type="submit" value="Cek">
             </form>
         
@@ -172,7 +179,7 @@
         <p style="color:black;"><b>JAWABAN</b></p>  
         <br>
         <form onsubmit="return check2()" method="post">
-            <input id="myid2" name="myvar2" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> N
+            <input id="myid2" name="myvar2" type="text" class="formlatihan"  onfocus="this.style.color='#000';"> Newton
             <input  type="submit" value="Cek">
         </form> 
         </div>

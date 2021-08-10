@@ -128,14 +128,14 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  background: #1e1e1e;
+  background: #0f0f0f;
 }
 nav ul ul{
   position: static;
   display: none;
 }
 nav ul .migrasi-tampil.show{
-  display: block;
+  display:block;
 }
 
 nav ul .kemagnetan-tampil.show1{
@@ -146,14 +146,22 @@ nav ul .produk-tampil.show2{
   display: block;
 }
 
+
 nav ul ul li{
+  
   line-height: 42px;
   border-top: none;
+  
 }
 nav ul ul li a{
   font-size: 14px;
   color: #e6e6e6;
-  padding-left: 50px;
+  padding-left: 40px;
+  line-height: 2.5;
+  padding-right: 10px;
+  background: #1b1b1b;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.144);
+
 }
 nav ul li.beranda ul li a{
   color: #e6e6e6;

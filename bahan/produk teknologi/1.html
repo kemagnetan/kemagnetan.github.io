@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body onload="drop();">
   
   <!--header untuk judul sub bab-->
   <div class="header">
-      <center>Kemagnetan dalam Produk Teknologi</center>
+      <center>C. Kemagnetan dalam Produk Teknologi</center>
   </div>
   <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
   <div class="btn">
@@ -34,7 +34,7 @@
           </li>
           
           <li>
-            <a href="#" class="kemagnetan">Teori Dasar Kemagnetan
+            <a href="#" class="kemagnetan">Teori Kemagnetan
               <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="kemagnetan-tampil">
@@ -50,7 +50,7 @@
               <span class="fas fa-caret-down tiga"></span>
             </a>
             <ul class="produk-tampil">
-              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;" href="#">Materi</a></li>
+              <li><a style="  color: cyan;" href="#">Materi</a></li>
               <li><a href="../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
             </ul>
           </li>
@@ -58,12 +58,17 @@
 
         </ul>
     </nav>
+     <!-- javascript untuk navigasi-->
+     <script>
+      function drop(){
+        $('nav ul .produk-tampil').toggleClass("show2");
+        $('nav ul .tiga').toggleClass("rotate");
+       }
+    </script>
+    
     <!--class untuk konten-->
     <div class="content">
-      <br>
-      <div class="borderbab">
-        C. Kemagnetan dalam Produk Teknologi
-      </div>
+     
       <br>
       <h3> <img src="../gambar/tujuan.png"><p class="textjudul">Tujuan</p></h3>
       <div class="canvas">
@@ -80,6 +85,7 @@
       <br>
       <h3> <img src="../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
       <div class="canvas">
+        <div class="canvas" style="background-color: white;">
         Simaklah vidio berikut dengan seksama untuk memahami bagaimana cara kerja MRI (Magnetic Resonance Imaging).      </div>
     <br>
       <center>
@@ -88,7 +94,7 @@
         </video>
       </center>
       <br>
-      <div class="canvas">
+      <div class="canvas" style="background-color: white;">
         <div class="tambahan">
         Selain menggunakan MRI, Pencitraan otak juga dapat dilakukan dengan Computed Tomography (CT) scan. Meskipun demikian, MRI memiliki kelebihan dibandingkan dengan pemeriksaan CT scan seperti dijelaskan sebagai berikut.
         
@@ -102,6 +108,7 @@
           </ol>
         </div>
       </div>
+    </div>
       <br>
       <!--Latihan -->
 

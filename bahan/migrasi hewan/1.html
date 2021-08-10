@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body onload="drop();">
   
   <!--header untuk judul sub bab-->
   <div class="header">
-      <center>Pemanfaatan Medan Magnet pada Migrasi Hewan</center>
+      <center>A. Pemanfaatan Medan Magnet pada Migrasi Hewan</center>
   </div>
   <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
   <div class="btn">
@@ -28,14 +28,14 @@
               <span class="fas fa-caret-down first"></span>
             </a>
             <ul class="migrasi-tampil">
-              <li><a  style="  color: cyan; background: #272727; border-left-color: cyan;" 
+              <li><a  style="  color: cyan;"
                       href="../migrasi hewan/1.html">Materi</a></li>
               <li><a href="Kuis/kuis1.html">Kuis 1</a></li>
             </ul>
           </li>
           
           <li>
-            <a href="#" class="kemagnetan">Teori Dasar Kemagnetan
+            <a href="#" class="kemagnetan">Teori Kemagnetan
               <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="kemagnetan-tampil">
@@ -59,13 +59,17 @@
 
         </ul>
     </nav>
+    <!-- javascript untuk navigasi-->
+    <script>
+      function drop(){
+        $('nav ul .migrasi-tampil').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+       }
+    </script>
     <!--class untuk konten-->
     <div class="content">
       <br>
-      <div class="borderbab">
-        A. Pemanfaatan Medan Magnet pada Migrasi Hewan
-      </div>
-      <br>
+    
       <h3> <img src="../gambar/tujuan.png"><p class="textjudul">Tujuan</p></h3>
       <div class="canvas">
         Siswa mampu memahami  manfaat medan magnet pada migrasi hewan.
@@ -86,19 +90,23 @@
           <source src="gambar/migrasi hewan.mp4">
         </video>
       </center>
-    </div>
-    
       <br>
       <!--untuk kontrol vidio-->
-      <div class="canvas"	>
+      <div class="canvas"	style="background:white;">
         <center>
+         <b> Navigasi Vidio :</b>
+         
           <button class="btnvidio" onclick="burung()" type="button">Burung</button>
           <button class="btnvidio" onclick="salmon()" type="button">Ikan Salmon</button>
           <button class="btnvidio" onclick="penyu()" type="button">Penyu</button>
           <button class="btnvidio" onclick="lobster()" type="button">Lobster Duri</button>
           <button class="btnvidio" onclick="bakteri()" type="button">Bakteri</button>
+       
         </center>
       </div>
+    </div>
+    
+     
       <br>
       <!--kesimpulan muncul setelah selesai menonton vidio-->
       <h3> <img src="../gambar/kesimpulan.png"><p class="textjudul">Kesimpulan</p></h3>
@@ -117,7 +125,7 @@
           <li>Dalam tubuh bakteri Magnetotactic Bacteria (MTB) terdapat organel khusus yang disebut magnetosome. Pada magnetosome tersusun atas senyawa magnetite ($Fe_{3}O_{4}$) atau greigite ($Fe_{3}S_{4}$). </li>
       </ul>
       <br>
-      <b>Setelah memahami hewa-hewan yang memanfaatkan medan magnet dalam bermigrasi. Kerjakan latihan pada </b> <a href="2.html"><button class="btnkecil" >Halaman berikutnya</button></a></center>
+      <b>Setelah memahami hewa-hewan yang memanfaatkan medan magnet dalam bermigrasi. Kerjakan latihan pada </b> <a href="2.html"><button class="btnkecil" ><h4>Halaman berikutnya</h4></button></a></center>
       </div>
       </div>
       <br>

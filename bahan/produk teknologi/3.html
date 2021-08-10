@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body onload="drop();">
   
   <!--header untuk judul sub bab-->
   <div class="header">
-      <center>Kemagnetan dalam Produk Teknologi</center>
+      <center>C. Kemagnetan dalam Produk Teknologi</center>
   </div>
   <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
   <div class="btn">
@@ -34,7 +34,7 @@
           </li>
           
           <li>
-            <a href="#" class="kemagnetan">Teori Dasar Kemagnetan
+            <a href="#" class="kemagnetan">Teori Kemagnetan
               <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="kemagnetan-tampil">
@@ -50,7 +50,7 @@
               <span class="fas fa-caret-down tiga"></span>
             </a>
             <ul class="produk-tampil">
-              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;" href="1.html">Materi</a></li>
+              <li><a style="  color: cyan;" href="1.html">Materi</a></li>
               <li><a href="../produk teknologi/Kuis/kuis3.html">Kuis 3</a></li>
             </ul>
           </li>
@@ -58,6 +58,13 @@
 
         </ul>
     </nav>
+    <!-- javascript untuk navigasi-->
+         <script>
+          function drop(){
+            $('nav ul .produk-tampil').toggleClass("show2");
+            $('nav ul .tiga').toggleClass("rotate");
+           }
+        </script>
     <!--class untuk konten-->
     <div class="content">
 
@@ -71,6 +78,7 @@
       <br>
       <h3> <img src="../gambar/menonton.png"><p class="textjudul">Ayo Menonton</p></h3>
       <div class="canvas">
+        <div class="canvas" style="background-color: white;">
         Vidio berikut ini akan menjelaskan mengenai PLTN (Pembangkit Listrik Tenaga Nuklir) dan bagaimana cara reaktor nuklir bekerja.
       </div>
         <br>
@@ -79,6 +87,7 @@
           <source src="gambar/reaktor nuklir.mp4">
         </video>
       </center>
+    </div>
       <br>
       <!--Latihan -->
       <h3> <img src="../gambar/latihan.png"><p class="textjudul">Mari Mencoba</p></h3>
@@ -98,81 +107,85 @@
 
              </ol> 
         </div> 
-      </div>
-      <br>
-      <div class="soal">
-        <!--soal 1-->
-      <div class="sub3" >
-        <table >
-          
-          <tr>
-            <td>Pembangkin listrik tenaga nuklir menggunakan uap dari  pembakaran mineral alam.</td>
-      
-              <td style="background-color: white; color: #007cad;">
-                <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span> Benar </span></label>
-                <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Salah </span></label>
-              
-              <div  id="j1benar" style="display:none; "><img src="../gambar/benar.png"></div>
-              <div   id="j1salah" style="display:none; "><img src="../gambar/salah.png"></div>
-            </td>
-          </tr>
-        </table>
-      
-      </div>
-      <br>
-       <!--soal 2-->
-      <div class="sub3" >
-        <table>
-          <tr>
-              <td >Pada PLTN panas diperoleh dari reaksi pemecahan inti atom dalam suatu reaktor nuklir.</td>
- 
-              <td style="background-color: white; color: #007cad;">
-                <label><input type="radio" name="soal2" id="s2benar" onclick="cek2()"/><span> Benar  </span></label>
-                <label><input type="radio"  name="soal2" id="s2salah" onclick="cek2()"/><span> Salah </span></label>
-                <div  id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
-               <div id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
-              </td>
-          </tr>
-        </table>
-       
-      </div>
-      <br>
-       <!--soal 3-->
-      <div class="sub3">
-        <table >
-         
-          <tr>
-              <td >Pada PLTN panas diperoleh dari reaksi pemecahan inti atom dalam suatu reaktor nuklir.</td>
-
-              <td style="background-color: white; color: #007cad;">
-                <label><input type="radio" name="soal3" id="s3salah" onclick="cek3()"/><span> Benar </span></label>
-                <label><input type="radio"  name="soal3" id="s3benar" onclick="cek3()"/><span> Salah </span></label>
-                <div  id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
-                <div  id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
-              </td>
-          </tr>
-        </table>
-      </div>
-      <br>
-      <!--Soal 4-->
-      <div class="sub3" >
-        <table >
-         
-          <tr>
-              <td>Panas dari pemecahan atom digunakan untuk menggerakan turbin dan reaktor.</td>
-         
-              <td style="background-color: white; color: #007cad;">
-                <label><input type="radio" name="soal4" id="s4benar" onclick="cek4()"/><span> Benar </span></label>
-                <label><input type="radio"  name="soal4" id="s4salah" onclick="cek4()"/><span> Salah </span></label>
-                <div id="j4benar" style="display:none; "><img src="../gambar/benar.png"></div>
-                <div  id="j4salah" style="display:none; "><img src="../gambar/salah.png"></div>
         
+        <div class="soal">
+          <br>
+          <!--soal 1-->
+        <div class="sub3" >
+          <table >
+            
+            <tr>
+              <td>Pembangkin listrik tenaga nuklir menggunakan uap dari  pembakaran mineral alam.</td>
+        
+                <td style="background-color: white; color: #007cad;">
+                  <label><input type="radio" name="soal1" id="s1benar" onclick="cek1()"/><span> Benar </span></label>
+                  <label><input type="radio"  name="soal1" id="s1salah" onclick="cek1()"/><span> Salah </span></label>
+                
+                <div  id="j1benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                <div   id="j1salah" style="display:none; "><img src="../gambar/salah.png"></div>
               </td>
-          </tr>
-        </table>
+            </tr>
+          </table>
+        
+        </div>
+        <br>
+         <!--soal 2-->
+        <div class="sub3" >
+          <table>
+            <tr>
+                <td >Pada PLTN panas diperoleh dari reaksi pemecahan inti atom dalam suatu reaktor nuklir.</td>
+   
+                <td style="background-color: white; color: #007cad;">
+                  <label><input type="radio" name="soal2" id="s2benar" onclick="cek2()"/><span> Benar  </span></label>
+                  <label><input type="radio"  name="soal2" id="s2salah" onclick="cek2()"/><span> Salah </span></label>
+                  <div  id="j2benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                 <div id="j2salah" style="display:none; "><img src="../gambar/salah.png"></div>
+                </td>
+            </tr>
+          </table>
+         
+        </div>
+        <br>
+         <!--soal 3-->
+        <div class="sub3">
+          <table >
+           
+            <tr>
+                <td >Pada PLTN panas diperoleh dari reaksi pemecahan inti atom dalam suatu reaktor nuklir.</td>
+  
+                <td style="background-color: white; color: #007cad;">
+                  <label><input type="radio" name="soal3" id="s3salah" onclick="cek3()"/><span> Benar </span></label>
+                  <label><input type="radio"  name="soal3" id="s3benar" onclick="cek3()"/><span> Salah </span></label>
+                  <div  id="j3benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                  <div  id="j3salah" style="display:none; "><img src="../gambar/salah.png"></div>
+                </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <!--Soal 4-->
+        <div class="sub3" >
+          <table >
+           
+            <tr>
+                <td>Panas dari pemecahan atom digunakan untuk menggerakan turbin dan reaktor.</td>
+           
+                <td style="background-color: white; color: #007cad;">
+                  <label><input type="radio" name="soal4" id="s4benar" onclick="cek4()"/><span> Benar </span></label>
+                  <label><input type="radio"  name="soal4" id="s4salah" onclick="cek4()"/><span> Salah </span></label>
+                  <div id="j4benar" style="display:none; "><img src="../gambar/benar.png"></div>
+                  <div  id="j4salah" style="display:none; "><img src="../gambar/salah.png"></div>
+          
+                </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+      </div>
       </div>
       <br>
-    </div>
+      
+    
          <br>
       <!--kesimpulan muncul setelah selesai menjawab soal-->
       <div id="kesimpulan" style="display: none;">

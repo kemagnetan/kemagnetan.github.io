@@ -11,11 +11,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body onload="drop();">
   
   <!--header untuk judul sub bab-->
   <div class="header">
-      <center>Teori Dasar Kemagnetan</center>
+      <center>B. Teori Dasar Kemagnetan</center>
   </div>
   <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
   <div class="btn">
@@ -36,11 +36,11 @@
           </li>
           
           <li>
-            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori Dasar Kemagnetan
+            <a href="#" style="  color: cyan; background: black; border-left-color: cyan;" class="kemagnetan">Teori  Kemagnetan
               <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="kemagnetan-tampil">
-              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;"  href="1.html">Konsep Gaya Magnet</a></li>
+              <li><a style="  color: cyan; "  href="1.html">Konsep Gaya Magnet</a></li>
               <li><a href="../2/1.html">Teori Kemagnetan bumi</a></li>
               <li><a href="../3/1.html">Induksi magnet dan gaya lorentz</a></li>
               <li><a href="../3/1.html">Induksi elektromagnetik</a></li>
@@ -60,6 +60,13 @@
 
         </ul>
     </nav>
+       <!-- javascript untuk navigasi-->
+       <script>
+        function drop(){
+          $('nav ul .kemagnetan-tampil').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+         }
+      </script>
     <!--class untuk konten-->
     <div class="content">
       <br>
@@ -117,8 +124,9 @@
       </center>
       <br>
       <!--untuk kontrol vidio-->
-      <div class="canvas"	>
+      <div class="canvas"	style="background-color: white;">
         <center>
+          <b>Navigasi Vidio :</b>
           <button class="btnvidio" onclick="coba1()" type="button">Percobaan 1</button>
           <button class="btnvidio" onclick="coba2()" type="button">Percobaan 2</button>
           <button class="btnvidio" onclick="coba3()" type="button">Percobaan 3</button>
@@ -217,7 +225,7 @@
                 </div>
                 <div id="1jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
                   <h2>Jawaban benar</h2>
-                  Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+                 sisi besi yang bertemu dengan kutub magnet penginduksi akan memiliki kutub yang berlawanan.
                 </div>
          </div> 
          <br>
@@ -242,7 +250,7 @@
         </div>
         <div id="2jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
           <h2>Jawaban benar</h2>
-          Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+          Sisi P pada  gambar merupakan kutub utara dan Q merupakan kutub selatan.
         </div>
          </div> 
          <br>
@@ -269,7 +277,7 @@
         </div>
         <div id="3jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
           <h2>Jawaban benar</h2>
-          Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+          Sisi A pada paku atau besi yang digosokan akan memiliki kutub yang sama dengan ujung magnet yang digunakan untuk menggosok.
         </div>
          </div>
          

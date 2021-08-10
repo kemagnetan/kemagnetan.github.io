@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body onload="drop();">
   
   <!--header untuk judul sub bab-->
   <div class="header">
-      <center>Pemanfaatan Medan Magnet pada Migrasi Hewan</center>
+      <center>A. Pemanfaatan Medan Magnet pada Migrasi Hewan</center>
   </div>
   <!-- navigasi sidebar (sebagai navigasi di sebelah kiri)-->
   <div class="btn">
@@ -28,13 +28,13 @@
               <span class="fas fa-caret-down first"></span>
             </a>
             <ul class="migrasi-tampil">
-              <li><a style="  color: cyan; background: #272727; border-left-color: cyan;"  href="../migrasi hewan/1.html">Materi</a></li>
+              <li><a style="  color: cyan;"  href="../migrasi hewan/1.html">Materi</a></li>
               <li><a href="Kuis/kuis1.html">Kuis 1</a></li>
             </ul>
           </li>
           
           <li>
-            <a href="#" class="kemagnetan">Teori Dasar Kemagnetan
+            <a href="#" class="kemagnetan">Teori Kemagnetan
               <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="kemagnetan-tampil">
@@ -58,6 +58,14 @@
 
         </ul>
     </nav>
+    <!-- javascript untuk navigasi-->
+    <script>
+      function drop(){
+        $('nav ul .migrasi-tampil').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+       }
+    </script>
+    
     <!--class untuk konten-->
     <div class="content">
       <br>
@@ -72,7 +80,7 @@
            </ol>
         </div>
        <br>
-    <div class="canvas" style="background-color:#daf5fd; color: black;">   
+    <div class="canvas" style="background-color:white; color: black;">   
     <!--Soal 1-->
     <div class="soal" id="soal1sow" >
       <div class="pertanyaan"><b>Burung dapat memanfaatkan medan magnet bumi untuk bermigrasi karena  ....</b></div> 
@@ -162,7 +170,7 @@
 
   <!--Soal 3-->
   <div class="soal" id="soal3sow" style="display:none;">
-    <div class="pertanyaan"><b>Penyu bermigrasi menggunakan medan magnet dengan kemampuan yang berbeda dengan hewn lain, yaitu   ....</b></div>
+    <div class="pertanyaan"><b>Penyu bermigrasi menggunakan medan magnet dengan kemampuan yang berbeda dengan hewan lain, yaitu   ....</b></div>
     <table cellpadding="10">
     <tr>
       <td><label><div class="pilihan"  style="cursor: pointer;">
@@ -285,10 +293,25 @@
     <h2>Jawaban Salah</h2>
     Sayang sekali. Silahkan pelajari kembali materi pada halaman sebelumnya dengan penuh semangat.
   </div>
-  <div id="jawabanbenar" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+  <div id="jawabanbenar1" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
     <h2>Jawaban benar</h2>
-    Selamat jawaban kamu benar. lanjutkan, karena usaha tidak akan menghianati hasil.
+    Burung merpati, burung layang-layang, dan elang memanfaatkan medan magnet bumi untuk bermigrasi dengan menggunakan magnetite (Mineral besi bermagnet) yang terletak di dalam tubuhnya.
   </div>
+  <div id="jawabanbenar2" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+    <h2>Jawaban benar</h2>
+    Ikan salmon memiliki kemampuan untuk kembali ke aliran sungai air tawar tempat awal mereka menetas dan tumbuh setelah berenang ribuan kilometer mengarungi lautan dengan kemampuan mendeteksi medan magnet.  </div>
+  <div id="jawabanbenar3" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+    <h2>Jawaban benar</h2>
+  Penyu salah satu hewan yang dapat memanfaatkan medan magnet bumi dalam bermigrasi dan dapat menentukan garis bujur seperti kompas.
+  </div>
+  <div id="jawabanbenar4" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+    <h2>Jawaban benar</h2>
+    Lobster duri migrasi dari lepas pantai menuju lautan lepas yang lebih hangat dan tenang. Lobster duri dapat merasakan medan magnet bumi dan bisa menyesuaikan diri tetap bergerak menuju arah kutub air.  </div>
+  <div id="jawabanbenar5" class="canvas" style=" display:none; background-color:rgb(255, 255, 255);border-color:green;color: green;">
+    <h2>Jawaban benar</h2>
+    Dalam tubuh bakteri Magnetotactic Bacteria (MTB) terdapat organel khusus yang disebut magnetosome. Pada magnetosome tersusun atas senyawa magnetite ($Fe_{3}O_{4}$) atau greigite ($Fe_{3}S_{4}$).   </div>
+
+
 </div>
 <br>
   <center>

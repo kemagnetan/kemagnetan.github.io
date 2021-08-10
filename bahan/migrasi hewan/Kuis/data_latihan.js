@@ -91,12 +91,32 @@ selanjutnya.addEventListener('click', function () {
         document.getElementById('kanan').className = document.getElementById('kanan').className.replace('hilang', '');
 
     }
+    
+    var menit = 60 * 30,
+    display = document.querySelector('#time');
+    startTimer(menit, display);
 
 
     MathJax.typeset();
 });
+        // timer pada soal
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10)
+                seconds = parseInt(timer % 60, 10);
 
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = "0";
+                    waktuhabis.style.display="";
+                }
+            }, 1000);
+        }
 
 
 window.onload = function () {
@@ -127,6 +147,7 @@ dat.onreadystatechange = function () {
     cek = [];
     jwbs = [];
     hasilakhir = 0;
+    kkm=70;
     benarr = 0;
     salahh = 0;
 
@@ -186,12 +207,14 @@ dat.onreadystatechange = function () {
 
             let span = document.createElement('span');
             let text_span = document.createTextNode(i + 1);
-
-            span.appendChild(text_span);
+            
+            bg_pertanyaan.appendChild(no);
+            no.appendChild(soal);
             soal.appendChild(text_soal);
             soal.appendChild(span);
-            no.appendChild(soal);
-            bg_pertanyaan.appendChild(no);
+            span.appendChild(text_span);
+            
+            
 
             // ---------------------------------
 
@@ -419,6 +442,8 @@ dat.onreadystatechange = function () {
         new_jwb_urut_no = [];
 
         selesai.addEventListener('click', function () {
+
+
             let sarat = 0;
 
             for (let t = 0; t < jwbs.length; t++) {
@@ -535,9 +560,16 @@ dat.onreadystatechange = function () {
                 // }
 
                 //
+            // menampilkan keterangan lulus atau gagal
+                if(hasilakhir >= kkm){
+                    lulus.style.display="";
+                }else{
+                    gagal.style.display="";
+                }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
             }
+
 
 
         });

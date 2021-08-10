@@ -6,6 +6,11 @@ body{
 table tr img{
 	width: 70%;
 }
+.border{
+	background-color:rgba(47, 79, 79, 0.212) ;
+	border-radius: 10px;
+	padding: 5px;
+}
 .header{
 	
 	width:auto;

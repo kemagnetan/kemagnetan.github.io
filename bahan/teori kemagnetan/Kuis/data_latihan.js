@@ -91,12 +91,32 @@ selanjutnya.addEventListener('click', function () {
         document.getElementById('kanan').className = document.getElementById('kanan').className.replace('hilang', '');
 
     }
-
+    //set timer
+    var menit = 60 * 30,
+    display = document.querySelector('#time');
+    startTimer(menit, display);
 
     MathJax.typeset();
 });
 
+       // timer pada soal
+       function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
 
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = "0";
+                waktuhabis.style.display="";
+            }
+        }, 1000);
+    }
 
 
 
@@ -515,6 +535,12 @@ dat.onreadystatechange = function () {
                 // }
 
                 //
+                           // menampilkan keterangan lulus atau gagal
+                if(hasilakhir >= 70){
+                    lulus.style.display="";
+                }else{
+                    gagal.style.display="";
+                }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
             }

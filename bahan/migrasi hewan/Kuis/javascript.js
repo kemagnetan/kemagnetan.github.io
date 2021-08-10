@@ -138,18 +138,6 @@ window.addEventListener('kyup', function (e) {
 });
 
 
-let home_klik = document.querySelector('.home a');
-console.log(home_klik);
-home_klik.addEventListener('click', function (e) {
-    e.preventDefault(e);
-    let tanya = confirm("Yakin Ingin Meninggalkan Halaman");
-    if (tanya) {
-        window.location = home_klik.href;
-    } else {
-
-    }
-})
-
 
 // ulangweb();
 // var ulang;

@@ -16,6 +16,34 @@
     background-color: rgb(211, 205, 205);
 }
 
+#waktuhabis{
+    background-color: #00000079;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    left: 0;top: 0;
+   
+}
+.border{
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    left: 32%;top: 30%;
+}
+.tombol{
+    background-color: #007cad;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.tombol:hover{
+    background-color: #033549;
+}
 #soal10,#soal11{
     text-align: center;
 }
@@ -504,6 +532,31 @@ a {
 }
 
 /* ---------------------------------------------------------------------------------- */
+.btn{
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    min-width: 100px;
+    background-color:  #0aa2df;
+    color: white; 
+    cursor: pointer;
+    border: none;
+  }
+.lulus{
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid green;
+    width: 80%;
+    color: green;
+ 
+
+}
+.gagal{
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid red;
+    width: 80%;
+    color: red;
+}
 
 @media (min-width : 992px) {
     .t_hasil {
@@ -715,6 +768,29 @@ a {
     }
 }
 @media (max-width : 992px) {
+    .t_hasil {
+        margin-left: 6%;
+
+    
+    }
+    .lulus{
+       background-color: white;
+       margin-top: 5px;
+     
+    
+    }
+    .gagal{
+        background-color: white;
+        margin-top: 5px;
+    }
+    #waktuhabis{
+
+        width: 100%;
+        height: 130%;
+
+       
+    }
+
 .keluar{
  
         background-color: rgb(255, 255, 255);

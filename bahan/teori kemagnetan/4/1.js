@@ -12,8 +12,6 @@ function gbr1(){
     tombol2.style.background="#04709b";
     tombol3.style.background="#04709b";
 
-    latihan.style.display="none";
-    sebelum.style.display="";
 }
 function gbr2(){
   generator.style.display="none";
@@ -24,8 +22,6 @@ function gbr2(){
     tombol2.style.background="black";
     tombol3.style.background="#04709b"; 
 
-    latihan.style.display="none";
-    sebelum.style.display="";
 
 }
 function gbr3(){
@@ -37,21 +33,10 @@ function gbr3(){
     tombol2.style.background="#04709b";
     tombol3.style.background="black";
 
-    latihan.style.display="none";
-    sebelum.style.display="";
+
 }
 
-//menampilkan latihan
 
-function latihantampil(){
-  latihan.style.display="";
-  sebelum.style.display="none";
-  materiberikut.style.display="";
-
-  generator.style.display="none";
-  dinamo.style.display="none";
-  trafo.style.display="none";
-}
 
 //cek hasil latihan
 var s1b=document.getElementById("s1b");
