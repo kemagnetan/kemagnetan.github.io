@@ -765,6 +765,23 @@ a {
     }
 }
 @media (max-width : 992px) {
+
+    .t_hasil {
+        margin-left: 6%;
+
+    
+    }
+    .lulus{
+       background-color: white;
+       margin-top: 5px;
+     
+    
+    }
+    .gagal{
+        background-color: white;
+        margin-top: 5px;
+    }
+    
     #waktuhabis{
 
         width: 100%;
