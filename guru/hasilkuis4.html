@@ -71,7 +71,7 @@
 
     //--------------------------Ambil semua data KUIS 1         
                 function dataKuis1(){
-                    firebase.database().ref('Evaluasi').once('value',
+                    firebase.database().ref('evaluasi').once('value',
                     function(AllRecords1){
                         AllRecords1.forEach(
                             function(CurrentRecord){
