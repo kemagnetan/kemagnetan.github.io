@@ -535,7 +535,7 @@ dat.onreadystatechange = function () {
                 // }
 
                 //
-                           // menampilkan keterangan lulus atau gagal
+        // menampilkan keterangan lulus atau gagal
                 if(hasilakhir >= 70){
                     lulus.style.display="";
                 }else{
@@ -627,7 +627,6 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
         hari: hari,
         jawabannya: jwb
     }
-
     let db = firebase.database().ref("kuis2/" + counter);
     db.set(task);
 

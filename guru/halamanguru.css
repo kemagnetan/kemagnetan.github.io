@@ -1,4 +1,6 @@
-
+body{
+  background-color: #007cad;
+}
 .popup{
     position:fixed;
     top:0;
