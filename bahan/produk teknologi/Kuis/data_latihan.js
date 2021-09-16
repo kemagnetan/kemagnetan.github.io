@@ -130,7 +130,7 @@ window.onload = function () {
     document.getElementById('kiri').className += ' hilang';
     document.getElementById('kanan').className += ' hilang';
 
-    readlah();
+    dataKuis()
 
     MathJax.typeset();
 }
@@ -669,3 +669,28 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
 
 
 MathJax.typeset();
+
+//--------------------------Ambil semua data KUIS          
+function dataKuis(){
+    firebase.database().ref('kontrol').once('value',
+    function(AllRecords1){
+        AllRecords1.forEach(
+            function(CurrentRecord){
+                var kuis1=CurrentRecord.val().kuis1;
+                var kuis2=CurrentRecord.val().kuis2;
+                var kuis3=CurrentRecord.val().kuis3;
+                var evaluasi=CurrentRecord.val().evaluasi;
+
+                datak(kuis1,kuis2,kuis3,evaluasi);
+            }
+        );
+        function datak(kuis1,kuis2,kuis3,evaluasi){
+            if(kuis3==0){
+                popup.style.display="";
+            }
+            console.log(kuis3);
+        }
+    });
+    
+
+}

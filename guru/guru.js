@@ -14,17 +14,7 @@
                 // Initialize Firebase
                 firebase.initializeApp(firebaseConfig);
 
-function masuk(){
-    kode = document.getElementById("kode").value ;
 
-    if(kode != "admin"){
-        alert("Kode yang anda masukan salah");
-    }
-    else{
-        popup.style.display="none";
-        judul.style.display="";
-    }
-}
 
 
 var on=1;
@@ -33,13 +23,13 @@ var off=0;
 //--------------------------------------Kuis 1--------------------------------
     function on_kuis1(){
         on1.style.background="green";
-        off1.style.background="#13bafc";
+        off1.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {kuis1:on});
     }
     function off_kuis1(){
         off1.style.background="red";
-        on1.style.background="#13bafc";
+        on1.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {kuis1:off});
     }
@@ -47,13 +37,13 @@ var off=0;
 //--------------------------------------Kuis 2 --------------------------------
     function on_kuis2(){
         on2.style.background="green";
-        off2.style.background="#13bafc";
+        off2.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {kuis2:on});
     }
     function off_kuis2(){
         off2.style.background="red";
-        on2.style.background="#13bafc";
+        on2.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {kuis2:off});
     }
@@ -61,13 +51,13 @@ var off=0;
     //--------------------------------------Kuis 3--------------------------------
     function on_kuis3(){
         on3.style.background="green";
-        off3.style.background="#13bafc";
+        off3.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {kuis3:on});
     }
     function off_kuis3(){
         off3.style.background="red";
-        on3.style.background="#13bafc";
+        on3.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {kuis3:off});
     }
@@ -75,18 +65,18 @@ var off=0;
 //--------------------------------------evaluasi --------------------------------
     function on_kuis4(){
         on4.style.background="green";
-        off4.style.background="#13bafc";
+        off4.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {evaluasi:on});
     }
     function off_kuis4(){
         off4.style.background="red";
-        on4.style.background="#13bafc";
+        on4.style.background="#0a3546";
         firebase.database().ref('kontrol/1/').update(
             {evaluasi:off});
     }
 
-  //--------------------------Ambil semua data KUIS 1         
+  //--------------------------Ambil semua data KUIS          
   function dataKuis1(){
     firebase.database().ref('kontrol').once('value',
     function(AllRecords1){

@@ -1,6 +1,29 @@
 body{
   background-color: #007cad;
 }
+.head{
+	
+	width:auto;
+	height:55%;
+	padding: 30px;
+	background:#014661;
+	font-family:arial;
+	color:white;
+	font-size: 17pt;
+  border-radius: 5px;
+	
+
+}
+.head img{
+	width: 50px;
+	position: absolute;
+	left: 40px;
+	top: 20px;
+	cursor: pointer;
+}
+.head img:hover{
+	transform: scale(1.2);
+}
 .popup{
     position:fixed;
     top:0;
@@ -136,6 +159,7 @@ button:hover{
           .nav{
             border-radius: 10px 10px 10px 10px;
             padding: 5px;
+            margin: 0;
             min-width: 100px;
             background-color:  #13bafc; 
           }
@@ -150,15 +174,22 @@ button:hover{
                 width: 100%;
             }
 
-            .header{
-                width: 80%;
+            .head{
+	
+              width:auto;
+              height:auto;
+              padding: 10px;
+              background:#014661;
+              font-family:arial;
+              color:white;
+              font-size: 17pt;
+              border-radius: 5px;
+              
+            
             }
-
-            .judul{
-
-                position: absolute;
-                left:0%;
-                top: 30%;
-
+            .head img{
+              width: 50px;
+              position:initial;
+              cursor: pointer;
             }
         }
