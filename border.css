@@ -146,6 +146,25 @@ h3 img{
     margin: 2px;
     border-radius: 5px 5px 5px 5px;
 }
+.canvasmengamati{
+    border-radius: 5px 5px 5px 5px;
+    border-color: firebrick;
+    background-color:white;
+    border-style: solid;
+    border-width: 2px;
+    padding: 3% 3% ;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    width: auto;
+    background-color: firebrick;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2px;
+    padding-left: 5px;
+    cursor: pointer;
+}
 
 @media screen and (max-width:600px){
     .canvas img{

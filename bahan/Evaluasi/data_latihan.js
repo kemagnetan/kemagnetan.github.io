@@ -679,7 +679,6 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
 }
 
 
-MathJax.typeset();
 //--------------------------Ambil semua data KUIS          
 function dataKuis(){
     firebase.database().ref('kontrol').once('value',
