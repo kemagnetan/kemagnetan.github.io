@@ -80,15 +80,15 @@ function gbr5(){
 //mengarahkan menit tertentu dengan button
 var vid = document.getElementById("vidio");
 function alat() { 
-    vid.currentTime=3;
+    vid.currentTime=28;
     vid.play();
   } 
   function coba1() { 
-    vid.currentTime=14;
+    vid.currentTime=41;
     vid.play();
   } 
   function coba2() { 
-    vid.currentTime=59;
+    vid.currentTime=65;
     vid.play();
   } 
   
