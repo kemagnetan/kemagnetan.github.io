@@ -131,6 +131,8 @@ nav ul li a{
 
 nav ul li a:hover{
   background: #01709c;
+  color:cyan;
+ 
 }
 nav ul ul{
   position: static;

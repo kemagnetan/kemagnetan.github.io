@@ -41,11 +41,10 @@
 
                 <div class="main-wrapper">
                     <div class="table-wrapper">
-                        <table class="demo-table">
+                        <table class="demo-table"id="tabel">
                         <thead>
                         <tr>
 
-                           
                         </tr>
                     </thead>
                         
@@ -60,7 +59,12 @@
             </div>
         </div>
 
- 
+        <br>
+        <center>
+        <button  type="button" id="export" onclick="exportTableToExcel('tabel')">Download</button>
+        </center>
+        <br>
+        <br>
 
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
