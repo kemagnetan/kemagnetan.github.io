@@ -29,7 +29,7 @@ function mencari() {
 
     nilaikuis=kuis.value;
     var task = firebase.database().ref(nilaikuis);
-    
+    console.log(task);
     if (kelasnya.value == "1") {
         kelasfix = "9A";
     } else if (kelasnya.value == "2") {

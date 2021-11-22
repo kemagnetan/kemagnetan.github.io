@@ -257,7 +257,7 @@ dat.onreadystatechange = function () {
             let soall = document.createElement('div');
             soall.setAttribute('class', 'soall');
 
-//=============menambahkan class
+            //=============menambahkan class
 
             if(nilai==9){
                 let soal10 = document.createElement('div');
@@ -276,7 +276,7 @@ dat.onreadystatechange = function () {
             
             inti_pertanyaan.appendChild(pertanyaannya);
             bg_pertanyaan.appendChild(inti_pertanyaan);
-//batas ---------------------------------
+            //batas ---------------------------------
 
           let batas = document.createElement('div');
           batas.setAttribute('class', 'batas');
@@ -389,8 +389,8 @@ dat.onreadystatechange = function () {
 
         // akhir if
 
-// memasukan gambar kesoal=============================//
-// memasukan gambar kesoal=============================//
+    // memasukan gambar kesoal=============================//
+    // memasukan gambar kesoal=============================//
         var gambar= new Image(300);
         gambar.src='gambar/10.png';
          x=document.getElementById("soal10");
@@ -470,8 +470,8 @@ dat.onreadystatechange = function () {
                     sarat = sarat + 1;
                 }
             }
-console.log(jwbs.length);
-console.log(sarat);
+    console.log(jwbs.length);
+    console.log(sarat);
             if (sarat == jwbs.length) {
                 // array kunci
                 hasilakhir = 0;

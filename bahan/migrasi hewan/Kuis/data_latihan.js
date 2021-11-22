@@ -83,7 +83,7 @@ selanjutnya.addEventListener('click', function () {
     // console.log(sekolahfix);
 
     if (cek != 3) {
-        alert("lengkapi dulu data dari anda");
+        alert("Lengkapi dulu data dari anda");
     } else if (cek == 3) {
         datadiri.className += ' hilang';
         document.getElementById('data').className += ' hilang';
@@ -162,7 +162,7 @@ dat.onreadystatechange = function () {
         //random urutan
         for (let x = 0; x < 100; x++) {
             // acak angka dengan batas length.data dan minimum 0
-            let angka = Math.floor(Math.random() * data.length) + 0;
+            let angka = Math.floor(Math.random() * data.length) + 0; //data.length untuk jumlah soal yg ditampilkan
             cek.push(angka);
         }
         // membuang angka yang sama
@@ -538,26 +538,6 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-
-                // ---------------------------------
-                //tampilkan semua soal dan jawaban benar
-
-                // let hilang_bgsoalnya = document.querySelectorAll('.bg_pertanyaan');
-                // let tampil_pertanyaann = document.querySelectorAll('.inti_pertanyaan .pertanyaannya');
-                // for (let k = 0; k < hilang_bgsoalnya.length; k++) {
-                //     if (hilang_bgsoalnya[k].className.indexOf('hilang') == -1) {
-
-                //     } else {
-                //         hilang_bgsoalnya[k].className = hilang_bgsoalnya[k].className.replace("hilang", " ");
-                //     }
-                // }
-                // for (let k = 0; k < tampil_pertanyaann.length; k++) {
-                //     //tampilkan jawaban
-
-                //     if (tampil_pertanyaann[k].className.indexOf('hilang') == -1) {} else {
-                //         tampil_pertanyaann[k].className = tampil_pertanyaann[k].className.replace("hilang", " ");
-                //     }
-                // }
 
                 //
             // menampilkan keterangan lulus atau gagal
