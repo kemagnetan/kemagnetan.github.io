@@ -56,7 +56,7 @@ function mencari() {
                             <td class="ukr1">${taskvalue.sekolah}</td>
                             <td class="ukr3">${taskvalue.kelas}</td>
                             <td class="ukr1">${taskvalue.nama}</td>
-                            <td class="ukr3">${taskvalue.skor}</td>
+                            <td class="ukr3">${taskvalue.nilai}</td>
                             <td class="ukr2">${taskvalue.hari}</td>
                             <td class="ukr2">${taskvalue.waktu}</td>
                             <td class="hps" onclick ="deletetask(${taskvalue.id})"><button type="button" class="btn btn-danger">Hapus</button></td>
