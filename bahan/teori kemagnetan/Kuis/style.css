@@ -1,0 +1,170 @@
+body{
+   
+    font-family: poppins,Arial,sans-serif;
+}
+#popup{
+    background-color: rgba(105, 105, 105, 0.295);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(180, 21, 21);
+    z-index: 5000;
+    padding-left: 30%;
+    padding-top: 15%;
+    font-size: 50px;
+}
+.gagal{
+    background-color: rgb(209, 62, 69);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+  
+}
+.berhasil{
+    background-color: rgb(52, 97, 180);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+   
+}
+#badan{
+    width: 40%;
+    min-height: 50%;
+    padding: 10px;
+
+   position: absolute;
+   top:10%;
+   left: 30%;
+}
+#waktuhabis{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 28.5%;
+    padding-top: 12%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 37, 51, 0.582);
+    z-index: 1;
+}
+.popup{
+    border-radius: 3px;
+    padding: 15px;
+    width: 60%;
+    background-color: white;
+    text-align: justify;
+}
+.navigasi{
+    position: absolute;
+    top: 11.5%;
+    left:15%;
+    background-color: white;
+    width: 15%;
+    height: 350px;
+    border-radius: 3px;
+    padding: 10px;
+}
+button{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+
+}
+.tombol{
+    padding: 3px;
+    background-color: slategrey;
+    min-width: 30px;
+    margin: 5px;
+    color: white;
+    border-radius: 4px;
+
+}.tombol:hover{
+    opacity:0.8;
+}
+.tombol2{
+    padding: 3px;
+    background-color: rgb(7, 182, 138);
+    min-width: 30px;
+    margin: 5px;
+    color: white;
+    border-radius: 4px;
+
+}
+
+.jawaban{
+    width: 95%;
+    padding: 10px;
+    min-height: 10px;
+    font-size: 16px;
+    font-family: poppins,Arial,sans-serif;
+    border-radius: 5px;
+    background-color:rgb(240, 239, 239);
+    
+}
+
+/* custom radio */
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+ 
+/* hide the browser's default radio button */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+ 
+/* create custom radio */
+.radio .check {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+ 
+/* on mouse-over, add border color */
+.radio:hover input ~ .check {
+    border: 2px solid #2489C5;
+}
+ 
+/* add background color when the radio is checked */
+.radio input:checked ~ .check {
+    background-color: #2489C5;
+    border:none;
+}
+ 
+/* create the radio and hide when not checked */
+.radio .check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+ 
+/* show the radio when checked */
+.radio input:checked ~ .check:after {
+    display: block;
+}
+ 
+/* radio style */
+.radio .check:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}

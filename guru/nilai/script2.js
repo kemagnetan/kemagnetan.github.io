@@ -1,18 +1,18 @@
 //----------------------------konfigurasi----------------------------------
 
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyBZ0iLEVsHSFnGxxIhsILZCz6BLniCxIxg",
-        authDomain: "crud-72352.firebaseapp.com",
-        databaseURL: "https://crud-72352-default-rtdb.firebaseio.com",
-        projectId: "crud-72352",
-        storageBucket: "crud-72352.appspot.com",
-        messagingSenderId: "288985518980",
-        appId: "1:288985518980:web:c5eded2aa0e9970b0b83d1",
-        measurementId: "G-HFDT60MD6C"
-    };
-    firebase.initializeApp(config);
+    var firebaseConfig = {
+        apiKey: "AIzaSyAXTrIuXO4OGau7EliaUj6XE-7OS0FIN8Q",
+        authDomain: "percobaan-3aa8e.firebaseapp.com",
+        databaseURL: "https://percobaan-3aa8e-default-rtdb.firebaseio.com",
+        projectId: "percobaan-3aa8e",
+        storageBucket: "percobaan-3aa8e.appspot.com",
+        messagingSenderId: "51589690048",
+        appId: "1:51589690048:web:e63a8de81c95edc3d7f325",
+        measurementId: "G-D8GZMGNJ69"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
 
 window.onload = function () {
 
